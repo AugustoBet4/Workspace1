@@ -46,8 +46,10 @@
          <URL path="src/mypackage1/altasParticipantesForm.java"/>
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
-         <URL path="src/mypackage1/ClaseNacion.java"/>
          <URL path="src/mypackage1/ConnectDB.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+        <URL path="src/mypackage1/ClaseNacion.java"/>
       </Item>
    </listOfChildren>
    <ownerMap/>

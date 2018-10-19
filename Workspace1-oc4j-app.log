@@ -772,3 +772,7 @@ javax.servlet.jsp.JspException: Cannot find bean under name ayuda
 		PooledExecutor.java:803
 	void java.lang.Thread.run()
 		Thread.java:484
+10/19/18 10:07 PM Started
+10/19/18 10:07 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/19/18 10:07 PM Workspace1-Aplicacion-webapp: action: init
+10/19/18 10:07 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
