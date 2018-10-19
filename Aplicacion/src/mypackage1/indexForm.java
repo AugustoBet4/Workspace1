@@ -5,8 +5,10 @@ import org.apache.struts.action.ActionError;
 import org.apache.struts.action.ActionMapping;
 import javax.servlet.http.HttpServletRequest;
 
-public class IndexForm extends ActionForm 
+public class indexForm extends ActionForm 
 {
+  String boton;
+
   /**
    * Reset all properties to their default values.
    * @param mapping The ActionMapping used to select this instance.
@@ -26,5 +28,15 @@ public class IndexForm extends ActionForm
   public ActionErrors validate(ActionMapping mapping, HttpServletRequest request)
   {
     return super.validate(mapping, request);
+  }
+
+  public String getBoton()
+  {
+    return boton;
+  }
+
+  public void setBoton(String newBoton)
+  {
+    boton = newBoton;
   }
 }
