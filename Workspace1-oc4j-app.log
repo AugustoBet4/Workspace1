@@ -1043,3 +1043,6 @@ javax.servlet.jsp.JspException: Cannot find ActionMappings or ActionFormBeans co
 		Thread.java:484
 10/19/18 11:00 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
 10/19/18 11:00 PM Started
+10/19/18 11:00 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/19/18 11:00 PM Workspace1-Aplicacion-webapp: action: init
+10/19/18 11:00 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
