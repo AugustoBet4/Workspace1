@@ -40,7 +40,9 @@
     <action path="/altasLocaciones" type="mypackage1.altasLocacionesAction" name="altasLocacionesForm" input="/altas_locaciones.jsp" scope="request">
       <forward name="index" path="/index.jsp"/>
     </action>
-    <action path="/altasArbitros" type="mypackage1.altasArbitrosAction" name="altasArbitrosForm" input="/altasArbitros.jsp" scope="request"/>
+    <action path="/altasArbitros" type="mypackage1.altasArbitrosAction" name="altasArbitrosForm" input="/altasArbitros.jsp" scope="request">
+      <forward name="index" path="/index.jsp"/>
+    </action>
   </action-mappings>
   <message-resources parameter="mypackage1.ApplicationResources"/>
 </struts-config>
