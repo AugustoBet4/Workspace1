@@ -24,7 +24,7 @@
               <div class="col-md">
                 <div class="form-group">
                   <h6>ID</h6>
-                  <html:text property="id" styleClass="form-control-sm" />
+                  <html:text property="id" styleClass="form-control" />
                 </div>
               </div>
             </div>
@@ -32,7 +32,7 @@
               <div class="col-md">
                 <div class="form-group">
                   <h6>Nombre</h6>
-                  <html:text property="nombre" styleClass="form-control-sm" />
+                  <html:text property="nombre" styleClass="form-control" />
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@
               <div class="col-md">
                 <div class="form-group">
                   <h6>Edad</h6>
-                  <html:text property="edad" styleClass="form-control-sm" />
+                  <html:text property="edad" styleClass="form-control" />
                 </div>
               </div>
             </div>

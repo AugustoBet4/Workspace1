@@ -48,13 +48,13 @@ public class indexAltasAction extends Action
       ResultSet rsConsulta = null;
       try{
         cn = conn.conexion;
-        String cadena = "select * from nacionalidad order by 1";
+        String cadena = "select * from NACIONALIDAD order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
           ClaseNacion item = new ClaseNacion();
-          item.setCodigo(rsConsulta.getString("idNacionalidad"));
-          item.setDesc(rsConsulta.getString("nacionalidad"));
+          item.setCodigo(rsConsulta.getString("IDNACIONALIDAD"));
+          item.setDesc(rsConsulta.getString("NACIONALIDAD"));
           items.add(item);
           System.out.println("Paso ..");
         }  
