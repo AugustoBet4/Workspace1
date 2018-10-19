@@ -19,7 +19,7 @@
          <URL path="src/mypackage1/ApplicationResources.properties"/>
       </Item>
       <Item class="oracle.jdeveloper.model.JspSourceNode">
-         <URL path="public_html/index.jsp" id="0"/>
+         <URL path="public_html/index.jsp"/>
          <encoding>windows-1252</encoding>
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
@@ -60,7 +60,6 @@
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="public_html/altasArbitros.jsp"/>
-         <encoding>windows-1252</encoding>
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/altasLocacionesForm.java"/>
@@ -70,6 +69,24 @@
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/altasArbitrosAction.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JspSourceNode">
+         <URL path="public_html/listado_participantes.jsp"/>
+         <encoding>windows-1252</encoding>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JspSourceNode">
+         <URL path="public_html/listado_locaciones.jsp"/>
+         <encoding>windows-1252</encoding>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JspSourceNode">
+         <URL path="public_html/listadoArbitros.jsp"/>
+         <encoding>windows-1252</encoding>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/ClaseListadoLocaciones.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/ClaseListadoParticipantes.java"/>
       </Item>
    </listOfChildren>
    <ownerMap/>
@@ -171,7 +188,7 @@
                         <programArguments class="java.lang.String"/>
                         <runActiveFile>true</runActiveFile>
                         <runDirectoryURL/>
-                        <targetURL idref="0"/>
+                        <targetURL path="public_html/index.jsp"/>
                         <useProxy>true</useProxy>
                      </Value>
                   </Item>
