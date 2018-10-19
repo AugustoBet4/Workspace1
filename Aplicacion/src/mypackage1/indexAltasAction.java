@@ -57,9 +57,6 @@ public class indexAltasAction extends Action
       to="grandslam";
     }
     if(boton.equals("Locaciones")){
-      Connection cn = null;
-      ConnectDB conn =new ConnectDB();
-      ResultSet rsConsulta = null;
       try{
         cn = conn.conexion;
         String cadena = "select * from pais order by 1";

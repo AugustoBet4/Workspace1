@@ -9,8 +9,14 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.naming.NamingException;
+import oracle.jdbc.*;
+import java.util.*;
 
-public class participantesAltaAction extends Action 
+public class altasParticipantesAction extends Action 
 {
   /**
    * This is the main action called from the Struts framework.
@@ -35,7 +41,7 @@ public class participantesAltaAction extends Action
     try
     {
       cn = conn.conexion;
-      String cadena = "insert into participantes values ("+id+",'"+nombre+"',"+edad+"',"+genero+"',"+nacionalidad+")";
+      String cadena = "insert into participantes values ("+id+",'"+nombre+"',"+edad+",'"+genero+"',"+nacionalidad+")";
       System.out.println(cadena);
       int a = conn.InsertaDatos(cadena);
       return mapping.findForward("index");
