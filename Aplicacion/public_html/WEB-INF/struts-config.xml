@@ -3,6 +3,7 @@
 <struts-config>
   <form-beans>
     <form-bean name="indexForm" type="mypackage1.indexForm"/>
+    <form-bean name="altasParticipantesForm" type="mypackage1.altasParticipantesForm"/>
   </form-beans>
   <action-mappings>
     <action path="/altas" type="mypackage1.indexAltasAction" name="indexForm" scope="request" input="/index.jsp">
@@ -18,7 +19,7 @@
       <forward name="resultados" path="/altas_resultados.jsp"/>
       <forward name="participantes-entrenadores" path="/altas_participantes-entrenadores.jsp"/>
     </action>
-    <action path="/listado" type="mypackage1.indexListadoAction" name="indexForm" scope="request">
+    <action path="/listado" type="mypackage1.indexListadoAction" name="indexForm" scope="request" input="/index.jsp">
       <forward name="arbitros" path="/listado_arbitros.jsp"/>
       <forward name="entrenadores" path="/listado_entrenadores.jsp"/>
       <forward name="grandslam" path="/listado_grandslam.jsp"/>
@@ -30,6 +31,8 @@
       <forward name="premios" path="/listado_premios.jsp"/>
       <forward name="resultados" path="/listado_resultados.jsp"/>
       <forward name="participantes-entrenadores" path="/listado_participantes-entrenadores.jsp"/>
+    </action>
+    <action path="/altaParti" type="mypackage1.altasParticipantesAction" name="altasParticipantesForm" input="/altas_participantes.jsp" scope="request">
     </action>
   </action-mappings>
   <message-resources parameter="mypackage1.ApplicationResources"/>

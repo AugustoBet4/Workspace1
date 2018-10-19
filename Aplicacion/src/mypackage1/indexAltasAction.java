@@ -43,7 +43,28 @@ public class indexAltasAction extends Action
       to="pais";
     }
     if(boton.equals("Participantes")){
-      to="participantes";
+      Connection cn = null;
+      ConnectDB conn =new ConnectDB();
+      ResultSet rsConsulta = null;
+      try{
+        cn = conn.conexion;
+        String cadena = "select * from nacionalidad order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next()){
+          ClaseNacion item = new ClaseNacion();
+          item.setCodigo(rsConsulta.getString("idNacionalidad"));
+          item.setDesc(rsConsulta.getString("nacionalidad"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }  
+        request.getSession().setAttribute("ayuda",items);
+        to="participantes";
+        }catch(Exception e){
+          e.printStackTrace();
+        }finally{
+          conn.closeConnection();	
+        }
     }
     if(boton.equals("Partido")){
       to="partido";

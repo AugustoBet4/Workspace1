@@ -1,3 +1,4 @@
+<%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
 <%@ page contentType="text/html;charset=windows-1252"%>
 <html>
   <head>
@@ -17,7 +18,59 @@
           Grand Slam - Agregar Participante
         </h1>
         <div class="card-body">
-          
+          <html:form action="/altaParti" styleClass="form-group">
+
+            <div class="row justify-content-md-center">
+              <div class="col-md">
+                <div class="form-group">
+                  <h6>ID</h6>
+                  <html:text property="id" styleClass="form-control-sm" />
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col-md">
+                <div class="form-group">
+                  <h6>Nombre</h6>
+                  <html:text property="nombre" styleClass="form-control-sm" />
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col-md">
+                <div class="form-group">
+                  <h6>Edad</h6>
+                  <html:text property="edad" styleClass="form-control-sm" />
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col-md">
+                <div class="form-group">
+                  <h6>Genero</h6>
+                  <html:select property="genero" styleClass="form-control" >
+                    <html:option value="Masculino" />
+                    <html:option value="Femenino" />
+                  </html:select>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col-md">
+                <div class="form-group">
+                  <h6>Nacionalidad</h6>
+                  <html:select property="nacionalidad" styleClass="form-control" >
+                    <html:options collection="ayuda" labelProperty="desc" property="codigo" />
+                  </html:select>
+                </div>
+              </div>
+            </div>
+           
+            <div class="form-group">
+              <html:submit styleClass="btn btn-success" value="Registrar" />
+            </div>
+            
+          </html:form>
         </div>
       </div>
     </div>
