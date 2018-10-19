@@ -49,7 +49,17 @@
          <URL path="src/mypackage1/ConnectDB.java"/>
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
-        <URL path="src/mypackage1/ClaseNacion.java"/>
+         <URL path="src/mypackage1/ClaseNacion.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JspSourceNode">
+         <URL path="public_html/altas_locaciones.jsp"/>
+         <encoding>windows-1252</encoding>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/altasLocacionesAction.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/altasLocacionesForm.java"/>
       </Item>
    </listOfChildren>
    <ownerMap/>

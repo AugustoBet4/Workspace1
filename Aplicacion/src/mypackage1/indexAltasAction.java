@@ -34,7 +34,28 @@ public class indexAltasAction extends Action
       to="grandslam";
     }
     if(boton.equals("Locaciones")){
-      to="locaciones";
+      Connection cn = null;
+      ConnectDB conn =new ConnectDB();
+      ResultSet rsConsulta = null;
+      try{
+        cn = conn.conexion;
+        String cadena = "select * from pais order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next()){
+          ClaseNacion item = new ClaseNacion();
+          item.setCodigo(rsConsulta.getString("NUM_SEC_PAIS"));
+          item.setDesc(rsConsulta.getString("NOMBRE"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }  
+        request.getSession().setAttribute("ayuda",items);
+        to="locaciones";
+        }catch(Exception e){
+          e.printStackTrace();
+        }finally{
+          conn.closeConnection();	
+        }
     }
     if(boton.equals("Nacionalidad")){
       to="nacionalidad";
