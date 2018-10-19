@@ -21,6 +21,33 @@ public class participantesAltaAction extends Action
    */
   public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
-    return mapping.findForward("success");
+    altasParticipantesForm cc = (altasParticipantesForm) form;
+    String id = cc.getId();
+    String nombre = cc.getNombre();
+    String edad = cc.getEdad();
+    String genero = cc.getGenero();
+    String nacionalidad = cc.getNacionalidad();
+
+    Connection cn = null;
+    ConnectDB conn =new ConnectDB();
+    ResultSet rsConsulta = null;
+
+    try
+    {
+      cn = conn.conexion;
+      String cadena = "insert into participantes values ("+id+",'"+nombre+"',"+edad+"',"+genero+"',"+nacionalidad+")";
+      System.out.println(cadena);
+      int a = conn.InsertaDatos(cadena);
+      return mapping.findForward("index");
+	  }
+    catch(Exception e)
+    {
+      e.printStackTrace();
+      return (mapping.findForward("nook"));
+    }   
+    finally
+    {
+      conn.closeConnection();	
+    }
   }
 }

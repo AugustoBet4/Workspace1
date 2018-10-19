@@ -35,7 +35,9 @@
     </action>
     <action path="/altaParti" type="mypackage1.altasParticipantesAction" name="altasParticipantesForm" input="/altas_participantes.jsp" scope="request">
     </action>
-    <action path="/altasLocaciones" type="mypackage1.altasLocacionesAction" name="altasLocacionesForm" input="/altas_locaciones.jsp" scope="request"/>
+    <action path="/altasLocaciones" type="mypackage1.altasLocacionesAction" name="altasLocacionesForm" input="/altas_locaciones.jsp" scope="request">
+      <forward name="index" path="/index.jsp"/>
+    </action>
   </action-mappings>
   <message-resources parameter="mypackage1.ApplicationResources"/>
 </struts-config>
