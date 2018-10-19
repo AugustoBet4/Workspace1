@@ -24,8 +24,31 @@ public class indexAltasAction extends Action
     indexForm indexRed = (indexForm) form;
     String boton = indexRed.getBoton();
     System.out.println("Presiono: "+boton);
+
+    Connection cn = null;
+    ConnectDB conn =new ConnectDB();
+    ResultSet rsConsulta = null;
+    
     if(boton.equals("Arbitros")){
-      to = "arbitros";
+      try{
+          cn = conn.conexion;
+          String cadena = "select * from NACIONALIDAD order by 1";
+          rsConsulta = conn.getData(cadena);
+          ArrayList items = new ArrayList();
+          while (rsConsulta.next()){
+            ClaseNacion item = new ClaseNacion();
+            item.setCodigo(rsConsulta.getString("IDNACIONALIDAD"));
+            item.setDesc(rsConsulta.getString("NACIONALIDAD"));
+            items.add(item);
+            System.out.println("Paso ..");
+          }  
+          request.getSession().setAttribute("ayuda",items);
+          to="arbitros";
+          }catch(Exception e){
+            e.printStackTrace();
+          }finally{
+            conn.closeConnection();	
+          }
     }
     if(boton.equals("Entrenadores")){
       to="entrenadores";
@@ -64,9 +87,7 @@ public class indexAltasAction extends Action
       to="pais";
     }
     if(boton.equals("Participantes")){
-      Connection cn = null;
-      ConnectDB conn =new ConnectDB();
-      ResultSet rsConsulta = null;
+      
       try{
         cn = conn.conexion;
         String cadena = "select * from NACIONALIDAD order by 1";

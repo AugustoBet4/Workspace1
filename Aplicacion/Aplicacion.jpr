@@ -52,6 +52,7 @@
          <URL path="src/mypackage1/ClaseNacion.java"/>
       </Item>
       <Item class="oracle.jdeveloper.model.JspSourceNode">
+<<<<<<< HEAD
          <URL path="public_html/altas_locaciones.jsp"/>
          <encoding>windows-1252</encoding>
       </Item>
@@ -60,6 +61,16 @@
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/altasLocacionesForm.java"/>
+=======
+         <URL path="public_html/altasArbitros.jsp"/>
+         <encoding>windows-1252</encoding>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/altasArbitrosForm.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/altasArbitrosAction.java"/>
+>>>>>>> 388c2161dcf5e31f21ea0d37ec1b6bd37fb5a36d
       </Item>
    </listOfChildren>
    <ownerMap/>
