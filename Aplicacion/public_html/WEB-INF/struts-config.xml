@@ -5,7 +5,7 @@
     <form-bean name="indexForm" type="mypackage1.indexForm"/>
   </form-beans>
   <action-mappings>
-    <action path="/altas" type="mypackage1.indexAltasAction"  name="indexForm" scope="request">
+    <action path="/altas" type="mypackage1.indexAltasAction" name="indexForm" scope="request" input="/index.jsp">
       <forward name="arbitros" path="/altas_arbitros.jsp"/>
       <forward name="entrenadores" path="/altas_entrenadores.jsp"/>
       <forward name="grandslam" path="/altas_grandslam.jsp"/>

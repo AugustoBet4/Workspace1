@@ -24,37 +24,37 @@ public class indexAltasAction extends Action
     indexForm indexRed = (indexForm) form;
     String boton = indexRed.getBoton();
     System.out.println("Presiono: "+boton);
-    if(boton=="Arbitros"){
+    if(boton.equals("Arbitros")){
       to = "arbitros";
     }
-    if(boton=="Entrenadores"){
+    if(boton.equals("Entrenadores")){
       to="entrenadores";
     }
-    if(boton=="Grandslam"){
+    if(boton.equals("Grandslam")){
       to="grandslam";
     }
-    if(boton=="Locaciones"){
+    if(boton.equals("Locaciones")){
       to="locaciones";
     }
-    if(boton=="Nacionalidad"){
+    if(boton.equals("Nacionalidad")){
       to="nacionalidad";
     }
-    if(boton=="Pais"){
+    if(boton.equals("Pais")){
       to="pais";
     }
-    if(boton=="Participantes"){
+    if(boton.equals("Participantes")){
       to="participantes";
     }
-    if(boton=="Partido"){
+    if(boton.equals("Partido")){
       to="partido";
     }
-    if(boton=="Premios"){
+    if(boton.equals("Premios")){
       to="premios";
     }
-    if(boton=="Resultados"){
+    if(boton.equals("Resultados")){
       to="resultados";
     }
-    if(boton=="Participantes-Entrenadores"){
+    if(boton.equals("Participantes-Entrenadores")){
       to="participantes-entrenadores";
     }
     return mapping.findForward(to);
