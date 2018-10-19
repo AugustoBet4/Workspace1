@@ -6,10 +6,30 @@
   </form-beans>
   <action-mappings>
     <action path="/altas" type="mypackage1.indexAltasAction"  name="indexForm" scope="request">
-      <forward name="altas" path="/altas.jsp"/>
+      <forward name="arbitros" path="/altas_arbitros.jsp"/>
+      <forward name="entrenadores" path="/altas_entrenadores.jsp"/>
+      <forward name="grandslam" path="/altas_grandslam.jsp"/>
+      <forward name="locaciones" path="/altas_locaciones.jsp"/>
+      <forward name="nacionalidad" path="/altas_nacionalidad.jsp"/>
+      <forward name="pais" path="/altas_pais.jsp"/>
+      <forward name="participantes" path="/altas_participantes.jsp"/>
+      <forward name="partido" path="/altas_partido.jsp"/>
+      <forward name="premios" path="/altas_premios.jsp"/>
+      <forward name="resultados" path="/altas_resultados.jsp"/>
+      <forward name="participantes-entrenadores" path="/altas_participantes-entrenadores.jsp"/>
     </action>
     <action path="/listado" type="mypackage1.indexListadoAction" name="indexForm" scope="request">
-      <forward name="listado" path="/listado.jsp"/>
+      <forward name="arbitros" path="/listado_arbitros.jsp"/>
+      <forward name="entrenadores" path="/listado_entrenadores.jsp"/>
+      <forward name="grandslam" path="/listado_grandslam.jsp"/>
+      <forward name="locaciones" path="/listado_locaciones.jsp"/>
+      <forward name="nacionalidad" path="/listado_nacionalidad.jsp"/>
+      <forward name="pais" path="/listado_pais.jsp"/>
+      <forward name="participantes" path="/listado_participantes.jsp"/>
+      <forward name="partido" path="/listado_partido.jsp"/>
+      <forward name="premios" path="/listado_premios.jsp"/>
+      <forward name="resultados" path="/listado_resultados.jsp"/>
+      <forward name="participantes-entrenadores" path="/listado_participantes-entrenadores.jsp"/>
     </action>
   </action-mappings>
   <message-resources parameter="mypackage1.ApplicationResources"/>

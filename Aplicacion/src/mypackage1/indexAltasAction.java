@@ -9,18 +9,54 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.naming.NamingException;
+import oracle.jdbc.*;
+import java.util.*;
 
 public class indexAltasAction extends Action 
 {
-  /**
-   * This is the main action called from the Struts framework.
-   * @param mapping The ActionMapping used to select this instance.
-   * @param form The optional ActionForm bean for this request.
-   * @param request The HTTP Request we are processing.
-   * @param response The HTTP Response we are processing.
-   */
   public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
-    return mapping.findForward("success");
+    String to = "";
+    indexForm indexRed = (indexForm) form;
+    String boton = indexRed.getBoton();
+    System.out.println("Presiono: "+boton);
+    if(boton=="Arbitros"){
+      to = "arbitros";
+    }
+    if(boton=="Entrenadores"){
+      to="entrenadores";
+    }
+    if(boton=="Grandslam"){
+      to="grandslam";
+    }
+    if(boton=="Locaciones"){
+      to="locaciones";
+    }
+    if(boton=="Nacionalidad"){
+      to="nacionalidad";
+    }
+    if(boton=="Pais"){
+      to="pais";
+    }
+    if(boton=="Participantes"){
+      to="participantes";
+    }
+    if(boton=="Partido"){
+      to="partido";
+    }
+    if(boton=="Premios"){
+      to="premios";
+    }
+    if(boton=="Resultados"){
+      to="resultados";
+    }
+    if(boton=="Participantes-Entrenadores"){
+      to="participantes-entrenadores";
+    }
+    return mapping.findForward(to);
   }
 }

@@ -31,6 +31,10 @@
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/indexForm.java"/>
       </Item>
+      <Item class="oracle.jdeveloper.model.JspSourceNode">
+         <URL path="public_html/listado.jsp"/>
+         <encoding>windows-1252</encoding>
+      </Item>
    </listOfChildren>
    <ownerMap/>
    <projectDocPath>
@@ -140,7 +144,7 @@
                      <Value class="oracle.jdevimpl.config.JProjectLibraries">
                         <jdkName>1.3.1_02</jdkName>
                         <jdkVersionNumber>1.3.1_02</jdkVersionNumber>
-                        <libraries>JDeveloper Runtime;JSP Runtime;Struts Runtime;Servlet Runtime</libraries>
+                        <libraries>JDeveloper Runtime;JSP Runtime;Struts Runtime;Servlet Runtime;Oracle JDBC</libraries>
                      </Value>
                   </Item>
                   <Item>
