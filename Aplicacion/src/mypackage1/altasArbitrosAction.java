@@ -9,6 +9,12 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.naming.NamingException;
+import oracle.jdbc.*;
+import java.util.*;
 
 public class altasArbitrosAction extends Action 
 {
@@ -21,6 +27,33 @@ public class altasArbitrosAction extends Action
    */
   public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
-    return mapping.findForward("success");
+   altasArbitrosForm arb = (altasArbitrosForm) form;
+    String id = arb.getId();
+    String nombre = arb.getNombre();
+    String telefono = arb.getTelefono();
+    String email = arb.getEmail();
+    String nacionalidad = arb.getNacionalidad();
+
+    Connection cn = null;
+    ConnectDB conn =new ConnectDB();
+    ResultSet rsConsulta = null;
+
+    try
+    {
+      cn = conn.conexion;
+      String cadena = "insert into arbitros values ("+id+",'"+nombre+"','"+telefono+"','"+email+"',"+nacionalidad+")";
+      System.out.println(cadena);
+      int a = conn.InsertaDatos(cadena);
+      return mapping.findForward("index");
+	  }
+    catch(Exception e)
+    {
+      e.printStackTrace();
+      return (mapping.findForward("nook"));
+    }   
+    finally
+    {
+      conn.closeConnection();	
+    }
   }
 }

@@ -1065,3 +1065,64 @@ javax.servlet.jsp.JspException: Cannot find ActionMappings or ActionFormBeans co
 10/19/18 11:19 PM Started
 10/19/18 11:19 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
 10/19/18 11:19 PM Workspace1-Aplicacion-webapp: action: init
+19/10/18 23:30 Started
+19/10/18 23:30 Workspace1-Aplicacion-webapp: JDevOJSP: init
+19/10/18 23:30 Workspace1-Aplicacion-webapp: action: init
+19/10/18 23:30 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+19/10/18 23:32 Started
+19/10/18 23:32 Workspace1-Aplicacion-webapp: JDevOJSP: init
+19/10/18 23:32 Workspace1-Aplicacion-webapp: action: init
+19/10/18 23:32 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+19/10/18 23:32 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+19/10/18 23:32 Workspace1-Aplicacion-webapp: Servlet error
+javax.servlet.jsp.JspException: Cannot find bean under name ayuda
+	java.util.Iterator org.apache.struts.taglib.html.OptionsTag.getIterator(java.lang.String, java.lang.String)
+		OptionsTag.java:411
+	int org.apache.struts.taglib.html.OptionsTag.doEndTag()
+		OptionsTag.java:236
+	void _altas__participantes._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		altas_participantes.jsp:63
+	void com.orionserver[Oracle9iAS (9.0.3.0.0) Containers for J2EE].http.OrionHttpJspPage.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		OrionHttpJspPage.java:56
+	void oracle.jsp.runtimev2.JspPageTable.compileAndServe(oracle.jsp.runtimev2.JspPageInfo, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspPageTable.java:537
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:272
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.processRequest(com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.ApplicationServerThread, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletRequest, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+19/10/18 23:32 Workspace1-Aplicacion-webapp: JDevOJSP: init
+19/10/18 23:32 Workspace1-Aplicacion-webapp: action: init
+19/10/18 23:32 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+19/10/18 23:39 Started
+19/10/18 23:39 Workspace1-Aplicacion-webapp: JDevOJSP: init
+19/10/18 23:39 Workspace1-Aplicacion-webapp: action: init
+19/10/18 23:39 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+19/10/18 23:46 Started
+19/10/18 23:46 Workspace1-Aplicacion-webapp: JDevOJSP: init
+19/10/18 23:46 Workspace1-Aplicacion-webapp: action: init
+19/10/18 23:46 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+19/10/18 23:46 Started
+19/10/18 23:46 Workspace1-Aplicacion-webapp: JDevOJSP: init
+19/10/18 23:46 Workspace1-Aplicacion-webapp: action: init
+19/10/18 23:46 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+19/10/18 23:47 Workspace1-Aplicacion-webapp: JDevOJSP: init
+19/10/18 23:47 Workspace1-Aplicacion-webapp: action: init
+19/10/18 23:47 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
