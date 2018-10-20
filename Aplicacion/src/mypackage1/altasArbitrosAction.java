@@ -27,7 +27,7 @@ public class altasArbitrosAction extends Action
    */
   public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
-   altasArbitrosForm arb = (altasArbitrosForm) form;
+    altasArbitrosForm arb = (altasArbitrosForm) form;
     String id = arb.getId();
     String nombre = arb.getNombre();
     String telefono = arb.getTelefono();
