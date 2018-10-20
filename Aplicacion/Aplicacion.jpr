@@ -88,6 +88,9 @@
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/ClaseListadoParticipantes.java"/>
       </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/ListadoForm.java"/>
+      </Item>
    </listOfChildren>
    <ownerMap/>
    <projectDocPath>

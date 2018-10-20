@@ -1068,3 +1068,278 @@ javax.servlet.jsp.JspException: Cannot find ActionMappings or ActionFormBeans co
 10/19/18 11:20 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
 10/19/18 11:52 PM Started
 10/19/18 11:52 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/19/18 11:52 PM Workspace1-Aplicacion-webapp: action: init
+10/19/18 11:52 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:07 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+10/20/18 12:07 AM Started
+10/20/18 12:07 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:07 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:07 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:09 AM Started
+10/20/18 12:11 AM Started
+10/20/18 12:11 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:11 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:11 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:13 AM Started
+10/20/18 12:13 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:13 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:13 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:13 AM Workspace1-Aplicacion-webapp: Servlet error
+java.lang.NullPointerException
+	org.apache.struts.action.ActionForward mypackage1.indexListadoAction.execute(org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		indexListadoAction.java:39
+	org.apache.struts.action.ActionForward org.apache.struts.action.RequestProcessor.processActionPerform(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.action.Action, org.apache.struts.action.ActionForm, org.apache.struts.action.ActionMapping)
+		RequestProcessor.java:446
+	void org.apache.struts.action.RequestProcessor.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:266
+	void org.apache.struts.action.ActionServlet.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:1292
+	void org.apache.struts.action.ActionServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:510
+	void javax.servlet.http.HttpServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		HttpServlet.java:760
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.processRequest(com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.ApplicationServerThread, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletRequest, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+10/20/18 12:13 AM Started
+10/20/18 12:13 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:13 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:13 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:14 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+10/20/18 12:14 AM Started
+10/20/18 12:14 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:14 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:14 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:14 AM Workspace1-Aplicacion-webapp: JspServlet: unable to dispatch to requested page: java.io.FileNotFoundException: C:\Portables\jdev9032\jdev\mywork\Workspace1\Aplicacion\public_html\altas_grandslam.jsp (The system cannot find the file specified.
+)
+	void java.io.FileInputStream.open(java.lang.String)
+		native code
+	void java.io.FileInputStream.<init>(java.lang.String)
+		FileInputStream.java:64
+	java.io.InputStream oracle.jsp.provider.JspFilesystemResource.fromStream(java.lang.String)
+		JspFilesystemResource.java:174
+	java.io.InputStreamReader oracle.jsp.provider.JspFilesystemResource.fromReader(java.lang.String, java.lang.String)
+		JspFilesystemResource.java:190
+	java.io.InputStreamReader oracle.jsp.runtimev2.JspPageCompiler.fromReader(oracle.jsp.provider.JspResourceProvider, java.lang.String, java.lang.String, javax.servlet.http.HttpServletRequest)
+		JspPageCompiler.java:449
+	long oracle.jsp.runtimev2.JspPageCompiler.attemptCompilePage(oracle.jsp.runtimev2.JspPageTable, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspClassProvider, javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String, boolean)
+		JspPageCompiler.java:342
+	long oracle.jsp.runtimev2.JspPageCompiler.compilePage(oracle.jsp.runtimev2.JspPageTable, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspClassProvider, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String, java.lang.String)
+		JspPageCompiler.java:226
+	oracle.jsp.runtimev2.JspPageInstFacade oracle.jsp.runtimev2.JspPageInfo.compileAndLoad(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, oracle.jsp.runtimev2.JspPageCompiler, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspClassProvider)
+		JspPageInfo.java:427
+	void oracle.jsp.runtimev2.JspPageTable.compileAndServe(oracle.jsp.runtimev2.JspPageInfo, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspPageTable.java:510
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:272
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind.server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind.server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	void com.evermind.server.http.ServletRequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:209
+	void org.apache.struts.action.RequestProcessor.doForward(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:1014
+	void org.apache.struts.action.RequestProcessor.processForwardConfig(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.config.ForwardConfig)
+		RequestProcessor.java:417
+	void org.apache.struts.action.RequestProcessor.processActionForward(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.action.ActionForward)
+		RequestProcessor.java:390
+	void org.apache.struts.action.RequestProcessor.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:271
+	void org.apache.struts.action.ActionServlet.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:1292
+	void org.apache.struts.action.ActionServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:510
+	void javax.servlet.http.HttpServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		HttpServlet.java:760
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind.server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind.server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind.server.http.HttpRequestHandler.processRequest(com.evermind.server.ApplicationServerThread, com.evermind.server.http.EvermindHttpServletRequest, com.evermind.server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind.server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind.server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:797
+	void java.lang.Thread.run()
+		Thread.java:484
+
+10/20/18 12:15 AM Started
+10/20/18 12:15 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:15 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:15 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:16 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+10/20/18 12:16 AM Started
+10/20/18 12:16 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:16 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:16 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:19 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+10/20/18 12:19 AM Started
+10/20/18 12:19 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:19 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:19 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:19 AM Workspace1-Aplicacion-webapp: JspServlet: unable to dispatch to requested page: java.io.FileNotFoundException: C:\Portables\jdev9032\jdev\mywork\Workspace1\Aplicacion\public_html\listado_nacionalidad.jsp (The system cannot find the file specified.
+)
+	void java.io.FileInputStream.open(java.lang.String)
+		native code
+	void java.io.FileInputStream.<init>(java.lang.String)
+		FileInputStream.java:64
+	java.io.InputStream oracle.jsp.provider.JspFilesystemResource.fromStream(java.lang.String)
+		JspFilesystemResource.java:174
+	java.io.InputStreamReader oracle.jsp.provider.JspFilesystemResource.fromReader(java.lang.String, java.lang.String)
+		JspFilesystemResource.java:190
+	java.io.InputStreamReader oracle.jsp.runtimev2.JspPageCompiler.fromReader(oracle.jsp.provider.JspResourceProvider, java.lang.String, java.lang.String, javax.servlet.http.HttpServletRequest)
+		JspPageCompiler.java:449
+	long oracle.jsp.runtimev2.JspPageCompiler.attemptCompilePage(oracle.jsp.runtimev2.JspPageTable, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspClassProvider, javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String, boolean)
+		JspPageCompiler.java:342
+	long oracle.jsp.runtimev2.JspPageCompiler.compilePage(oracle.jsp.runtimev2.JspPageTable, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspClassProvider, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String, java.lang.String)
+		JspPageCompiler.java:226
+	oracle.jsp.runtimev2.JspPageInstFacade oracle.jsp.runtimev2.JspPageInfo.compileAndLoad(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, oracle.jsp.runtimev2.JspPageCompiler, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspClassProvider)
+		JspPageInfo.java:427
+	void oracle.jsp.runtimev2.JspPageTable.compileAndServe(oracle.jsp.runtimev2.JspPageInfo, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspPageTable.java:510
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:272
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind.server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind.server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	void com.evermind.server.http.ServletRequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:209
+	void org.apache.struts.action.RequestProcessor.doForward(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:1014
+	void org.apache.struts.action.RequestProcessor.processForwardConfig(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.config.ForwardConfig)
+		RequestProcessor.java:417
+	void org.apache.struts.action.RequestProcessor.processActionForward(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.action.ActionForward)
+		RequestProcessor.java:390
+	void org.apache.struts.action.RequestProcessor.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:271
+	void org.apache.struts.action.ActionServlet.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:1292
+	void org.apache.struts.action.ActionServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:510
+	void javax.servlet.http.HttpServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		HttpServlet.java:760
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind.server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind.server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind.server.http.HttpRequestHandler.processRequest(com.evermind.server.ApplicationServerThread, com.evermind.server.http.EvermindHttpServletRequest, com.evermind.server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind.server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind.server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:797
+	void java.lang.Thread.run()
+		Thread.java:484
+
+10/20/18 12:21 AM Started
+10/20/18 12:21 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:21 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:21 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:23 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+10/20/18 12:23 AM Started
+10/20/18 12:23 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:23 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:23 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:25 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+10/20/18 12:25 AM Started
+10/20/18 12:25 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:25 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:26 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:26 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+10/20/18 12:26 AM Started
+10/20/18 12:26 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:26 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:26 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:26 AM Workspace1-Aplicacion-webapp: Servlet error
+javax.servlet.jsp.JspException: No getter method for property locacion of bean tabla
+	java.lang.Object org.apache.struts.util.RequestUtils.lookup(javax.servlet.jsp.PageContext, java.lang.String, java.lang.String, java.lang.String)
+		RequestUtils.java:742
+	int org.apache.struts.taglib.bean.WriteTag.doStartTag()
+		WriteTag.java:290
+	void _listado__locaciones._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		listado_locaciones.jsp:39
+	void com.orionserver[Oracle9iAS (9.0.3.0.0) Containers for J2EE].http.OrionHttpJspPage.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		OrionHttpJspPage.java:56
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:317
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:209
+	void org.apache.struts.action.RequestProcessor.doForward(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:1014
+	void org.apache.struts.action.RequestProcessor.processForwardConfig(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.config.ForwardConfig)
+		RequestProcessor.java:417
+	void org.apache.struts.action.RequestProcessor.processActionForward(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.action.ActionForward)
+		RequestProcessor.java:390
+	void org.apache.struts.action.RequestProcessor.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:271
+	void org.apache.struts.action.ActionServlet.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:1292
+	void org.apache.struts.action.ActionServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:510
+	void javax.servlet.http.HttpServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		HttpServlet.java:760
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.processRequest(com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.ApplicationServerThread, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletRequest, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+10/20/18 12:27 AM Started
+10/20/18 12:27 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:27 AM Workspace1-Aplicacion-webapp: action: init
