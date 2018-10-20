@@ -40,17 +40,19 @@
             <div class="col-3">
               <h2 class="justify-content-md-center">Listar</h2>
               <div class="btn-group-vertical">
-                <html:submit value="Arbitros" styleClass="btn btn-outline-warning" />
-                <html:submit value="Entrenadores" styleClass="btn btn-outline-warning mt-1" />
-                <html:submit value="Grandslam" styleClass="btn btn-outline-warning mt-1" />
-                <html:submit value="Locaciones" styleClass="btn btn-outline-warning mt-1" />
-                <html:submit value="Nacionalidad" styleClass="btn btn-outline-warning mt-1" />
-                <html:submit value="Pais" styleClass="btn btn-outline-warning mt-1" />
-                <html:submit value="Participantes" styleClass="btn btn-outline-warning mt-1" />
-                <html:submit value="Partido" styleClass="btn btn-outline-warning mt-1" />
-                <html:submit value="Premios" styleClass="btn btn-outline-warning mt-1" />
-                <html:submit value="Resultados" styleClass="btn btn-outline-warning mt-1" />
-                <html:submit value="Participantes/Entrenadores" styleClass="btn btn-outline-warning mt-1" />
+                <html:form action="/listado" styleClass="form-group">
+                  <html:submit value="Arbitros" styleClass="btn btn-outline-warning" property="boton" />
+                  <html:submit value="Entrenadores" styleClass="btn btn-outline-warning mt-1" property="boton" />
+                  <html:submit value="Grandslam" styleClass="btn btn-outline-warning mt-1" property="boton" />
+                  <html:submit value="Locaciones" styleClass="btn btn-outline-warning mt-1" property="boton" />
+                  <html:submit value="Nacionalidad" styleClass="btn btn-outline-warning mt-1" property="boton" />
+                  <html:submit value="Pais" styleClass="btn btn-outline-warning mt-1" property="boton" />
+                  <html:submit value="Participantes" styleClass="btn btn-outline-warning mt-1" property="boton" />
+                  <html:submit value="Partido" styleClass="btn btn-outline-warning mt-1" property="boton" />
+                  <html:submit value="Premios" styleClass="btn btn-outline-warning mt-1" property="boton" />
+                  <html:submit value="Resultados" styleClass="btn btn-outline-warning mt-1" property="boton" />
+                  <html:submit value="Participantes/Entrenadores" styleClass="btn btn-outline-warning mt-1" property="boton" />
+                </html:form>
               </div>
             </div>
           </div>

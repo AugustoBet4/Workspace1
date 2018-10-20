@@ -6,7 +6,11 @@
     <form-bean name="altasParticipantesForm" type="mypackage1.altasParticipantesForm"/>
     <form-bean name="altasLocacionesForm" type="mypackage1.altasLocacionesForm"/>
     <form-bean name="altasArbitrosForm" type="mypackage1.altasArbitrosForm"/>
+<<<<<<< HEAD
     <form-bean name="altasEntrenadoresForm" type="mypackage1.altasEntrenadoresForm"/>
+=======
+    <form-bean name="ListadoForm" type="mypackage1.ListadoForm"/>
+>>>>>>> e005db0be19808669fdc2b32803f6cb24849222d
   </form-beans>
   <action-mappings>
     <action path="/altas" type="mypackage1.indexAltasAction" name="indexForm" scope="request" input="/index.jsp">
