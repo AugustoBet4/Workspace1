@@ -37,7 +37,29 @@ public class indexListadoAction extends Action
     ResultSet rsConsulta = null;
     
     if(boton.equals("Arbitros")){
-    
+      try{
+        String cadena = "select * from arbitros order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next()){
+          ClaseListadoArbitros item = new ClaseListadoArbitros();
+          item.setIdarbitro(rsConsulta.getString("idarbitro"));
+          item.setNombre(rsConsulta.getString("nombre"));
+          item.setTelefono(rsConsulta.getString("telefono"));
+          item.setEmail(rsConsulta.getString("email"));
+          item.setIdnacionalidad(rsConsulta.getString("idnacionalidad"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }
+        ListadoForm f = new ListadoForm ();	   
+        f.setTabla(items);
+        request.getSession().setAttribute("nn",f);
+        to = "arbitros";
+      }catch(Exception e){
+        e.printStackTrace();
+      }finally{
+        conn.closeConnection();	
+      }
     }
     if(boton.equals("Entrenadores")){
        try{

@@ -112,6 +112,9 @@
          <URL path="public_html/listadoEntrenadores.jsp"/>
          <encoding>windows-1252</encoding>
       </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/ClaseListadoArbitros.java"/>
+      </Item>
    </listOfChildren>
    <ownerMap/>
    <projectDocPath>

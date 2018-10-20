@@ -27,7 +27,7 @@
       <forward name="participantes-entrenadores" path="/altas_participantes-entrenadores.jsp"/>
     </action>
     <action path="/listado" type="mypackage1.indexListadoAction" name="indexForm" scope="request" input="/index.jsp">
-      <forward name="arbitros" path="/listado_arbitros.jsp"/>
+      <forward name="arbitros" path="/listadoArbitros.jsp"/>
       <forward name="entrenadores" path="/listadoEntrenadores.jsp"/>
       <forward name="grandslam" path="/listado_grandslam.jsp"/>
       <forward name="locaciones" path="/listado_locaciones.jsp"/>
