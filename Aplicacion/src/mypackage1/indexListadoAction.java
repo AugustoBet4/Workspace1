@@ -37,28 +37,32 @@ public class indexListadoAction extends Action
     ResultSet rsConsulta = null;
     
     if(boton.equals("Arbitros")){
-      try{
-          cn = conn.conexion;
-          String cadena = "select * from NACIONALIDAD order by 1";
-          rsConsulta = conn.getData(cadena);
-          ArrayList items = new ArrayList();
-          while (rsConsulta.next()){
-            ClaseNacion item = new ClaseNacion();
-            item.setCodigo(rsConsulta.getString("IDNACIONALIDAD"));
-            item.setDesc(rsConsulta.getString("NACIONALIDAD"));
-            items.add(item);
-            System.out.println("Paso ..");
-          }  
-          request.getSession().setAttribute("ayuda",items);
-          to="arbitros";
-          }catch(Exception e){
-            e.printStackTrace();
-          }finally{
-            conn.closeConnection();	
-          }
+    
     }
     if(boton.equals("Entrenadores")){
-      to="entrenadores";
+       try{
+        String cadena = "select * from entrenadores order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next()){
+          ClaseListadoEntrenadores item = new ClaseListadoEntrenadores();
+          item.setIdentrenadores(rsConsulta.getString("identrenadores"));
+          item.setNombre(rsConsulta.getString("nombre"));
+          item.setEdad(rsConsulta.getString("edad"));
+          item.setIdnacionalidad(rsConsulta.getString("idnacionalidad"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }
+        ListadoForm f = new ListadoForm ();	   
+        f.setTabla(items);
+        request.getSession().setAttribute("nn",f);
+        to = "entrenadores";
+      }catch(Exception e){
+        e.printStackTrace();
+      }finally{
+        conn.closeConnection();	
+      }
+      
     }
     if(boton.equals("Grandslam")){
       to="grandslam";
