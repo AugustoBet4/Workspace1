@@ -51,7 +51,25 @@ public class indexAltasAction extends Action
           }
     }
     if(boton.equals("Entrenadores")){
-      to="entrenadores";
+      try{
+          cn = conn.conexion;
+          String cadena = "select * from NACIONALIDAD order by 1";
+          rsConsulta = conn.getData(cadena);
+          ArrayList items = new ArrayList();
+          while (rsConsulta.next()){
+            ClaseNacion item = new ClaseNacion();
+            item.setCodigo(rsConsulta.getString("IDNACIONALIDAD"));
+            item.setDesc(rsConsulta.getString("NACIONALIDAD"));
+            items.add(item);
+            System.out.println("Paso ..");
+          }  
+          request.getSession().setAttribute("ayuda",items);
+          to="entrenadores";
+          }catch(Exception e){
+            e.printStackTrace();
+          }finally{
+            conn.closeConnection();	
+          }
     }
     if(boton.equals("Grandslam")){
       to="grandslam";

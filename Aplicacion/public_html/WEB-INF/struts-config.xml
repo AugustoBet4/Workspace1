@@ -6,11 +6,12 @@
     <form-bean name="altasParticipantesForm" type="mypackage1.altasParticipantesForm"/>
     <form-bean name="altasLocacionesForm" type="mypackage1.altasLocacionesForm"/>
     <form-bean name="altasArbitrosForm" type="mypackage1.altasArbitrosForm"/>
+    <form-bean name="altasEntrenadoresForm" type="mypackage1.altasEntrenadoresForm"/>
   </form-beans>
   <action-mappings>
     <action path="/altas" type="mypackage1.indexAltasAction" name="indexForm" scope="request" input="/index.jsp">
       <forward name="arbitros" path="/altasArbitros.jsp"/>
-      <forward name="entrenadores" path="/altas_entrenadores.jsp"/>
+      <forward name="entrenadores" path="/altasEntrenadores.jsp"/>
       <forward name="grandslam" path="/altas_grandslam.jsp"/>
       <forward name="locaciones" path="/altas_locaciones.jsp"/>
       <forward name="nacionalidad" path="/altas_nacionalidad.jsp"/>
@@ -23,7 +24,7 @@
     </action>
     <action path="/listado" type="mypackage1.indexListadoAction" name="indexForm" scope="request" input="/index.jsp">
       <forward name="arbitros" path="/listado_arbitros.jsp"/>
-      <forward name="entrenadores" path="/listado_entrenadores.jsp"/>
+      <forward name="entrenadores" path="/listadoEntrenadores.jsp"/>
       <forward name="grandslam" path="/listado_grandslam.jsp"/>
       <forward name="locaciones" path="/listado_locaciones.jsp"/>
       <forward name="nacionalidad" path="/listado_nacionalidad.jsp"/>
@@ -41,6 +42,9 @@
       <forward name="index" path="/index.jsp"/>
     </action>
     <action path="/altasArbitros" type="mypackage1.altasArbitrosAction" name="altasArbitrosForm" input="/altasArbitros.jsp" scope="request">
+      <forward name="index" path="/index.jsp"/>
+    </action>
+    <action path="/altasEntrenadores" type="mypackage1.altasEntrenadoresAction" name="altasEntrenadoresForm" input="/altasEntrenadores.jsp" scope="request">
       <forward name="index" path="/index.jsp"/>
     </action>
   </action-mappings>
