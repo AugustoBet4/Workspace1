@@ -88,7 +88,6 @@
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/ClaseListadoParticipantes.java"/>
       </Item>
-<<<<<<< HEAD
       <Item class="oracle.jdeveloper.model.JspSourceNode">
          <URL path="public_html/altasEntrenadores.jsp"/>
          <encoding>windows-1252</encoding>
@@ -98,10 +97,9 @@
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/altasEntrenadoresAction.java"/>
-=======
+      </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/ListadoForm.java"/>
->>>>>>> e005db0be19808669fdc2b32803f6cb24849222d
       </Item>
    </listOfChildren>
    <ownerMap/>

@@ -47,11 +47,6 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
 
 
       out.write(__jsp_StaticText.text[0]);
-<<<<<<< HEAD
-      /*@lineinfo:user-code*//*@lineinfo:14^1*/      out.print( new java.util.Date() );
-      /*@lineinfo:generated-code*/
-      out.write(__jsp_StaticText.text[1]);
-=======
       out.write(__jsp_StaticText.text[1]);
       out.write(__jsp_StaticText.text[2]);
       out.write(__jsp_StaticText.text[3]);
@@ -167,7 +162,6 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
       }
       /*@lineinfo:generated-code*/
       out.write(__jsp_StaticText.text[10]);
->>>>>>> e005db0be19808669fdc2b32803f6cb24849222d
 
 
     }
@@ -180,25 +174,12 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
       pageContext.handlePageException( e);
     }
     finally {
-<<<<<<< HEAD
-      OracleJspRuntime.extraHandlePCFinally(pageContext,false);
-=======
       OracleJspRuntime.extraHandlePCFinally(pageContext,true);
->>>>>>> e005db0be19808669fdc2b32803f6cb24849222d
       JspFactory.getDefaultFactory().releasePageContext(pageContext);
     }
 
   }
   private static class __jsp_StaticText {
-<<<<<<< HEAD
-    private static final char text[][]=new char[2][];
-    static {
-      try {
-      text[0] = 
-      "\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n<title>\nHello World\n</title>\n</head>\n<body>\n<h2>\nThe current time is: \n</h2>\n<p>\n".toCharArray();
-      text[1] = 
-      "</p>\n</body>\n</html>\n".toCharArray();
-=======
     private static final char text[][]=new char[11][];
     static {
       try {
@@ -224,7 +205,6 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
       "\n                  </td>\n                </tr>\n              ".toCharArray();
       text[10] = 
       "\n            </table>\n          \n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n\n".toCharArray();
->>>>>>> e005db0be19808669fdc2b32803f6cb24849222d
       }
       catch (Throwable th) {
         System.err.println(th);

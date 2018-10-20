@@ -1585,3 +1585,133 @@ javax.servlet.jsp.JspException: No getter method for property id of bean org.apa
 20/10/18 0:32 Workspace1-Aplicacion-webapp: JDevOJSP: init
 20/10/18 0:32 Workspace1-Aplicacion-webapp: action: init
 20/10/18 0:32 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:45 AM Started
+10/20/18 12:45 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:45 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:46 AM Workspace1-Aplicacion-webapp: Error preloading servlet
+javax.servlet.UnavailableException: Parsing error processing resource path /WEB-INF/struts-config.xml
+	org.apache.struts.config.ApplicationConfig org.apache.struts.action.ActionServlet.initApplicationConfig(java.lang.String, java.lang.String)
+		ActionServlet.java:866
+	void org.apache.struts.action.ActionServlet.init()
+		ActionServlet.java:455
+	void javax.servlet.GenericServlet.init(javax.servlet.ServletConfig)
+		GenericServlet.java:258
+	com.evermind.server.http.ServletInstanceInfo com.evermind.server.http.HttpApplication.loadServlet(com.evermind.util.ByteString)
+		HttpApplication.java:1956
+	com.evermind.server.http.ServletInstanceInfo com.evermind.server.http.HttpApplication.findServlet(com.evermind.util.ByteString)
+		HttpApplication.java:4355
+	void com.evermind.server.http.HttpApplication.initPreloadServlets()
+		HttpApplication.java:4455
+	void com.evermind.server.http.HttpApplication.initDynamic(com.evermind.server.http.HttpApplicationConfig)
+		HttpApplication.java:662
+	void com.evermind.server.http.HttpApplication.<init>(com.evermind.server.Application, com.evermind.server.http.HttpSite, com.evermind.server.http.HttpApplicationConfig, java.lang.String, java.lang.String, boolean)
+		HttpApplication.java:435
+	com.evermind.server.http.HttpApplication com.evermind.server.Application.getHttpApplication(java.lang.String, java.lang.String, boolean, long, com.evermind.server.http.HttpSite, boolean)
+		Application.java:695
+	com.evermind.server.http.HttpApplication com.evermind.server.http.HttpServer.getHttpApplication(com.evermind.server.http.HttpApplicationReference, com.evermind.server.http.HttpSite)
+		HttpServer.java:676
+	com.evermind.server.http.HttpApplication com.evermind.server.http.HttpSite.getApplication(com.evermind.util.ByteString)
+		HttpSite.java:388
+	boolean com.evermind.server.http.HttpRequestHandler.processRequest(com.evermind.server.ApplicationServerThread, com.evermind.server.http.EvermindHttpServletRequest, com.evermind.server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:407
+	void com.evermind.server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind.server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+10/20/18 12:46 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:46 AM Workspace1-Aplicacion-webapp: Servlet error
+javax.servlet.jsp.JspException: Cannot find ActionMappings or ActionFormBeans collection
+	void org.apache.struts.taglib.html.FormTag.lookup()
+		FormTag.java:858
+	int org.apache.struts.taglib.html.FormTag.doStartTag()
+		FormTag.java:543
+	void _index._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		index.jsp:25
+	void com.orionserver[Oracle9iAS (9.0.3.0.0) Containers for J2EE].http.OrionHttpJspPage.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		OrionHttpJspPage.java:56
+	void oracle.jsp.runtimev2.JspPageTable.compileAndServe(oracle.jsp.runtimev2.JspPageInfo, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspPageTable.java:537
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:272
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.processRequest(com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.ApplicationServerThread, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletRequest, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+10/20/18 12:48 AM Started
+10/20/18 12:48 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:48 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:48 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:51 AM Workspace1-Aplicacion-webapp: JspServlet: unable to dispatch to requested page: java.io.FileNotFoundException: C:\Portables\jdev9032\jdev\mywork\Workspace1\Aplicacion\public_html\locaciones.jsp (The system cannot find the file specified.
+)
+	void java.io.FileInputStream.open(java.lang.String)
+		native code
+	void java.io.FileInputStream.<init>(java.lang.String)
+		FileInputStream.java:64
+	java.io.InputStream oracle.jsp.provider.JspFilesystemResource.fromStream(java.lang.String)
+		JspFilesystemResource.java:174
+	java.io.InputStreamReader oracle.jsp.provider.JspFilesystemResource.fromReader(java.lang.String, java.lang.String)
+		JspFilesystemResource.java:190
+	java.io.InputStreamReader oracle.jsp.runtimev2.JspPageCompiler.fromReader(oracle.jsp.provider.JspResourceProvider, java.lang.String, java.lang.String, javax.servlet.http.HttpServletRequest)
+		JspPageCompiler.java:449
+	long oracle.jsp.runtimev2.JspPageCompiler.attemptCompilePage(oracle.jsp.runtimev2.JspPageTable, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspClassProvider, javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String, boolean)
+		JspPageCompiler.java:342
+	long oracle.jsp.runtimev2.JspPageCompiler.compilePage(oracle.jsp.runtimev2.JspPageTable, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspClassProvider, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String, java.lang.String)
+		JspPageCompiler.java:226
+	oracle.jsp.runtimev2.JspPageInstFacade oracle.jsp.runtimev2.JspPageInfo.compileAndLoad(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, oracle.jsp.runtimev2.JspPageCompiler, oracle.jsp.provider.JspResourceProvider, oracle.jsp.provider.JspClassProvider)
+		JspPageInfo.java:427
+	void oracle.jsp.runtimev2.JspPageTable.compileAndServe(oracle.jsp.runtimev2.JspPageInfo, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspPageTable.java:510
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:272
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind.server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind.server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind.server.http.HttpRequestHandler.processRequest(com.evermind.server.ApplicationServerThread, com.evermind.server.http.EvermindHttpServletRequest, com.evermind.server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind.server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind.server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+
+10/20/18 12:52 AM Started
+10/20/18 12:52 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:52 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:52 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:53 AM Started
+10/20/18 12:53 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:53 AM Workspace1-Aplicacion-webapp: action: init
+10/20/18 12:53 AM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+10/20/18 12:55 AM Started
+10/20/18 12:55 AM Workspace1-Aplicacion-webapp: JDevOJSP: init
+10/20/18 12:55 AM Workspace1-Aplicacion-webapp: action: init
