@@ -8,6 +8,8 @@
     <form-bean name="altasArbitrosForm" type="mypackage1.altasArbitrosForm"/>
     <form-bean name="altasEntrenadoresForm" type="mypackage1.altasEntrenadoresForm"/>
     <form-bean name="ListadoForm" type="mypackage1.ListadoForm"/>
+    <form-bean name="altasPremiosForm" type="mypackage1.altasPremiosForm"/>
+    <form-bean name="altasResultadosForm" type="mypackage1.altasResultadosForm"/>
   </form-beans>
   <global-forwards>
     <forward name="nook" path="/error_page.jsp"/>
@@ -49,6 +51,12 @@
       <forward name="index" path="/index.jsp"/>
     </action>
     <action path="/altasEntrenadores" type="mypackage1.altasEntrenadoresAction" name="altasEntrenadoresForm" input="/altasEntrenadores.jsp" scope="request">
+      <forward name="index" path="/index.jsp"/>
+    </action>
+    <action path="/altasResultados" type="mypackage1.altasResultadosAction" name="altasResultadosForm" scope="request">
+      <forward name="index" path="/index.jsp"/>
+    </action>
+    <action path="/altasPremios" type="mypackage1.altasPremiosAction" name="altasPremiosForm" scope="request">
       <forward name="index" path="/index.jsp"/>
     </action>
   </action-mappings>

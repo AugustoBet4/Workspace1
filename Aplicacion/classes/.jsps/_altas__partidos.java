@@ -1,4 +1,4 @@
-  /*@lineinfo:filename=/error_page.jsp*/
+  /*@lineinfo:filename=/altas_partidos.jsp*/
   /*@lineinfo:generated-code*/
 
 import oracle.jsp.runtime.*;
@@ -7,7 +7,7 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
 
-public class _error__page extends oracle.jsp.runtime.HttpJsp {
+public class _altas__partidos extends oracle.jsp.runtime.HttpJsp {
 
   public final String _globalsClassName = null;
 
@@ -38,7 +38,7 @@ public class _error__page extends oracle.jsp.runtime.HttpJsp {
     int __jsp_tag_starteval;
     ServletContext application = pageContext.getServletContext();
     JspWriter out = pageContext.getOut();
-    _error__page page = this;
+    _altas__partidos page = this;
     ServletConfig config = pageContext.getServletConfig();
 
     try {
@@ -47,6 +47,9 @@ public class _error__page extends oracle.jsp.runtime.HttpJsp {
 
 
       out.write(__jsp_StaticText.text[0]);
+      /*@lineinfo:user-code*//*@lineinfo:15^1*/      out.print( new java.util.Date() );
+      /*@lineinfo:generated-code*/
+      out.write(__jsp_StaticText.text[1]);
 
 
     }
@@ -65,11 +68,13 @@ public class _error__page extends oracle.jsp.runtime.HttpJsp {
 
   }
   private static class __jsp_StaticText {
-    private static final char text[][]=new char[1][];
+    private static final char text[][]=new char[2][];
     static {
       try {
       text[0] = 
-      "\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n<title>\nPagina en caso de error\n</title>\n</head>\n<body>\n<h1>JA JA ERROR!</h1>\n</body>\n</html>\n".toCharArray();
+      "\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n<title>\nPagina de altas_partidos\n</title>\n</head>\n<body>\n<h2>\nidpartido, idlocaciones, idparticpantes1, idparticipantes2, idarbitros, id modalidades, idgrandslam\n\n</h2>\n<p>\n".toCharArray();
+      text[1] = 
+      "</p>\n</body>\n</html>\n".toCharArray();
       }
       catch (Throwable th) {
         System.err.println(th);
