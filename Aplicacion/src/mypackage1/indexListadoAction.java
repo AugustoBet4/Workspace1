@@ -151,10 +151,53 @@ public class indexListadoAction extends Action
       to="partido";
     }
     if(boton.equals("Premios")){
-      to="premios";
-    }
+       try{
+        String cadena = "select * from PREMIOS order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next()){
+          ClaseListadoPremios item = new ClaseListadoPremios();
+          item.setIdpremios(rsConsulta.getString("idpremios"));
+          item.setCantidad(rsConsulta.getString("cantidad"));
+          item.setCategoria(rsConsulta.getString("categoria"));
+          item.setIdparticipante(rsConsulta.getString("idparticipante"));
+          item.setIdpartido(rsConsulta.getString("idpartido"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }
+        ListadoForm f = new ListadoForm ();	   
+        f.setTabla(items);
+        request.getSession().setAttribute("nn",f);
+        to = "premios";
+      }catch(Exception e){
+        e.printStackTrace();
+        return mapping.findForward("nook");
+      }finally{
+        conn.closeConnection();	
+      }    }
     if(boton.equals("Resultados")){
-      to="resultados";
+        try{
+        String cadena = "select * from RESULTADOS order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next()){
+          ClaseListadoResultados item = new ClaseListadoResultados();
+          item.setIdresultados(rsConsulta.getString("idresultados"));
+          item.setResultado(rsConsulta.getString("resultado"));
+          item.setIdpartido(rsConsulta.getString("idpartido"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }
+        ListadoForm f = new ListadoForm ();	   
+        f.setTabla(items);
+        request.getSession().setAttribute("nn",f);
+        to = "resultados";
+      }catch(Exception e){
+        e.printStackTrace();
+        return mapping.findForward("nook");
+      }finally{
+        conn.closeConnection();	
+      }
     }
     if(boton.equals("Participantes-Entrenadores")){
       to="participantes-entrenadores";
