@@ -35,6 +35,14 @@ Pagina de altas_resultados
                   </div>
                 </div>
               </div>
+              <div class="row justify-content-md-center">
+                <div class="col-md">
+                  <div class="form-group">
+                    <h6>idpartido</h6>
+                    
+                  </div>
+                </div>
+              </div>
               <div class="form-group">
               <html:submit styleClass="btn btn-success" value="Registrar" />
             </div>
