@@ -161,6 +161,9 @@
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/ClaseGrandslam.java"/>
       </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/ClasePartido.java"/>
+      </Item>
    </listOfChildren>
    <ownerMap/>
    <projectDocPath>

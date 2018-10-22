@@ -97,17 +97,36 @@ public class _altas__resultados extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:47^15*/            {
-              org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_4=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag styleClass value");
+            /*@lineinfo:translated-code*//*@lineinfo:42^21*/            {
+              org.apache.struts.taglib.html.SelectTag __jsp_taghandler_4=(org.apache.struts.taglib.html.SelectTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SelectTag.class,"org.apache.struts.taglib.html.SelectTag property styleClass");
               __jsp_taghandler_4.setParent(__jsp_taghandler_1);
-              __jsp_taghandler_4.setStyleClass("btn btn-success");
-              __jsp_taghandler_4.setValue("Registrar");
+              __jsp_taghandler_4.setProperty("idpartido");
+              __jsp_taghandler_4.setStyleClass("form-control");
               __jsp_tag_starteval=__jsp_taghandler_4.doStartTag();
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_4,__jsp_tag_starteval,out);
                 do {
-                } while (__jsp_taghandler_4.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                  /*@lineinfo:generated-code*/
+                  out.write(__jsp_StaticText.text[5]);
+                  /*@lineinfo:translated-code*//*@lineinfo:43^23*/                  {
+                    org.apache.struts.taglib.html.OptionsTag __jsp_taghandler_5=(org.apache.struts.taglib.html.OptionsTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.OptionsTag.class,"org.apache.struts.taglib.html.OptionsTag collection property");
+                    __jsp_taghandler_5.setParent(__jsp_taghandler_4);
+                    __jsp_taghandler_5.setCollection("ayuda");
+                    __jsp_taghandler_5.setProperty("codigo");
+                    __jsp_tag_starteval=__jsp_taghandler_5.doStartTag();
+                    if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
+                    {
+                      do {
+                      } while (__jsp_taghandler_5.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                    }
+                    if (__jsp_taghandler_5.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                      return;
+                    OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_5);
+                  }
+                  /*@lineinfo:generated-code*/
+                  out.write(__jsp_StaticText.text[6]);
+                /*@lineinfo:translated-code*//*@lineinfo:43^76*/                } while (__jsp_taghandler_4.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
               }
               if (__jsp_taghandler_4.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -115,15 +134,34 @@ public class _altas__resultados extends oracle.jsp.runtime.HttpJsp {
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_4);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[5]);
-          /*@lineinfo:translated-code*//*@lineinfo:47^77*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+            out.write(__jsp_StaticText.text[7]);
+            /*@lineinfo:translated-code*//*@lineinfo:49^15*/            {
+              org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_6=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag styleClass value");
+              __jsp_taghandler_6.setParent(__jsp_taghandler_1);
+              __jsp_taghandler_6.setStyleClass("btn btn-success");
+              __jsp_taghandler_6.setValue("Registrar");
+              __jsp_tag_starteval=__jsp_taghandler_6.doStartTag();
+              if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
+              {
+                out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_6,__jsp_tag_starteval,out);
+                do {
+                } while (__jsp_taghandler_6.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+              }
+              if (__jsp_taghandler_6.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                return;
+              OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_6);
+            }
+            /*@lineinfo:generated-code*/
+            out.write(__jsp_StaticText.text[8]);
+          /*@lineinfo:translated-code*//*@lineinfo:49^77*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
         OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_1);
       }
       /*@lineinfo:generated-code*/
-      out.write(__jsp_StaticText.text[6]);
+      out.write(__jsp_StaticText.text[9]);
 
 
     }
@@ -142,7 +180,7 @@ public class _altas__resultados extends oracle.jsp.runtime.HttpJsp {
 
   }
   private static class __jsp_StaticText {
-    private static final char text[][]=new char[7][];
+    private static final char text[][]=new char[10][];
     static {
       try {
       text[0] = 
@@ -154,10 +192,16 @@ public class _altas__resultados extends oracle.jsp.runtime.HttpJsp {
       text[3] = 
       "\n                  </div>\n                </div>\n              </div>\n              <div class=\"row justify-content-md-center\">\n                <div class=\"col-md\">\n                  <div class=\"form-group\">\n                    <h6>Resultado</h6>\n                    ".toCharArray();
       text[4] = 
-      "\n                  </div>\n                </div>\n              </div>\n              <div class=\"row justify-content-md-center\">\n                <div class=\"col-md\">\n                  <div class=\"form-group\">\n                    <h6>idpartido</h6>\n                    \n                  </div>\n                </div>\n              </div>\n              <div class=\"form-group\">\n              ".toCharArray();
+      "\n                  </div>\n                </div>\n              </div>\n              <div class=\"row justify-content-md-center\">\n                <div class=\"col-md\">\n                  <div class=\"form-group\">\n                    <h6>idpartido</h6>\n                    ".toCharArray();
       text[5] = 
-      "\n            </div>\n          ".toCharArray();
+      "\n                      ".toCharArray();
       text[6] = 
+      "\n                    ".toCharArray();
+      text[7] = 
+      "\n                  </div>\n                </div>\n              </div>\n              <div class=\"form-group\">\n              ".toCharArray();
+      text[8] = 
+      "\n            </div>\n          ".toCharArray();
+      text[9] = 
       "\n        </div>\n      </div>\n    </div>\n</body>\n</html>\n".toCharArray();
       }
       catch (Throwable th) {

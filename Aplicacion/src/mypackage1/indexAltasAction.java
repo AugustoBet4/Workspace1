@@ -216,10 +216,76 @@ public class indexAltasAction extends Action
     }
     
     if(boton.equals("Premios")){
+    
+      try
+      {
+        cn = conn.conexion;
+        //-----------------------------------------------------------------------
+        //COMBO BOX PARTICIPANTES
+        String cadena = "select * from PARTICIPANTES order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next())
+        {
+          ClaseParticipantes item = new ClaseParticipantes();
+          item.setCodigo(rsConsulta.getString("IDPARTICIPANTES"));
+          item.setDesc(rsConsulta.getString("NOMBRE"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }
+        request.getSession().setAttribute("ayuda",items);
+        //-----------------------------------------------------------------------
+        //COMBO BOX PARTIDO
+        String cadena2 = "select * from PARTIDO order by 1";
+        rsConsulta = conn.getData(cadena2);
+        ArrayList items2 = new ArrayList();
+        while (rsConsulta.next())
+        {
+            ClasePartido item = new ClasePartido();
+            item.setCodigo(rsConsulta.getString("IDPARTIDO"));
+            items2.add(item);
+            System.out.println("Paso ..");
+        }
+        request.getSession().setAttribute("ayuda2",items2);
+      }
+      catch(Exception e)
+      {
+        e.printStackTrace();
+        return (mapping.findForward("nook"));
+      }
+      finally
+      {
+        conn.closeConnection();
+      }
       to="premios";
     }
+    
     if(boton.equals("Resultados")){
+      try
+      {
+      cn = conn.conexion;
+      String cadena = "select * from PARTIDO order by 1";
+      rsConsulta = conn.getData(cadena);
+      ArrayList items = new ArrayList();
+      while (rsConsulta.next())
+      {
+          ClasePartido item = new ClasePartido();
+          item.setCodigo(rsConsulta.getString("IDPARTIDO"));
+          items.add(item);
+          System.out.println("Paso ..");
+      }
+      request.getSession().setAttribute("ayuda",items);
       to="resultados";
+      }
+      catch(Exception e)
+      {
+      e.printStackTrace();
+      return (mapping.findForward("nook"));
+      }
+      finally
+      {
+      conn.closeConnection();
+      }
     }
     if(boton.equals("Participantes-Entrenadores")){
       to="participantes-entrenadores";

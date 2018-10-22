@@ -39,7 +39,9 @@ Pagina de altas_resultados
                 <div class="col-md">
                   <div class="form-group">
                     <h6>idpartido</h6>
-                    
+                    <html:select property="idpartido" styleClass="form-control">
+                      <html:options collection="ayuda" property="codigo" />
+                    </html:select>
                   </div>
                 </div>
               </div>

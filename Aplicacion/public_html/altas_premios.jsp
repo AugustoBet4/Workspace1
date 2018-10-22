@@ -44,6 +44,26 @@ idpremios, cantidad, categoria, idparticipante, idpartido
                   </div>
                 </div>
               </div>
+              <div class="row justify-content-md-center">
+                <div class="col-md">
+                  <div class="form-group">
+                    <h6>IDPARTICIPANTE</h6>
+                    <html:select property="participante" styleClass="form-control">
+                      <html:options collection="ayuda" labelProperty="desc" property="codigo" />
+                    </html:select>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-md-center">
+                <div class="col-md">
+                  <div class="form-group">
+                    <h6>IDPARTIDO</h6>
+                    <html:select property="idpartido" styleClass="form-control">
+                      <html:options collection="ayuda2" property="codigo" />
+                    </html:select>
+                  </div>
+                </div>
+              </div>
               <div class="form-group">
               <html:submit styleClass="btn btn-success" value="Registrar" />
             </div>
