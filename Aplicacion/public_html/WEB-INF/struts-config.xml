@@ -43,7 +43,7 @@
       <forward name="partido" path="/listadoPartidos.jsp"/>
       <forward name="premios" path="/listadoPremios.jsp"/>
       <forward name="resultados" path="/listadoResultados.jsp"/>
-      <forward name="participantes-entrenadores" path="/listado_participantes-entrenadores.jsp"/>
+      <forward name="participantes-entrenadores" path="/listadoParticipantesEntrenadores.jsp"/>
     </action>
     <action path="/altaParti" type="mypackage1.altasParticipantesAction" name="altasParticipantesForm" input="/altas_participantes.jsp" scope="request">
       <forward name="index" path="/index.jsp"/>

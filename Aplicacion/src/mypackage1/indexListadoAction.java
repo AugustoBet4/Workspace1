@@ -263,8 +263,27 @@ public class indexListadoAction extends Action
         conn.closeConnection();	
       }
     }
-    if(boton.equals("Participantes-Entrenadores")){
-      to="participantes-entrenadores";
+    if(boton.equals("Participantes/Entrenadores")){
+      try{
+        String cadena = "select	a.\"nombre\" as idparticipante, b.\"nombre\" as identrenadores from participantes a, entrenadores b, participantes_has_entrenadores c where c.\"idparticipante\"=a.\"idparticipantes\" and c.\"identrenadores\"=b.\"identrenadores\" ";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList(); 
+        while (rsConsulta.next()){
+          ClaseListadoParticipantesEntrenadores item = new ClaseListadoParticipantesEntrenadores();
+          item.setIdparticipante(rsConsulta.getString("idparticipante"));
+          item.setIdentrenadores(rsConsulta.getString("identrenadores"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }
+        ListadoForm f = new ListadoForm ();	   
+        f.setTabla(items);
+        request.getSession().setAttribute("nn",f);
+        to="participantes-entrenadores";
+      }catch(Exception e){
+        e.printStackTrace();
+      }finally{
+        conn.closeConnection();	
+      }
     }
     return mapping.findForward(to);
   }
