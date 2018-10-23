@@ -2,30 +2,47 @@ package mypackage1;
 
 public class ClaseGrandslam 
 {
-  String codigo;
-  String desc;
+
+  String idgrandslam;
+  String nombre;
+  String anio;
 
   public ClaseGrandslam()
   {
   }
 
-  public String getCodigo()
+  public String getIdgrandslam()
   {
-    return codigo;
+    return idgrandslam;
   }
 
-  public void setCodigo(String newCodigo)
+  public void setIdgrandslam(String newIdgrandslam)
   {
-    codigo = newCodigo;
+    idgrandslam = newIdgrandslam;
   }
 
-  public String getDesc()
+  public String getNombre()
   {
-    return desc;
+    return nombre;
   }
 
-  public void setDesc(String newDesc)
+  public void setNombre(String newNombre)
   {
-    desc = newDesc;
+    nombre = newNombre;
   }
+
+  public String getAnio()
+  {
+    return anio;
+  }
+
+  public void setAnio(String newAnio)
+  {
+    anio = newAnio;
+  }
+
+
+
+
+
 }

@@ -87,7 +87,29 @@ public class indexListadoAction extends Action
       
     }
     if(boton.equals("Grandslam")){
-      to="grandslam";
+      try{
+        cn = conn.conexion;
+        System.out.println("Conexion lista");
+        String cadena = "select * from GRANDSLAM order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next()){
+          ClaseGrandslam item = new ClaseGrandslam();
+          item.setIdgrandslam(rsConsulta.getString("idgrandslam"));
+          item.setNombre(rsConsulta.getString("nombre"));
+          item.setAnio(rsConsulta.getString("anio"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }
+        ListadoForm f = new ListadoForm ();	   
+        f.setTabla(items);
+        request.getSession().setAttribute("nn",f);
+        to = "grandslam";
+      }catch(Exception e){
+        e.printStackTrace();
+      }finally{
+        conn.closeConnection();	
+      }
     }
     if(boton.equals("Locaciones")){
       try{
@@ -115,10 +137,52 @@ public class indexListadoAction extends Action
       }
     }
     if(boton.equals("Nacionalidad")){
-      to="nacionalidad";
+  try{
+        cn = conn.conexion;
+        System.out.println("Conexion lista");
+        String cadena = "select * from nacionalidad order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next()){
+          ClaseNacionalidad item = new ClaseNacionalidad();
+          item.setIdnacionalidad(rsConsulta.getString("idnacionalidad"));
+          item.setNacionalidad(rsConsulta.getString("nacionalidad"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }
+        ListadoForm f = new ListadoForm ();	   
+        f.setTabla(items);
+        request.getSession().setAttribute("nn",f);
+        to = "nacionalidad";
+      }catch(Exception e){
+        e.printStackTrace();
+      }finally{
+        conn.closeConnection();	
+      }
     }
     if(boton.equals("Pais")){
-      to="pais";
+     try{
+        cn = conn.conexion;
+        System.out.println("Conexion lista");
+        String cadena = "select * from pais order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next()){
+          ClasePais item = new ClasePais();
+          item.setIdpais(rsConsulta.getString("num_sec_pais"));
+          item.setPais(rsConsulta.getString("nombre"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }
+        ListadoForm f = new ListadoForm ();	   
+        f.setTabla(items);
+        request.getSession().setAttribute("nn",f);
+        to = "pais";
+      }catch(Exception e){
+        e.printStackTrace();
+      }finally{
+        conn.closeConnection();	
+      }
     }
     if(boton.equals("Participantes")){
       try{
