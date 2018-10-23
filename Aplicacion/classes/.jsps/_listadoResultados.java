@@ -47,6 +47,86 @@ public class _listadoResultados extends oracle.jsp.runtime.HttpJsp {
 
 
       out.write(__jsp_StaticText.text[0]);
+      out.write(__jsp_StaticText.text[1]);
+      out.write(__jsp_StaticText.text[2]);
+      /*@lineinfo:translated-code*//*@lineinfo:32^15*/      {
+        org.apache.struts.taglib.logic.IterateTag __jsp_taghandler_1=(org.apache.struts.taglib.logic.IterateTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.logic.IterateTag.class,"org.apache.struts.taglib.logic.IterateTag id indexId name property");
+        __jsp_taghandler_1.setParent(null);
+        __jsp_taghandler_1.setId("tabla");
+        __jsp_taghandler_1.setIndexId("index");
+        __jsp_taghandler_1.setName("nn");
+        __jsp_taghandler_1.setProperty("tabla");
+        java.lang.Object tabla = null;
+        java.lang.Integer index = null;
+        __jsp_tag_starteval=__jsp_taghandler_1.doStartTag();
+        if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
+        {
+          out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_1,__jsp_tag_starteval,out);
+          do {
+            tabla = (java.lang.Object) pageContext.findAttribute("tabla");
+            index = (java.lang.Integer) pageContext.findAttribute("index");
+            /*@lineinfo:generated-code*/
+            out.write(__jsp_StaticText.text[3]);
+            /*@lineinfo:translated-code*//*@lineinfo:35^21*/            {
+              org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_2=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
+              __jsp_taghandler_2.setParent(__jsp_taghandler_1);
+              __jsp_taghandler_2.setName("tabla");
+              __jsp_taghandler_2.setProperty("idresultados");
+              __jsp_tag_starteval=__jsp_taghandler_2.doStartTag();
+              if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
+              {
+                do {
+                } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+              }
+              if (__jsp_taghandler_2.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                return;
+              OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_2);
+            }
+            /*@lineinfo:generated-code*/
+            out.write(__jsp_StaticText.text[4]);
+            /*@lineinfo:translated-code*//*@lineinfo:38^21*/            {
+              org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_3=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
+              __jsp_taghandler_3.setParent(__jsp_taghandler_1);
+              __jsp_taghandler_3.setName("tabla");
+              __jsp_taghandler_3.setProperty("resultado");
+              __jsp_tag_starteval=__jsp_taghandler_3.doStartTag();
+              if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
+              {
+                do {
+                } while (__jsp_taghandler_3.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+              }
+              if (__jsp_taghandler_3.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                return;
+              OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_3);
+            }
+            /*@lineinfo:generated-code*/
+            out.write(__jsp_StaticText.text[5]);
+            /*@lineinfo:translated-code*//*@lineinfo:41^21*/            {
+              org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_4=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
+              __jsp_taghandler_4.setParent(__jsp_taghandler_1);
+              __jsp_taghandler_4.setName("tabla");
+              __jsp_taghandler_4.setProperty("idpartido");
+              __jsp_tag_starteval=__jsp_taghandler_4.doStartTag();
+              if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
+              {
+                do {
+                } while (__jsp_taghandler_4.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+              }
+              if (__jsp_taghandler_4.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                return;
+              OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_4);
+            }
+            /*@lineinfo:generated-code*/
+            out.write(__jsp_StaticText.text[6]);
+          /*@lineinfo:translated-code*//*@lineinfo:41^69*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+          out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+        }
+        if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+          return;
+        OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_1);
+      }
+      /*@lineinfo:generated-code*/
+      out.write(__jsp_StaticText.text[7]);
 
 
     }
@@ -59,17 +139,31 @@ public class _listadoResultados extends oracle.jsp.runtime.HttpJsp {
       pageContext.handlePageException( e);
     }
     finally {
-      OracleJspRuntime.extraHandlePCFinally(pageContext,false);
+      OracleJspRuntime.extraHandlePCFinally(pageContext,true);
       JspFactory.getDefaultFactory().releasePageContext(pageContext);
     }
 
   }
   private static class __jsp_StaticText {
-    private static final char text[][]=new char[1][];
+    private static final char text[][]=new char[8][];
     static {
       try {
       text[0] = 
-      "\n<html>\n<head>\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>\n<title>\nGrand Slam - Listado de los Resultados\n</title>\n</head>\n<body>\n <div class=\"container\">\n      <div class=\"card mt-3\">\n        <h1 class=\"card-header\">\n          Grand Slam - Listado de los Resultados\n        </h1>\n        <div class=\"card-body\">\n          <div class=\"row justify-content-md-center\">\n\n            <table class=\"table table-striped\">\n              <thead class=\"thead-dark\">\n                <tr>\n                  <th scope=\"col\">Codigo</th>\n                  <th scope=\"col\">Resultado</th>\n                  <th scope=\"col\">Partido</th>\n                </tr>\n              </thead>\n              <logic:iterate id=\"tabla\" indexId=\"index\" name=\"nn\" property=\"tabla\">            \n                <tr>\n                  <td>\n                    <bean:write name=\"tabla\" property=\"idresultados\" />\n                  </td>\n                  <td>\n                    <bean:write name=\"tabla\" property=\"resultado\" />\n                  </td>\n                  <td>\n                    <bean:write name=\"tabla\" property=\"idpartido\" />\n                  </td>\n                </tr>\n              </logic:iterate>\n            </table>\n          \n          </div>\n        </div>\n      </div>\n    </div>\n</body>\n</html>\n".toCharArray();
+      "\n".toCharArray();
+      text[1] = 
+      "\n".toCharArray();
+      text[2] = 
+      "\n<html>\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>\n<title>\nGrand Slam - Listado de los premios\n</title>\n</head>\n<body>\n <div class=\"container\">\n      <div class=\"card mt-3\">\n        <h1 class=\"card-header\">\n          Grand Slam - Listado de los premios\n        </h1>\n        <div class=\"card-body\">\n          <div class=\"row justify-content-md-center\">\n\n            <table class=\"table table-striped\">\n              <thead class=\"thead-dark\">\n                <tr>\n                  <th scope=\"col\">Codigo</th>\n                  <th scope=\"col\">Resultado</th>\n                  <th scope=\"col\">Idpartido</th>\n                </tr>\n              </thead>\n              ".toCharArray();
+      text[3] = 
+      "\n                <tr>\n                  <td>\n                    ".toCharArray();
+      text[4] = 
+      "\n                  </td>\n                  <td>\n                    ".toCharArray();
+      text[5] = 
+      "\n                  </td>\n                  <td>\n                    ".toCharArray();
+      text[6] = 
+      "\n                  </td>\n                </tr>\n              ".toCharArray();
+      text[7] = 
+      "\n            </table>   \n          </div>\n        </div>\n      </div>\n    </div>\n</body>\n</html>".toCharArray();
       }
       catch (Throwable th) {
         System.err.println(th);

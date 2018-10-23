@@ -212,6 +212,32 @@ public class indexListadoAction extends Action
       }
     }
     if(boton.equals("Partido")){
+       try{
+        String cadena = "select * from PARTIDO order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next()){
+          ClaseListadoPartidos item = new ClaseListadoPartidos();
+          item.setIdpartido(rsConsulta.getString("idpartido"));
+          item.setIdlocaciones(rsConsulta.getString("idlocaciones"));
+          item.setIdparticipantes1(rsConsulta.getString("idparticipantes1"));
+          item.setIdparticipantes2(rsConsulta.getString("idparticipantes2"));
+          item.setIdarbitros(rsConsulta.getString("idarbitros"));
+          item.setIdmodalidades(rsConsulta.getString("idmodalidades"));
+          item.setIdgrandslam(rsConsulta.getString("idgrandslam"));
+          items.add(item);
+          System.out.println("Paso ..");
+        }
+        ListadoForm f = new ListadoForm ();	   
+        f.setTabla(items);
+        request.getSession().setAttribute("nn",f);
+        to = "partido";
+      }catch(Exception e){
+        e.printStackTrace();
+        return mapping.findForward("nook");
+      }finally{
+        conn.closeConnection();	
+      }
       to="partido";
     }
     if(boton.equals("Premios")){
@@ -238,7 +264,8 @@ public class indexListadoAction extends Action
         return mapping.findForward("nook");
       }finally{
         conn.closeConnection();	
-      }    }
+      }    
+      }
     if(boton.equals("Resultados")){
         try{
         String cadena = "select * from RESULTADOS order by 1";

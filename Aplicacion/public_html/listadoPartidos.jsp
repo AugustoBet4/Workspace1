@@ -1,3 +1,5 @@
+<%@ taglib uri="/WEB-INF/struts-bean.tld" prefix="bean" %>
+<%@ taglib uri="/WEB-INF/struts-logic.tld" prefix="logic" %>
 <%@ page contentType="text/html;charset=windows-1252"%>
 <html>
 <head>
@@ -32,28 +34,28 @@ Grand Slam - Listado de los partidos
                     <th scope="col">Grand Slam</th>
                 </tr>
               </thead>
-               <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">            
+              <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">           
                 <tr>
                   <td>
-                    <bean:write name="tabla" property="idpartidos" />
+                  <bean:write name="tabla" property="idpartido" />
                   </td>
                   <td>
-                    <bean:write name="tabla" property="locaciones" />
+                  <bean:write name="tabla" property="idlocaciones" />
                   </td>
                   <td>
-                    <bean:write name="tabla" property="idparticipantes1" />
+                  <bean:write name="tabla" property="idparticipantes1" />
                   </td>
                   <td>
-                    <bean:write name="tabla" property="idparticipantes2" />
+                  <bean:write name="tabla" property="idparticipantes2" />
                   </td>
                   <td>
-                    <bean:write name="tabla" property="idarbitros" />
+                  <bean:write name="tabla" property="idarbitros" />
                   </td>
                   <td>
-                    <bean:write name="tabla" property="idmodalidades" />
+                  <bean:write name="tabla" property="idmodalidades" />
                   </td>
                   <td>
-                    <bean:write name="tabla" property="idgrandslam" />
+                  <bean:write name="tabla" property="idgrandslam" />
                   </td>
                 </tr>
               </logic:iterate>
