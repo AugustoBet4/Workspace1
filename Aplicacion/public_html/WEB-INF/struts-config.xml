@@ -14,6 +14,9 @@
     <form-bean name="altasGrandslamForm" type="mypackage1.altasGrandslamForm"/>
     <form-bean name="altasNacionalidadForm" type="mypackage1.altasNacionalidadForm"/>
     <form-bean name="altasPaisForm" type="mypackage1.altasPaisForm"/>
+    <form-bean name="bajasResultadosForm" type="mypackage1.bajasResultadosForm"/>
+    <form-bean name="bajasPremiosForm" type="mypackage1.bajasPremiosForm"/>
+    <form-bean name="bajasPartidosForm" type="mypackage1.bajasPartidosForm"/>
   </form-beans>
   <global-forwards>
     <forward name="nook" path="/error_page.jsp"/>
@@ -75,6 +78,9 @@
     <action path="/altasPais" type="mypackage1.altasPaisAction" name="altasPaisForm" scope="request">
       <forward name="index" path="/index.jsp"/>
     </action>
+    <action path="/bajaPartidos" type="mypackage1.bajasPartidosAction"/>
+    <action path="/bajasPremios" type="mypackage1.bajasPremiosAction"/>
+    <action path="/bajasResultados" type="mypackage1.bajasResultadosAction"/>
   </action-mappings>
   <message-resources parameter="mypackage1.ApplicationResources"/>
 </struts-config>
