@@ -14,11 +14,16 @@
     <form-bean name="altasGrandslamForm" type="mypackage1.altasGrandslamForm"/>
     <form-bean name="altasNacionalidadForm" type="mypackage1.altasNacionalidadForm"/>
     <form-bean name="altasPaisForm" type="mypackage1.altasPaisForm"/>
+    <form-bean name="bajasArbitrosForm" type="mypackage1.bajasArbitrosForm"/>
+    <form-bean name="bajasGrandslamForm" type="mypackage1.bajasGrandslamForm"/>
     <form-bean name="bajasResultadosForm" type="mypackage1.bajasResultadosForm"/>
+    <form-bean name="bajasLocacionesForm" type="mypackage1.bajasLocacionesForm"/>    
+    <form-bean name="bajasPaisForm" type="mypackage1.bajasPaisForm"/>
     <form-bean name="bajasPremiosForm" type="mypackage1.bajasPremiosForm"/>
     <form-bean name="bajasPartidosForm" type="mypackage1.bajasPartidosForm"/>
     <form-bean name="bajasParticipantesForm" type="mypackage1.bajasParticipantesForm"/>
     <form-bean name="bajasNacionalidadForm" type="mypackage1.bajasNacionalidadForm"/>
+    <form-bean name="bajasParticipantesEntrenadoresForm" type="mypackage1.bajasParticipantesEntrenadoresForm"/>
   </form-beans>
   <global-forwards>
     <forward name="nook" path="/error_page.jsp"/>
