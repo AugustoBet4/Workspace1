@@ -55,6 +55,19 @@
       <forward name="resultados" path="/listadoResultados.jsp"/>
       <forward name="participantes-entrenadores" path="/listadoParticipantesEntrenadores.jsp"/>
     </action>
+    <action path="/bajas" type="mypackage1.indexBajasAction" name="indexForm" scope="request" input="/index.jsp">
+      <forward name="arbitros" path="/bajas_arbitros.jsp"/>
+      <forward name="entrenadores" path="/bajas_entrenadores.jsp"/>
+      <forward name="grandslam" path="/bajas_Grandslam.jsp"/>
+      <forward name="locaciones" path="/bajas_locaciones.jsp"/>
+      <forward name="nacionalidad" path="/bajas_nacionalidad.jsp"/>
+      <forward name="pais" path="/bajas_pais.jsp"/>
+      <forward name="participantes" path="/bajas_participantes.jsp"/>
+      <forward name="partido" path="/bajas_partidos.jsp"/>
+      <forward name="premios" path="/bajas_premios.jsp"/>
+      <forward name="resultados" path="/bajas_resultados.jsp"/>
+      <forward name="participantes-entrenadores" path="/bajas_ParticipantesEntrenadores.jsp"/>
+    </action>
     <action path="/altaParti" type="mypackage1.altasParticipantesAction" name="altasParticipantesForm" input="/altas_participantes.jsp" scope="request">
       <forward name="index" path="/index.jsp"/>
     </action>
@@ -90,6 +103,9 @@
     <action path="/bajasResultados" type="mypackage1.bajasResultadosAction"/>
     <action path="/bajasNacionalidad" type="mypackage1.bajasNacionalidadAction"/>
     <action path="/bajasParticipantes" type="mypackage1.bajasParticipantesAction"/>
+    <action path="/bajasLocaciones" type="mypackage1.bajasLocacionesAction" name="bajasLocacionesForm" scope="request">
+      <forward name="index" path="/index.jsp" />
+    </action>
   </action-mappings>
   <message-resources parameter="mypackage1.ApplicationResources"/>
 </struts-config>
