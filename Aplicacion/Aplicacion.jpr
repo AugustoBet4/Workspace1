@@ -270,6 +270,26 @@
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/bajasPartidosForm.java"/>
       </Item>
+      <Item class="oracle.jdeveloper.model.JspSourceNode">
+         <URL path="public_html/bajas_nacionalidad.jsp"/>
+         <encoding>windows-1252</encoding>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JspSourceNode">
+         <URL path="public_html/bajas_participantes.jsp"/>
+         <encoding>windows-1252</encoding>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/bajasNacionalidadAction.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/bajasParticipantesAction.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/bajasParticipantesForm.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/bajasNacionalidadForm.java"/>
+      </Item>
    </listOfChildren>
    <ownerMap/>
    <projectDocPath>
