@@ -115,14 +115,14 @@ public class indexListadoAction extends Action
       try{
         cn = conn.conexion;
         System.out.println("Conexion lista");
-        String cadena = "select * from LOCACIONES order by 1";
+        String cadena = "select a.idlocaciones, a.locacion, b.nombre from LOCACIONES a, pais b where a.idpais = b.idpais order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
           ClaseListadoLocaciones item = new ClaseListadoLocaciones();
           item.setId(rsConsulta.getString("idlocaciones"));
           item.setLocacion(rsConsulta.getString("locacion"));
-          item.setPais(rsConsulta.getString("idpais"));
+          item.setPais(rsConsulta.getString("nombre"));
           items.add(item);
           System.out.println("Paso ..");
         }
@@ -188,7 +188,7 @@ public class indexListadoAction extends Action
       try{
         cn = conn.conexion;
         System.out.println("Conexion lista");
-        String cadena = "select * from participantes order by 1";
+        String cadena = "select a.idparticipantes, a.nombre, a.edad, a.genero, b.nacionalidad from participantes a, nacionalidad b where a.nacionalidad_idnacionalidad = b.idnacionalidad order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
@@ -197,7 +197,7 @@ public class indexListadoAction extends Action
           item.setNombre(rsConsulta.getString("nombre"));
           item.setEdad(rsConsulta.getString("edad"));
           item.setGenero(rsConsulta.getString("genero"));
-          item.setNacionalidad(rsConsulta.getString("nacionalidad_idnacionalidad"));
+          item.setNacionalidad(rsConsulta.getString("nacionalidad"));
           items.add(item);
           System.out.println("Paso ..");
         }

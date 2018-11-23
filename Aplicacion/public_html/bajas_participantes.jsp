@@ -21,38 +21,40 @@
         </h1>
         <div class="card-body">
           <div class="row justify-content-md-center">
-
-            <table class="table table-striped">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">Codigo</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Edad</th>
-                  <th scope="col">Genero</th>
-                  <th scope="col">Nacionalidad</th>
-                </tr>
-              </thead>
-              <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">
-                <tr>
-                  <td>
-                    <bean:write name="tabla" property="id" />
-                  </td>
-                  <td>
-                    <bean:write name="tabla" property="nombre" />
-                  </td>
-                  <td>
-                    <bean:write name="tabla" property="edad" />
-                  </td>
-                  <td>
-                    <bean:write name="tabla" property="genero" />
-                  </td>
-                  <td>
-                    <bean:write name="tabla" property="nacionalidad" />
-                  </td>
-                </tr>
-              </logic:iterate>
-            </table>
-          
+            <html:form action="/bajasParticipantes">
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Genero</th>
+                    <th scope="col">Nacionalidad</th>
+                  </tr>
+                </thead>
+                <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">
+                  <tr>
+                    <td>
+                      <html:submit property="cod" >
+                        <bean:write name="tabla" property="id" />
+                      </html:submit>
+                    </td>
+                    <td>
+                      <bean:write name="tabla" property="nombre" />
+                    </td>
+                    <td>
+                      <bean:write name="tabla" property="edad" />
+                    </td>
+                    <td>
+                      <bean:write name="tabla" property="genero" />
+                    </td>
+                    <td>
+                      <bean:write name="tabla" property="nacionalidad" />
+                    </td>
+                  </tr>
+                </logic:iterate>
+              </table>
+            </html:form>          
           </div>
         </div>
       </div>

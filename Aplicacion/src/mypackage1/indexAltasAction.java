@@ -32,7 +32,7 @@ public class indexAltasAction extends Action
     if(boton.equals("Arbitros")){
       try{
           cn = conn.conexion;
-          String cadena = "select * from NACIONALIDAD order by 1";
+          String cadena = "select * from ARBITROS order by 1";
           rsConsulta = conn.getData(cadena);
           ArrayList items = new ArrayList();
           while (rsConsulta.next()){
@@ -100,12 +100,13 @@ try{
       try{
         cn = conn.conexion;
         String cadena = "select * from pais order by 1";
+        System.out.println("Esto imprime: "+cadena);
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
-          ClaseNacion item = new ClaseNacion();
-          item.setCodigo(rsConsulta.getString("NUM_SEC_PAIS"));
-          item.setDesc(rsConsulta.getString("NOMBRE"));
+          ClaseLocacion item = new ClaseLocacion();
+          item.setCodigo(rsConsulta.getString("idpais"));
+          item.setDesc(rsConsulta.getString("nombre"));
           items.add(item);
           System.out.println("Paso ..");
         }  

@@ -14,7 +14,6 @@ public class ConnectDB {
     // Local: 192.168.0.160:1521:xe
     // Publica: 201.131.41.50:1521:xe
     String sourceURL = "jdbc:oracle:thin:@201.131.41.50:1521:xe";
-    //String sourceURL = "jdbc:oracle:thin:@201.131.41.50:1521:xe";
     String UserName = "anavia";
     String Password = "manager2019";
     try {

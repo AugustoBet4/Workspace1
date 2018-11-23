@@ -102,7 +102,9 @@
     <action path="/bajasPremios" type="mypackage1.bajasPremiosAction"/>
     <action path="/bajasResultados" type="mypackage1.bajasResultadosAction"/>
     <action path="/bajasNacionalidad" type="mypackage1.bajasNacionalidadAction"/>
-    <action path="/bajasParticipantes" type="mypackage1.bajasParticipantesAction"/>
+    <action path="/bajasParticipantes" type="mypackage1.bajasParticipantesAction" name="bajasParticipantesForm" scope="request">
+      <forward name="index" path="/index.jsp"/>
+    </action>
     <action path="/bajasLocaciones" type="mypackage1.bajasLocacionesAction" name="bajasLocacionesForm" scope="request">
       <forward name="index" path="/index.jsp" />
     </action>

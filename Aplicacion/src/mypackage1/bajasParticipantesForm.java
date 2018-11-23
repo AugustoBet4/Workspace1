@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 
 public class bajasParticipantesForm extends ActionForm 
 {
+  String cod;
+
   /**
    * Reset all properties to their default values.
    * @param mapping The ActionMapping used to select this instance.
@@ -26,5 +28,15 @@ public class bajasParticipantesForm extends ActionForm
   public ActionErrors validate(ActionMapping mapping, HttpServletRequest request)
   {
     return super.validate(mapping, request);
+  }
+
+  public String getCod()
+  {
+    return cod;
+  }
+
+  public void setCod(String newCod)
+  {
+    cod = newCod;
   }
 }
