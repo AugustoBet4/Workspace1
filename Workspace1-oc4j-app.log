@@ -5762,3 +5762,5 @@ com.evermind.server.http.HttpIOException: Connection aborted by peer: socket wri
 11/23/18 6:15 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
 11/23/18 6:18 PM Started
 11/23/18 6:18 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/23/18 6:18 PM Workspace1-Aplicacion-webapp: action: init
+11/23/18 6:18 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
