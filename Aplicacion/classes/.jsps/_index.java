@@ -877,7 +877,7 @@ public class _index extends com.orionserver.http.OrionHttpJspPage {
       text[13] = 
       "\r\n                ".getBytes("Cp1252");
       text[14] = 
-      "\r\n              </div>\r\n            </div>\r\n            <div class=\"col-3\">\r\n              <h2 class=\"justify-content-md-center\">Listar</h2>\r\n              <div class=\"btn-group-vertical\">\r\n                ".getBytes("Cp1252");
+      "\r\n              </div>\r\n            </div>\r\n            <div class=\"col-3\">\r\n              <h2 class=\"justify-content-md-center\">Lista/Modificar</h2>\r\n              <div class=\"btn-group-vertical\">\r\n                ".getBytes("Cp1252");
       text[15] = 
       "\r\n                  ".getBytes("Cp1252");
       text[16] = 

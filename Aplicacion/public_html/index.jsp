@@ -39,7 +39,7 @@
               </div>
             </div>
             <div class="col-3">
-              <h2 class="justify-content-md-center">Listar</h2>
+              <h2 class="justify-content-md-center">Lista/Modificar</h2>
               <div class="btn-group-vertical">
                 <html:form action="/listado" styleClass="form-group">
                   <html:submit value="Arbitros" styleClass="btn btn-outline-warning" property="boton" />

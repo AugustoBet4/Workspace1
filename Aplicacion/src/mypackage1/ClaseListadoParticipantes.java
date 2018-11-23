@@ -7,6 +7,7 @@ public class ClaseListadoParticipantes
   String edad;
   String genero;
   String nacionalidad;
+  String id_nacionalidad;
 
   public ClaseListadoParticipantes()
   {
@@ -60,5 +61,15 @@ public class ClaseListadoParticipantes
   public void setNacionalidad(String newNacionalidad)
   {
     nacionalidad = newNacionalidad;
+  }
+
+  public String getId_nacionalidad()
+  {
+    return id_nacionalidad;
+  }
+
+  public void setId_nacionalidad(String newId_nacionalidad)
+  {
+    id_nacionalidad = newId_nacionalidad;
   }
 }

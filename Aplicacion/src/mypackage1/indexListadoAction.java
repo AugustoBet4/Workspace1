@@ -115,7 +115,7 @@ public class indexListadoAction extends Action
       try{
         cn = conn.conexion;
         System.out.println("Conexion lista");
-        String cadena = "select a.idlocaciones, a.locacion, b.nombre from LOCACIONES a, pais b where a.idpais = b.idpais order by 1";
+        String cadena = "select a.idlocaciones, a.locacion, b.nombre, a.idpais from LOCACIONES a, pais b where a.idpais = b.idpais order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
@@ -123,6 +123,7 @@ public class indexListadoAction extends Action
           item.setId(rsConsulta.getString("idlocaciones"));
           item.setLocacion(rsConsulta.getString("locacion"));
           item.setPais(rsConsulta.getString("nombre"));
+          item.setId_pais(rsConsulta.getString("idpais"));
           items.add(item);
           System.out.println("Paso ..");
         }
@@ -188,7 +189,7 @@ public class indexListadoAction extends Action
       try{
         cn = conn.conexion;
         System.out.println("Conexion lista");
-        String cadena = "select a.idparticipantes, a.nombre, a.edad, a.genero, b.nacionalidad from participantes a, nacionalidad b where a.nacionalidad_idnacionalidad = b.idnacionalidad order by 1";
+        String cadena = "select a.idparticipantes, a.nombre, a.edad, a.genero, b.nacionalidad, a.nacionalidad_idnacionalidad from participantes a, nacionalidad b where a.nacionalidad_idnacionalidad = b.idnacionalidad order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
@@ -198,6 +199,7 @@ public class indexListadoAction extends Action
           item.setEdad(rsConsulta.getString("edad"));
           item.setGenero(rsConsulta.getString("genero"));
           item.setNacionalidad(rsConsulta.getString("nacionalidad"));
+          item.setId_nacionalidad(rsConsulta.getString("nacionalidad_idnacionalidad"));
           items.add(item);
           System.out.println("Paso ..");
         }

@@ -24,6 +24,9 @@
     <form-bean name="bajasParticipantesForm" type="mypackage1.bajasParticipantesForm"/>
     <form-bean name="bajasNacionalidadForm" type="mypackage1.bajasNacionalidadForm"/>
     <form-bean name="bajasParticipantesEntrenadoresForm" type="mypackage1.bajasParticipantesEntrenadoresForm"/>
+    <form-bean name="MediasForm" type="mypackage1.MediasForm"/>
+    <form-bean name="editLocacionesForm" type="mypackage1.editLocacionesForm"/>
+    <form-bean name="editParticipantesForm" type="mypackage1.editParticipantesForm"/>
   </form-beans>
   <global-forwards>
     <forward name="nook" path="/error_page.jsp"/>
@@ -106,7 +109,19 @@
       <forward name="index" path="/index.jsp"/>
     </action>
     <action path="/bajasLocaciones" type="mypackage1.bajasLocacionesAction" name="bajasLocacionesForm" scope="request">
-      <forward name="index" path="/index.jsp" />
+      <forward name="index" path="/index.jsp"/>
+    </action>
+    <action path="/mediasLocaciones" type="mypackage1.mediasLocacionAction" name="MediasForm" scope="request">
+      <forward name="edit" path="/editLocaciones.jsp"/>
+    </action>
+    <action path="/editLocaciones" type="mypackage1.editLocacionesAction" name="editLocacionesForm" scope="request">
+      <forward name="ok" path="/index.jsp"/>
+    </action>
+    <action path="/mediasParticipantes" type="mypackage1.mediasParticipantesAction" name="MediasForm" scope="request">
+      <forward name="edit" path="/editParticipantes.jsp"/>
+    </action>
+    <action path="/editParticipantes" type="mypackage1.editParticipantesAction" name="editParticipantesForm" scope="request">
+      <forward name="ok" path="/index.jsp"/>
     </action>
   </action-mappings>
   <message-resources parameter="mypackage1.ApplicationResources"/>

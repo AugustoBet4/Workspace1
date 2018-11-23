@@ -21,30 +21,32 @@
         </h1>
         <div class="card-body">
           <div class="row justify-content-md-center">
-
-            <table class="table table-striped">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">Codigo</th>
-                  <th scope="col">Locacion</th>
-                  <th scope="col">Pais</th>
-                </tr>
-              </thead>
-              <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">
-                <tr>
-                  <td>
-                    <bean:write name="tabla" property="id" />
-                  </td>
-                  <td>
-                    <bean:write name="tabla" property="locacion" />
-                  </td>
-                  <td>
-                    <bean:write name="tabla" property="pais" />
-                  </td>
-                </tr>
-              </logic:iterate>
-            </table>
-          
+            <html:form action="/mediasLocaciones">
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Locacion</th>
+                    <th scope="col">Pais</th>
+                  </tr>
+                </thead>
+                <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">
+                  <tr>
+                    <td>
+                      <html:submit property="cod" >
+                        <bean:write name="tabla" property="id" />
+                      </html:submit>
+                    </td>
+                    <td>
+                      <bean:write name="tabla" property="locacion" />
+                    </td>
+                    <td>
+                      <bean:write name="tabla" property="pais" />
+                    </td>
+                  </tr>
+                </logic:iterate>
+              </table>
+            </html:form>
           </div>
         </div>
       </div>

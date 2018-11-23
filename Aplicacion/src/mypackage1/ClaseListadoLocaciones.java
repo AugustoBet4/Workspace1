@@ -5,6 +5,7 @@ public class ClaseListadoLocaciones
   String id;
   String locacion;
   String pais;
+  String id_pais;
 
   public ClaseListadoLocaciones()
   {
@@ -38,5 +39,15 @@ public class ClaseListadoLocaciones
   public void setPais(String newPais)
   {
     pais = newPais;
+  }
+
+  public String getId_pais()
+  {
+    return id_pais;
+  }
+
+  public void setId_pais(String newId_pais)
+  {
+    id_pais = newId_pais;
   }
 }
