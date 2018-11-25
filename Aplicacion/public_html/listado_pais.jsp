@@ -21,7 +21,7 @@
         </h1>
         <div class="card-body">
           <div class="row justify-content-md-center">
-
+            <html:form action="/mediasPais">
             <table class="table table-striped">
               <thead class="thead-dark">
                 <tr>
@@ -32,7 +32,9 @@
               <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">
                 <tr>
                   <td>
-                    <bean:write name="tabla" property="idpais" />
+                    <html:submit property="cod" >
+                        <bean:write name="tabla" property="idpais" />
+                      </html:submit>
                   </td>
                   <td>
                     <bean:write name="tabla" property="pais" />
@@ -40,6 +42,7 @@
                 </tr>
               </logic:iterate>
             </table>
+           </html:form>
           </div>
         </div>
       </div>

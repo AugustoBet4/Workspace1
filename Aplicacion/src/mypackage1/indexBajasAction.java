@@ -169,7 +169,7 @@ public class indexBajasAction extends Action
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
           ClasePais item = new ClasePais();
-          item.setIdpais(rsConsulta.getString("num_sec_pais"));
+          item.setIdpais(rsConsulta.getString("idpais"));
           item.setPais(rsConsulta.getString("nombre"));
           items.add(item);
           System.out.println("Paso ..");

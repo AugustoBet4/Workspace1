@@ -37,7 +37,7 @@
                       </html:submit>
                     </td>
                     <td>
-                      <bean:write name="tabla" property="nombre" />
+                      <bean:write name="tabla" property="pais" />
                     </td>
                   </tr>
                 </logic:iterate>

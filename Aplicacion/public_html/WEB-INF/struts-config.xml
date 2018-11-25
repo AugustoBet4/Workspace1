@@ -27,11 +27,15 @@
     <form-bean name="MediasForm" type="mypackage1.MediasForm"/>
     <form-bean name="editLocacionesForm" type="mypackage1.editLocacionesForm"/>
     <form-bean name="editParticipantesForm" type="mypackage1.editParticipantesForm"/>
+    <form-bean name="editGrandslamForm" type="mypackage1.editGrandslamForm"/>
+    <form-bean name="editNacionalidadForm" type="mypackage1.editNacionalidadForm"/>
+    <form-bean name="editPaisForm" type="mypackage1.editPaisForm"/>
   </form-beans>
   <global-forwards>
     <forward name="nook" path="/error_page.jsp"/>
   </global-forwards>
   <action-mappings>
+  
     <action path="/altas" type="mypackage1.indexAltasAction" name="indexForm" scope="request" input="/index.jsp">
       <forward name="arbitros" path="/altasArbitros.jsp"/>
       <forward name="entrenadores" path="/altasEntrenadores.jsp"/>
@@ -45,6 +49,7 @@
       <forward name="resultados" path="/altas_resultados.jsp"/>
       <forward name="participantes-entrenadores" path="/altas_participantes-entrenadores.jsp"/>
     </action>
+    
     <action path="/listado" type="mypackage1.indexListadoAction" name="indexForm" scope="request" input="/index.jsp">
       <forward name="arbitros" path="/listadoArbitros.jsp"/>
       <forward name="entrenadores" path="/listadoEntrenadores.jsp"/>
@@ -58,6 +63,7 @@
       <forward name="resultados" path="/listadoResultados.jsp"/>
       <forward name="participantes-entrenadores" path="/listadoParticipantesEntrenadores.jsp"/>
     </action>
+    
     <action path="/bajas" type="mypackage1.indexBajasAction" name="indexForm" scope="request" input="/index.jsp">
       <forward name="arbitros" path="/bajas_arbitros.jsp"/>
       <forward name="entrenadores" path="/bajas_entrenadores.jsp"/>
@@ -71,12 +77,15 @@
       <forward name="resultados" path="/bajas_resultados.jsp"/>
       <forward name="participantes-entrenadores" path="/bajas_ParticipantesEntrenadores.jsp"/>
     </action>
+    
     <action path="/altaParti" type="mypackage1.altasParticipantesAction" name="altasParticipantesForm" input="/altas_participantes.jsp" scope="request">
       <forward name="index" path="/index.jsp"/>
     </action>
+    
     <action path="/altasLocaciones" type="mypackage1.altasLocacionesAction" name="altasLocacionesForm" input="/altas_locaciones.jsp" scope="request">
       <forward name="index" path="/index.jsp"/>
     </action>
+    
     <action path="/altasArbitros" type="mypackage1.altasArbitrosAction" name="altasArbitrosForm" input="/altasArbitros.jsp" scope="request">
       <forward name="index" path="/index.jsp"/>
     </action>
@@ -104,7 +113,6 @@
     <action path="/bajaPartidos" type="mypackage1.bajasPartidosAction"/>
     <action path="/bajasPremios" type="mypackage1.bajasPremiosAction"/>
     <action path="/bajasResultados" type="mypackage1.bajasResultadosAction"/>
-    
     <action path="/bajasGrandslam" type="mypackage1.bajasGrandslamAction" name="bajasGrandslamForm" scope="request">
       <forward name="inicio" path="/index.jsp"/>
     </action>
@@ -114,8 +122,6 @@
     <action path="/bajasPais" type="mypackage1.bajasPaisAction" name="bajasPaisForm" scope="request">
       <forward name="inicio" path="/index.jsp"/>
     </action>
-    
-    
     <action path="/bajasParticipantes" type="mypackage1.bajasParticipantesAction" name="bajasParticipantesForm" scope="request">
       <forward name="index" path="/index.jsp"/>
     </action>
@@ -134,6 +140,25 @@
     <action path="/editParticipantes" type="mypackage1.editParticipantesAction" name="editParticipantesForm" scope="request">
       <forward name="ok" path="/index.jsp"/>
     </action>
+    <action path="/mediasGrandslam" type="mypackage1.mediasGrandslamAction" name="MediasForm" scope="request">
+      <forward name="edit" path="/editGrandslam.jsp"/>
+    </action>
+    <action path="/editGrandslam" type="mypackage1.editGrandslamAction" name="editGrandslamForm" scope="request">
+      <forward name="ok" path="/index.jsp"/>
+    </action>
+    <action path="/mediasNacionalidad" type="mypackage1.mediasNacionalidadAction" name="MediasForm" scope="request">
+      <forward name="edit" path="/editNacionalidad.jsp"/>
+    </action>
+    <action path="/editNacionalidad" type="mypackage1.editNacionalidadAction" name="editNacionalidadForm" scope="request">
+      <forward name="ok" path="/index.jsp"/>
+    </action>
+    <action path="/mediasPais" type="mypackage1.mediasPaisAction" name="MediasForm" scope="request">
+      <forward name="edit" path="/editPais.jsp"/>
+    </action>
+    <action path="/editPais" type="mypackage1.editPaisAction" name="editPaisForm" scope="request">
+      <forward name="ok" path="/index.jsp"/>
+    </action>
+    
   </action-mappings>
   <message-resources parameter="mypackage1.ApplicationResources"/>
 </struts-config>
