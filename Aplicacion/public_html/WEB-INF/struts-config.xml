@@ -104,7 +104,18 @@
     <action path="/bajaPartidos" type="mypackage1.bajasPartidosAction"/>
     <action path="/bajasPremios" type="mypackage1.bajasPremiosAction"/>
     <action path="/bajasResultados" type="mypackage1.bajasResultadosAction"/>
-    <action path="/bajasNacionalidad" type="mypackage1.bajasNacionalidadAction"/>
+    
+    <action path="/bajasGrandslam" type="mypackage1.bajasGrandslamAction" name="bajasGrandslamForm" scope="request">
+      <forward name="inicio" path="/index.jsp"/>
+    </action>
+    <action path="/bajasNacionalidad" type="mypackage1.bajasNacionalidadAction" name="bajasNacionalidadForm" scope="request">
+      <forward name="inicio" path="/index.jsp"/>
+    </action>
+    <action path="/bajasPais" type="mypackage1.bajasPaisAction" name="bajasPaisForm" scope="request">
+      <forward name="inicio" path="/index.jsp"/>
+    </action>
+    
+    
     <action path="/bajasParticipantes" type="mypackage1.bajasParticipantesAction" name="bajasParticipantesForm" scope="request">
       <forward name="index" path="/index.jsp"/>
     </action>

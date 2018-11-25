@@ -10,36 +10,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <title>
-      Grandslam - Listado Nacionalidad
+      Grandslam - Eliminar Nacionalidad
     </title>
   </head>
   <body>
     <div class="container">
       <div class="card mt-3">
         <h1 class="card-header">
-          Grand Slam - Listado Nacionalidad
+          Grand Slam - Eliminando Nacionalidad
         </h1>
         <div class="card-body">
           <div class="row justify-content-md-center">
-
-            <table class="table table-striped">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">Codigo</th>
-                  <th scope="col">Nombre</th>
-                </tr>
-              </thead>
-              <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">
-                <tr>
-                  <td>
-                    <bean:write name="tabla" property="idnacionalidad" />
-                  </td>
-                  <td>
-                    <bean:write name="tabla" property="nacionalidad" />
-                  </td>
-                </tr>
-              </logic:iterate>
-            </table>
+            <html:form action="/bajasNacionalidad">
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Nacionalidad</th>
+                  </tr>
+                </thead>
+                <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">
+                  <tr>
+                    <td>
+                      <html:submit property="cod" >
+                        <bean:write name="tabla" property="idnacionalidad" />
+                      </html:submit>
+                    </td>
+                    <td>
+                      <bean:write name="tabla" property="nacionalidad" />
+                    </td>
+                  </tr>
+                </logic:iterate>
+              </table>
+            </html:form>
           </div>
         </div>
       </div>
