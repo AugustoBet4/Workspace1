@@ -11,7 +11,6 @@ Pagina de altas_partidos
 </title>
 </head>
 <body>
-idpartido, idlocaciones, idparticpantes1, idparticipantes2, idarbitros, id modalidades, idgrandslam
 <div class="container">
       <div class="card mt-3">
         <h1 class="card-header">
@@ -63,7 +62,7 @@ idpartido, idlocaciones, idparticpantes1, idparticipantes2, idarbitros, id modal
                   <div class="form-group">
                     <h6>Arbitro</h6>
                     <html:select property="arbitro" styleClass="form-control">
-                      <html:options collection="ayuda2" labelProperty="desc" property="codigo" />
+                      <html:options collection="ayuda2" labelProperty="nombre" property="cod" />
                     </html:select>
                   </div>
                 </div>
@@ -83,7 +82,7 @@ idpartido, idlocaciones, idparticpantes1, idparticipantes2, idarbitros, id modal
                   <div class="form-group">
                     <h6>Grand Slam</h6>
                     <html:select property="grandslam" styleClass="form-control">
-                      <html:options collection="ayuda4" labelProperty="desc" property="codigo" />
+                      <html:options collection="ayuda4" labelProperty="anio" property="nombre" />
                     </html:select>
                   </div>
                 </div>

@@ -12,7 +12,6 @@ Pagina de altas_premios
 </title>
 </head>
 <body>
-idpremios, cantidad, categoria, idparticipante, idpartido
 <div class="container">
       <div class="card mt-3">
         <h1 class="card-header">
