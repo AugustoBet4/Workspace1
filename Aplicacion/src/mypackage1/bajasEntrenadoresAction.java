@@ -9,6 +9,12 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.naming.NamingException;
+import oracle.jdbc.*;
+import java.util.*;
 
 public class bajasEntrenadoresAction extends Action 
 {
@@ -21,6 +27,36 @@ public class bajasEntrenadoresAction extends Action
    */
   public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
-    return mapping.findForward("success");
+    bajasEntrenadoresForm cc = (bajasEntrenadoresForm) form;
+    String codigo = cc.getCod();
+    
+    Connection cn = null;
+    ConnectDB conn =new ConnectDB();
+    ResultSet rsConsulta = null;
+
+    try
+       {
+         cn = conn.conexion;
+         String cadena = "delete from ENTRENADORES where identrenadores = "+ codigo +"";
+         System.out.println(cadena);
+         int a = conn.InsertaDatos(cadena);
+         System.out.println(a);
+         if(a == 1) {
+          return mapping.findForward("index");
+         }
+         else{
+          return mapping.findForward("nook");
+         }
+	      }
+        catch(Exception e)
+       {
+          e.printStackTrace();
+          return (mapping.findForward("nook"));
+       }
+       
+    finally
+    {
+      conn.closeConnection();	
+    }
   }
 }

@@ -9,6 +9,12 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.naming.NamingException;
+import oracle.jdbc.*;
+import java.util.*;
 
 public class bajasParticipantesEntrenadoresAction extends Action 
 {
@@ -21,6 +27,38 @@ public class bajasParticipantesEntrenadoresAction extends Action
    */
   public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
-    return mapping.findForward("success");
+    bajasParticipantesEntrenadoresForm cc = (bajasParticipantesEntrenadoresForm) form;
+    String codigo1 = cc.getCod1();
+    String codigo2 = cc.getCod2();
+    
+    
+    Connection cn = null;
+    ConnectDB conn =new ConnectDB();
+    ResultSet rsConsulta = null;
+
+    try
+       {
+         cn = conn.conexion;
+         String cadena = "delete from PARTICIPANTES_HAS_ENTRENADORES where idparticipantes = "+ codigo1 +" and identrenadores = "+ codigo2 +"";
+         System.out.println(cadena);
+         int a = conn.InsertaDatos(cadena);
+         System.out.println(a);
+         if(a == 1) {
+          return mapping.findForward("inicio");
+         }
+         else{
+          return mapping.findForward("nook");
+         }
+	      }
+        catch(Exception e)
+       {
+          e.printStackTrace();
+          return (mapping.findForward("nook"));
+       }
+       
+    finally
+    {
+      conn.closeConnection();	
+    }
   }
 }

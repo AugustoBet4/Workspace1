@@ -21,7 +21,7 @@
         </h1>
         <div class="card-body">
           <div class="row justify-content-md-center">
-
+<html:form action="/mediasArbitros">
             <table class="table table-striped">
               <thead class="thead-dark">
                 <tr>
@@ -34,8 +34,10 @@
               </thead>
               <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">
                 <tr>
-                  <td>
-                    <bean:write name="tabla" property="idarbitro" />
+                <td>
+                  <html:submit property="cod" >
+                        <bean:write name="tabla" property="idarbitro" />
+                      </html:submit>
                   </td>
                   <td>
                     <bean:write name="tabla" property="nombre" />
@@ -52,7 +54,7 @@
                 </tr>
               </logic:iterate>
             </table>
-          
+            </html:form>
           </div>
         </div>
       </div>

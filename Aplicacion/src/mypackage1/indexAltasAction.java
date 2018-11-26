@@ -36,9 +36,12 @@ public class indexAltasAction extends Action
           rsConsulta = conn.getData(cadena);
           ArrayList items = new ArrayList();
           while (rsConsulta.next()){
-            ClaseNacion item = new ClaseNacion();
-            item.setCodigo(rsConsulta.getString("IDNACIONALIDAD"));
-            item.setDesc(rsConsulta.getString("NACIONALIDAD"));
+            ClaseArbitro item = new ClaseArbitro();
+            item.setCod(rsConsulta.getString("IDARBITRO"));
+            item.setNombre(rsConsulta.getString("NOMBRE"));
+            item.setTelefono(rsConsulta.getString("TELEFONO"));
+            item.setEmail(rsConsulta.getString("EMAIL"));
+            item.setNacionalidad(rsConsulta.getString("IDNACIONALIDAD"));
             items.add(item);
             System.out.println("Paso ..");
           }  
@@ -227,8 +230,8 @@ try{
       while (rsConsulta.next())
       {
           ClaseArbitro item = new ClaseArbitro();
-          item.setCodigo(rsConsulta.getString("IDARBITRO"));
-          item.setDesc(rsConsulta.getString("NOMBRE"));
+          item.setCod(rsConsulta.getString("IDARBITRO"));
+          item.setNombre(rsConsulta.getString("NOMBRE"));
           items2.add(item);
           System.out.println("Paso ..");
       }

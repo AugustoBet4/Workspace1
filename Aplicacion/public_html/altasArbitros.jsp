@@ -58,7 +58,7 @@
                   <div class="form-group">
                     <h6>Nacionalidad</h6>
                     <html:select property="nacionalidad" styleClass="form-control" >
-                      <html:options collection="ayuda" labelProperty="desc" property="codigo" />
+                      <html:options collection="ayuda" labelProperty="nombre" property="cod" />
                     </html:select>
                   </div>
                 </div>

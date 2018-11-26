@@ -294,7 +294,7 @@ public class indexListadoAction extends Action
     }
     if(boton.equals("Participantes/Entrenadores")){
       try{
-        String cadena = "select	a.\"nombre\" as idparticipante, b.\"nombre\" as identrenadores from participantes a, entrenadores b, participantes_has_entrenadores c where c.\"idparticipante\"=a.\"idparticipantes\" and c.\"identrenadores\"=b.\"identrenadores\" ";
+        String cadena = "select * from PARTICIPANTES_HAS_ENTRENADORES order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList(); 
         while (rsConsulta.next()){

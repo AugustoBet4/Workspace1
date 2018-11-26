@@ -2,30 +2,69 @@ package mypackage1;
 
 public class ClaseArbitro 
 {
-  String codigo;
-  String desc;
+
+  String cod;
+  String nombre;
+  String telefono;
+  String email;
+  String nacionalidad;
 
   public ClaseArbitro()
   {
   }
 
-  public String getCodigo()
+  public String getCod()
   {
-    return codigo;
+    return cod;
   }
 
-  public void setCodigo(String newCodigo)
+  public void setCod(String newCod)
   {
-    codigo = newCodigo;
+    cod = newCod;
   }
 
-  public String getDesc()
+  public String getNombre()
   {
-    return desc;
+    return nombre;
   }
 
-  public void setDesc(String newDesc)
+  public void setNombre(String newNombre)
   {
-    desc = newDesc;
+    nombre = newNombre;
   }
+
+  public String getTelefono()
+  {
+    return telefono;
+  }
+
+  public void setTelefono(String newTelefono)
+  {
+    telefono = newTelefono;
+  }
+
+  public String getEmail()
+  {
+    return email;
+  }
+
+  public void setEmail(String newEmail)
+  {
+    email = newEmail;
+  }
+
+  public String getNacionalidad()
+  {
+    return nacionalidad;
+  }
+
+  public void setNacionalidad(String newNacionalidad)
+  {
+    nacionalidad = newNacionalidad;
+  }
+
+
+
+
+
 }

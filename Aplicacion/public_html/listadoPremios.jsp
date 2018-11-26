@@ -1,5 +1,6 @@
 <%@ taglib uri="/WEB-INF/struts-bean.tld" prefix="bean" %>
 <%@ taglib uri="/WEB-INF/struts-logic.tld" prefix="logic" %>
+<%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
 <%@ page contentType="text/html;charset=windows-1252"%>
 <html>
 <head>
@@ -20,7 +21,7 @@ Grand Slam - Listado de los premios
         </h1>
         <div class="card-body">
           <div class="row justify-content-md-center">
-
+            <html:form action="/mediasPremios">
             <table class="table table-striped">
               <thead class="thead-dark">
                 <tr>
@@ -34,7 +35,9 @@ Grand Slam - Listado de los premios
               <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">            
                 <tr>
                   <td>
-                    <bean:write name="tabla" property="idpremios" />
+                  <html:submit property="cod" >
+                        <bean:write name="tabla" property="idpremios" />
+                      </html:submit>
                   </td>
                   <td>
                     <bean:write name="tabla" property="cantidad" />
@@ -51,7 +54,7 @@ Grand Slam - Listado de los premios
                 </tr>
               </logic:iterate>
             </table>
-          
+            </html:form>          
           </div>
         </div>
       </div>

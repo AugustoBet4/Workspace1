@@ -119,7 +119,7 @@ public class _bajas__pais extends oracle.jsp.runtime.HttpJsp {
                     org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_5=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
                     __jsp_taghandler_5.setParent(__jsp_taghandler_2);
                     __jsp_taghandler_5.setName("tabla");
-                    __jsp_taghandler_5.setProperty("nombre");
+                    __jsp_taghandler_5.setProperty("pais");
                     __jsp_tag_starteval=__jsp_taghandler_5.doStartTag();
                     if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
                     {
@@ -132,7 +132,7 @@ public class _bajas__pais extends oracle.jsp.runtime.HttpJsp {
                   }
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[9]);
-                /*@lineinfo:translated-code*//*@lineinfo:40^68*/                } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                /*@lineinfo:translated-code*//*@lineinfo:40^66*/                } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
               }
               if (__jsp_taghandler_2.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)

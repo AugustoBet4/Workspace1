@@ -151,8 +151,8 @@ public class _altasArbitros extends oracle.jsp.runtime.HttpJsp {
                     org.apache.struts.taglib.html.OptionsTag __jsp_taghandler_7=(org.apache.struts.taglib.html.OptionsTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.OptionsTag.class,"org.apache.struts.taglib.html.OptionsTag collection labelProperty property");
                     __jsp_taghandler_7.setParent(__jsp_taghandler_6);
                     __jsp_taghandler_7.setCollection("ayuda");
-                    __jsp_taghandler_7.setLabelProperty("desc");
-                    __jsp_taghandler_7.setProperty("codigo");
+                    __jsp_taghandler_7.setLabelProperty("nombre");
+                    __jsp_taghandler_7.setProperty("cod");
                     __jsp_tag_starteval=__jsp_taghandler_7.doStartTag();
                     if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
                     {
@@ -165,7 +165,7 @@ public class _altasArbitros extends oracle.jsp.runtime.HttpJsp {
                   }
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[8]);
-                /*@lineinfo:translated-code*//*@lineinfo:61^97*/                } while (__jsp_taghandler_6.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                /*@lineinfo:translated-code*//*@lineinfo:61^96*/                } while (__jsp_taghandler_6.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
               }
               if (__jsp_taghandler_6.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
