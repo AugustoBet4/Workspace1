@@ -7,6 +7,7 @@ public class ClaseListadoArbitros
   String email;
   String idnacionalidad;
   String idarbitro;
+  String nacionalidad;
 
   public ClaseListadoArbitros()
   {
@@ -62,5 +63,15 @@ public class ClaseListadoArbitros
   public void setIdarbitro(String newIdarbitro)
   {
     idarbitro = newIdarbitro;
+  }
+
+  public String getNacionalidad()
+  {
+    return nacionalidad;
+  }
+
+  public void setNacionalidad(String newNacionalidad)
+  {
+    nacionalidad = newNacionalidad;
   }
 }

@@ -6,6 +6,7 @@ public class ClaseListadoEntrenadores
   String nombre;
   String edad;
   String idnacionalidad;
+  String nacionalidad;
 
   public ClaseListadoEntrenadores()
   {
@@ -49,5 +50,15 @@ public class ClaseListadoEntrenadores
   public void setIdnacionalidad(String newIdnacionalidad)
   {
     idnacionalidad = newIdnacionalidad;
+  }
+
+  public String getNacionalidad()
+  {
+    return nacionalidad;
+  }
+
+  public void setNacionalidad(String newNacionalidad)
+  {
+    nacionalidad = newNacionalidad;
   }
 }

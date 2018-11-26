@@ -152,7 +152,7 @@ public class _listadoEntrenadores extends com.orionserver.http.OrionHttpJspPage 
                     org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_7=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
                     __jsp_taghandler_7.setParent(__jsp_taghandler_2);
                     __jsp_taghandler_7.setName("tabla");
-                    __jsp_taghandler_7.setProperty("idnacionalidad");
+                    __jsp_taghandler_7.setProperty("nacionalidad");
                     __jsp_tag_starteval=__jsp_taghandler_7.doStartTag();
                     if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
                     {
@@ -165,7 +165,7 @@ public class _listadoEntrenadores extends com.orionserver.http.OrionHttpJspPage 
                   }
                   /*@lineinfo:generated-code*/
                   __ojsp_s_out.write(__jsp_StaticText.text[11]);
-                /*@lineinfo:translated-code*//*@lineinfo:48^74*/                } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                /*@lineinfo:translated-code*//*@lineinfo:48^72*/                } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
                 __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }

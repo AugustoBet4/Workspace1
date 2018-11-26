@@ -7,6 +7,7 @@ public class ClaseListadoPremios
   String categoria;
   String idparticipante;
   String idpartido;
+  String participante;
 
   public ClaseListadoPremios()
   {
@@ -60,5 +61,15 @@ public class ClaseListadoPremios
   public void setIdpartido(String newIdpartido)
   {
     idpartido = newIdpartido;
+  }
+
+  public String getParticipante()
+  {
+    return participante;
+  }
+
+  public void setParticipante(String newParticipante)
+  {
+    participante = newParticipante;
   }
 }

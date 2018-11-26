@@ -49,7 +49,7 @@
                     <bean:write name="tabla" property="email" />
                   </td>
                   <td>
-                    <bean:write name="tabla" property="idnacionalidad" />
+                    <bean:write name="tabla" property="nacionalidad" />
                   </td>
                 </tr>
               </logic:iterate>

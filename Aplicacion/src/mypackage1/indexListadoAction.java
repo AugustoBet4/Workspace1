@@ -38,7 +38,7 @@ public class indexListadoAction extends Action
     
     if(boton.equals("Arbitros")){
       try{
-        String cadena = "select * from arbitros order by 1";
+        String cadena = "select a.idarbitro, a.nombre, a.telefono, a.email, b.nacionalidad, b.idnacionalidad from arbitros a, nacionalidad b where a.idnacionalidad = b.idnacionalidad order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
@@ -47,6 +47,7 @@ public class indexListadoAction extends Action
           item.setNombre(rsConsulta.getString("nombre"));
           item.setTelefono(rsConsulta.getString("telefono"));
           item.setEmail(rsConsulta.getString("email"));
+          item.setNacionalidad(rsConsulta.getString("nacionalidad"));
           item.setIdnacionalidad(rsConsulta.getString("idnacionalidad"));
           items.add(item);
           System.out.println("Paso ..");
@@ -63,7 +64,7 @@ public class indexListadoAction extends Action
     }
     if(boton.equals("Entrenadores")){
        try{
-        String cadena = "select * from entrenadores order by 1";
+        String cadena = "select a.identrenadores, a.nombre, a.edad, b.nacionalidad, b.idnacionalidad from entrenadores a, nacionalidad b where a.idnacionalidad = b.idnacionalidad order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
@@ -71,6 +72,7 @@ public class indexListadoAction extends Action
           item.setIdentrenadores(rsConsulta.getString("identrenadores"));
           item.setNombre(rsConsulta.getString("nombre"));
           item.setEdad(rsConsulta.getString("edad"));
+          item.setNacionalidad(rsConsulta.getString("nacionalidad"));
           item.setIdnacionalidad(rsConsulta.getString("idnacionalidad"));
           items.add(item);
           System.out.println("Paso ..");
@@ -244,7 +246,7 @@ public class indexListadoAction extends Action
     }
     if(boton.equals("Premios")){
        try{
-        String cadena = "select * from PREMIOS order by 1";
+        String cadena = "select a.idpremios, a.cantidad, a.categoria, b.nombre, b.idparticipantes, a.idpartido from PREMIOS a, participantes b where a.idparticipante=b.idparticipantes  order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
@@ -252,7 +254,8 @@ public class indexListadoAction extends Action
           item.setIdpremios(rsConsulta.getString("idpremios"));
           item.setCantidad(rsConsulta.getString("cantidad"));
           item.setCategoria(rsConsulta.getString("categoria"));
-          item.setIdparticipante(rsConsulta.getString("idparticipante"));
+          item.setParticipante(rsConsulta.getString("nombre"));
+          item.setIdparticipante(rsConsulta.getString("idparticipantes"));
           item.setIdpartido(rsConsulta.getString("idpartido"));
           items.add(item);
           System.out.println("Paso ..");
@@ -294,13 +297,15 @@ public class indexListadoAction extends Action
     }
     if(boton.equals("Participantes/Entrenadores")){
       try{
-        String cadena = "select * from PARTICIPANTES_HAS_ENTRENADORES order by 1";
+        String cadena = "select	a.nombre as participante, c.idparticipante, b.nombre as entrenador, c.identrenadores from participantes a, entrenadores b, participantes_has_entrenadores c where c.idparticipante = a.idparticipantes and c.identrenadores = b.identrenadores order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList(); 
         while (rsConsulta.next()){
           ClaseListadoParticipantesEntrenadores item = new ClaseListadoParticipantesEntrenadores();
           item.setIdparticipante(rsConsulta.getString("idparticipante"));
+          item.setParticipante(rsConsulta.getString("participante"));
           item.setIdentrenadores(rsConsulta.getString("identrenadores"));
+          item.setEntrenador(rsConsulta.getString("entrenador"));
           items.add(item);
           System.out.println("Paso ..");
         }

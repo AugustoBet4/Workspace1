@@ -46,7 +46,7 @@ Grand Slam - Listado de los premios
                     <bean:write name="tabla" property="categoria" />
                   </td>
                   <td>
-                    <bean:write name="tabla" property="idparticipante" />
+                    <bean:write name="tabla" property="participante" />
                   </td>
                   <td>
                     <bean:write name="tabla" property="idpartido" />

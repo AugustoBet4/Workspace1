@@ -33,7 +33,7 @@
                   <tr>
                     <td>
                       <html:submit property="cod" >
-                        <bean:write name="tabla" property="idparticipantes" />
+                        <bean:write name="tabla" property="idparticipante" />
                       </html:submit>
                     </td>
                     <td>

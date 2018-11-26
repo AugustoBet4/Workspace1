@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'windows-1252'?>
 <!DOCTYPE orion-application PUBLIC "-//Evermind//DTD J2EE Application runtime 1.2//EN" "http://xmlns.oracle.com/ias/dtds/orion-application.dtd">
 <orion-application>
-   <web-module id="Workspace1-Aplicacion-webapp" path="C:\TallerProgra\workspace1\Aplicacion\public_html"/>
+   <web-module id="Workspace1-Aplicacion-webapp" path="C:\Users\GuTo\Desktop\Projects\Workspace1\Aplicacion\public_html"/>
   <log>
     <file path="Workspace1-oc4j-app.log"/>
   </log>
-   <data-sources path="C:\TallerProgra\workspace1\Workspace1-data-sources.xml"/>
+   <data-sources path="C:\Users\GuTo\Desktop\Projects\Workspace1\Workspace1-data-sources.xml"/>
 </orion-application>

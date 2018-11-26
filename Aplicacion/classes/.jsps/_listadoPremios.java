@@ -152,7 +152,7 @@ public class _listadoPremios extends com.orionserver.http.OrionHttpJspPage {
                     org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_7=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
                     __jsp_taghandler_7.setParent(__jsp_taghandler_2);
                     __jsp_taghandler_7.setName("tabla");
-                    __jsp_taghandler_7.setProperty("idparticipante");
+                    __jsp_taghandler_7.setProperty("participante");
                     __jsp_tag_starteval=__jsp_taghandler_7.doStartTag();
                     if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
                     {

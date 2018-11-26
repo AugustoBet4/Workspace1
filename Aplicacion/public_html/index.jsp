@@ -34,7 +34,6 @@
                   <html:submit value="Partido" styleClass="btn btn-outline-success mt-1" property="boton" />
                   <html:submit value="Premios" styleClass="btn btn-outline-success mt-1" property="boton" />
                   <html:submit value="Resultados" styleClass="btn btn-outline-success mt-1" property="boton" />
-                  <html:submit value="Participantes-Entrenadores" styleClass="btn btn-outline-success mt-1" property="boton" />
                 </html:form>
               </div>
             </div>
@@ -52,7 +51,6 @@
                   <html:submit value="Partido" styleClass="btn btn-outline-warning mt-1" property="boton" />
                   <html:submit value="Premios" styleClass="btn btn-outline-warning mt-1" property="boton" />
                   <html:submit value="Resultados" styleClass="btn btn-outline-warning mt-1" property="boton" />
-                  <html:submit value="Participantes/Entrenadores" styleClass="btn btn-outline-warning mt-1" property="boton" />
                 </html:form>
               </div>
             </div>
@@ -70,7 +68,6 @@
                   <html:submit value="Partido" styleClass="btn btn-outline-danger mt-1" property="boton" />
                   <html:submit value="Premios" styleClass="btn btn-outline-danger mt-1" property="boton" />
                   <html:submit value="Resultados" styleClass="btn btn-outline-danger mt-1" property="boton" />
-                  <html:submit value="Participantes/Entrenadores" styleClass="btn btn-outline-danger mt-1" property="boton" />
                 </html:form>
               </div>
             </div>

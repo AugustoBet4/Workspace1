@@ -10,14 +10,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <title>
-      Grandslam - Listado Locaciones
+      Grandslam - Listado Participantes
     </title>
   </head>
   <body>
     <div class="container">
       <div class="card mt-3">
         <h1 class="card-header">
-          Grand Slam - Listado Locaciones
+          Grand Slam - Listado Participantes
         </h1>
         <div class="card-body">
           <div class="row justify-content-md-center">

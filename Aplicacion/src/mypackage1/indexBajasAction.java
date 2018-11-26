@@ -38,7 +38,7 @@ public class indexBajasAction extends Action
     
     if(boton.equals("Arbitros")){
       try{
-        String cadena = "select * from arbitros order by 1";
+        String cadena = "select a.idarbitro, a.nombre, a.telefono, a.email, b.nacionalidad from arbitros a, nacionalidad b where a.idnacionalidad = b.idnacionalidad order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
@@ -47,7 +47,7 @@ public class indexBajasAction extends Action
           item.setNombre(rsConsulta.getString("nombre"));
           item.setTelefono(rsConsulta.getString("telefono"));
           item.setEmail(rsConsulta.getString("email"));
-          item.setIdnacionalidad(rsConsulta.getString("idnacionalidad"));
+          item.setIdnacionalidad(rsConsulta.getString("nacionalidad"));
           items.add(item);
           System.out.println("Paso ..");
         }
@@ -63,7 +63,7 @@ public class indexBajasAction extends Action
     }
     if(boton.equals("Entrenadores")){
        try{
-        String cadena = "select * from entrenadores order by 1";
+        String cadena = "select a.identrenadores, a.nombre, a.edad, b.nacionalidad from entrenadores a, nacionalidad b where a.idnacionalidad = b.idnacionalidad order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
@@ -71,7 +71,7 @@ public class indexBajasAction extends Action
           item.setIdentrenadores(rsConsulta.getString("identrenadores"));
           item.setNombre(rsConsulta.getString("nombre"));
           item.setEdad(rsConsulta.getString("edad"));
-          item.setIdnacionalidad(rsConsulta.getString("idnacionalidad"));
+          item.setIdnacionalidad(rsConsulta.getString("nacionalidad"));
           items.add(item);
           System.out.println("Paso ..");
         }
@@ -213,18 +213,19 @@ public class indexBajasAction extends Action
     }
     if(boton.equals("Partido")){
        try{
-        String cadena = "select * from PARTIDO order by 1";
+        String cadena = "select a.idpartido, b.locacion, c.nombre as participante1, d.nombre as participante2, e.nombre as arbitro, f.modalidad, g.nombre||' '||g.anio as grandslam from partido a, locaciones b, participantes c, participantes d, arbitros e, modalidades f, grandslam g where a.idlocaciones = b.idlocaciones and a.idparticipantes1 = c.idparticipantes and a.idparticipantes2 = d.idparticipantes and a.idarbitros = e.idarbitro and a.idmodalidades = f.idmodalidades and a.idgrandslam = g.idgrandslam order by 1";
         rsConsulta = conn.getData(cadena);
+        System.out.println(rsConsulta);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
           ClaseListadoPartidos item = new ClaseListadoPartidos();
           item.setIdpartido(rsConsulta.getString("idpartido"));
-          item.setIdlocaciones(rsConsulta.getString("idlocaciones"));
-          item.setIdparticipantes1(rsConsulta.getString("idparticipantes1"));
-          item.setIdparticipantes2(rsConsulta.getString("idparticipantes2"));
-          item.setIdarbitros(rsConsulta.getString("idarbitros"));
-          item.setIdmodalidades(rsConsulta.getString("idmodalidades"));
-          item.setIdgrandslam(rsConsulta.getString("idgrandslam"));
+          item.setIdlocaciones(rsConsulta.getString("locacion"));
+          item.setIdparticipantes1(rsConsulta.getString("participante1"));
+          item.setIdparticipantes2(rsConsulta.getString("participante2"));
+          item.setIdarbitros(rsConsulta.getString("arbitro"));
+          item.setIdmodalidades(rsConsulta.getString("modalidad"));
+          item.setIdgrandslam(rsConsulta.getString("grandslam"));
           items.add(item);
           System.out.println("Paso ..");
         }
@@ -242,7 +243,7 @@ public class indexBajasAction extends Action
     }
     if(boton.equals("Premios")){
        try{
-        String cadena = "select * from PREMIOS order by 1";
+        String cadena = "select a.idpremios, a.cantidad, a.categoria, b.nombre, a.idpartido from PREMIOS a, participantes b where a.idparticipante=b.idparticipantes  order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
@@ -250,7 +251,7 @@ public class indexBajasAction extends Action
           item.setIdpremios(rsConsulta.getString("idpremios"));
           item.setCantidad(rsConsulta.getString("cantidad"));
           item.setCategoria(rsConsulta.getString("categoria"));
-          item.setIdparticipante(rsConsulta.getString("idparticipante"));
+          item.setIdparticipante(rsConsulta.getString("nombre"));
           item.setIdpartido(rsConsulta.getString("idpartido"));
           items.add(item);
           System.out.println("Paso ..");
@@ -292,13 +293,13 @@ public class indexBajasAction extends Action
     }
     if(boton.equals("Participantes/Entrenadores")){
       try{
-        String cadena = "select	a.\"nombre\" as idparticipante, b.\"nombre\" as identrenadores from participantes a, entrenadores b, participantes_has_entrenadores c where c.\"idparticipante\"=a.\"idparticipantes\" and c.\"identrenadores\"=b.\"identrenadores\" ";
+        String cadena = "select	a.nombre as participante, b.nombre as entrenador from participantes a, entrenadores b, participantes_has_entrenadores c where c.idparticipante = a.idparticipantes and c.identrenadores = b.identrenadores ";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList(); 
         while (rsConsulta.next()){
           ClaseListadoParticipantesEntrenadores item = new ClaseListadoParticipantesEntrenadores();
-          item.setIdparticipante(rsConsulta.getString("idparticipante"));
-          item.setIdentrenadores(rsConsulta.getString("identrenadores"));
+          item.setIdparticipante(rsConsulta.getString("participante"));
+          item.setIdentrenadores(rsConsulta.getString("entrenador"));
           items.add(item);
           System.out.println("Paso ..");
         }

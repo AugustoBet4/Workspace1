@@ -4,6 +4,8 @@ public class ClaseListadoParticipantesEntrenadores
 {
   String idparticipante;
   String identrenadores;
+  String participante;
+  String entrenador;
 
   public ClaseListadoParticipantesEntrenadores()
   {
@@ -28,4 +30,27 @@ public class ClaseListadoParticipantesEntrenadores
   {
     identrenadores = newIdentrenadores;
   }
+
+  public String getParticipante()
+  {
+    return participante;
+  }
+
+  public void setParticipante(String newParticipante)
+  {
+    participante = newParticipante;
+  }
+
+  public String getEntrenador()
+  {
+    return entrenador;
+  }
+
+  public void setEntrenador(String newEntrenador)
+  {
+    entrenador = newEntrenador;
+  }
+
+
+
 }

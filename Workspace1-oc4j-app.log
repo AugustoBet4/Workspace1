@@ -7898,3 +7898,420 @@ javax.servlet.jsp.JspException: No getter method for property idlocacion of bean
 26/11/18 8:24 Workspace1-Aplicacion-webapp: JDevOJSP: init
 26/11/18 8:24 Workspace1-Aplicacion-webapp: action: init
 26/11/18 8:24 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:41 PM Started
+11/26/18 4:41 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:41 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:41 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:48 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 4:48 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:48 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:48 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:48 PM Started
+11/26/18 4:48 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:48 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:48 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:49 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:49 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:49 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:49 PM Started
+11/26/18 4:49 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:49 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:49 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:52 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:52 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:52 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:55 PM Started
+11/26/18 4:55 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:55 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:55 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:55 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:55 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:55 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:55 PM Started
+11/26/18 4:55 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:55 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:55 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:56 PM Started
+11/26/18 4:56 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:56 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:56 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:59 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 4:59 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:59 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:59 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 4:59 PM Started
+11/26/18 4:59 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 4:59 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 4:59 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:00 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:00 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:00 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:02 PM Started
+11/26/18 5:02 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:02 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:02 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:02 PM Workspace1-Aplicacion-webapp: Servlet error
+javax.servlet.jsp.JspException: No getter method for property idparticipantes of bean tabla
+	java.lang.Object org.apache.struts.util.RequestUtils.lookup(javax.servlet.jsp.PageContext, java.lang.String, java.lang.String, java.lang.String)
+		RequestUtils.java:742
+	int org.apache.struts.taglib.bean.WriteTag.doStartTag()
+		WriteTag.java:290
+	void _bajas__ParticipantesEntrenadores._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		bajas_ParticipantesEntrenadores.jsp:36
+	void oracle.jsp.runtime.HttpJsp.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpJsp.java:139
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:317
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:209
+	void org.apache.struts.action.RequestProcessor.doForward(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:1014
+	void org.apache.struts.action.RequestProcessor.processForwardConfig(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.config.ForwardConfig)
+		RequestProcessor.java:417
+	void org.apache.struts.action.RequestProcessor.processActionForward(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.action.ActionForward)
+		RequestProcessor.java:390
+	void org.apache.struts.action.RequestProcessor.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:271
+	void org.apache.struts.action.ActionServlet.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:1292
+	void org.apache.struts.action.ActionServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:510
+	void javax.servlet.http.HttpServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		HttpServlet.java:760
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.processRequest(com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.ApplicationServerThread, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletRequest, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: Servlet error
+javax.servlet.jsp.JspException: No getter method for property idparticipantes of bean tabla
+	java.lang.Object org.apache.struts.util.RequestUtils.lookup(javax.servlet.jsp.PageContext, java.lang.String, java.lang.String, java.lang.String)
+		RequestUtils.java:742
+	int org.apache.struts.taglib.bean.WriteTag.doStartTag()
+		WriteTag.java:290
+	void _bajas__ParticipantesEntrenadores._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		bajas_ParticipantesEntrenadores.jsp:36
+	void oracle.jsp.runtime.HttpJsp.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpJsp.java:139
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:317
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:209
+	void org.apache.struts.action.RequestProcessor.doForward(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:1014
+	void org.apache.struts.action.RequestProcessor.processForwardConfig(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.config.ForwardConfig)
+		RequestProcessor.java:417
+	void org.apache.struts.action.RequestProcessor.processActionForward(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.action.ActionForward)
+		RequestProcessor.java:390
+	void org.apache.struts.action.RequestProcessor.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:271
+	void org.apache.struts.action.ActionServlet.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:1292
+	void org.apache.struts.action.ActionServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:510
+	void javax.servlet.http.HttpServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		HttpServlet.java:760
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.processRequest(com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.ApplicationServerThread, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletRequest, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+11/26/18 5:04 PM Started
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: Servlet error
+javax.servlet.jsp.JspException: No getter method for property idparticipantes of bean tabla
+	java.lang.Object org.apache.struts.util.RequestUtils.lookup(javax.servlet.jsp.PageContext, java.lang.String, java.lang.String, java.lang.String)
+		RequestUtils.java:742
+	int org.apache.struts.taglib.bean.WriteTag.doStartTag()
+		WriteTag.java:290
+	void _bajas__ParticipantesEntrenadores._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		bajas_ParticipantesEntrenadores.jsp:36
+	void oracle.jsp.runtime.HttpJsp.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpJsp.java:139
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:317
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:209
+	void org.apache.struts.action.RequestProcessor.doForward(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:1014
+	void org.apache.struts.action.RequestProcessor.processForwardConfig(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.config.ForwardConfig)
+		RequestProcessor.java:417
+	void org.apache.struts.action.RequestProcessor.processActionForward(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.action.ActionForward)
+		RequestProcessor.java:390
+	void org.apache.struts.action.RequestProcessor.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:271
+	void org.apache.struts.action.ActionServlet.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:1292
+	void org.apache.struts.action.ActionServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:510
+	void javax.servlet.http.HttpServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		HttpServlet.java:760
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.processRequest(com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.ApplicationServerThread, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletRequest, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:04 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:14 PM Started
+11/26/18 5:14 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:14 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:14 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:14 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 5:14 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:14 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:14 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:15 PM Started
+11/26/18 5:15 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:15 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:15 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:16 PM Started
+11/26/18 5:16 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:16 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:16 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:17 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 5:17 PM Started
+11/26/18 5:17 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:17 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:17 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:21 PM Started
+11/26/18 5:21 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:21 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:21 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:34 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 5:34 PM Started
+11/26/18 5:34 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:34 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:35 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:35 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 5:35 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:35 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:35 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:53 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 5:53 PM Started
+11/26/18 5:53 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:53 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:53 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 5:53 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 5:55 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 5:55 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 5:55 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 6:12 PM Started
+11/26/18 6:12 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 6:12 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 6:12 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 6:15 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 6:15 PM Started
+11/26/18 6:15 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 6:15 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 6:15 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 6:17 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 6:17 PM Started
+11/26/18 6:17 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 6:17 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 6:17 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 6:18 PM Workspace1-Aplicacion-webapp: Servlet error
+javax.servlet.jsp.JspException: No getter method for property nombre of bean tabla
+	java.lang.Object org.apache.struts.util.RequestUtils.lookup(javax.servlet.jsp.PageContext, java.lang.String, java.lang.String, java.lang.String)
+		RequestUtils.java:742
+	int org.apache.struts.taglib.bean.WriteTag.doStartTag()
+		WriteTag.java:290
+	void _listadoPremios._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		listadoPremios.jsp:49
+	void com.orionserver[Oracle9iAS (9.0.3.0.0) Containers for J2EE].http.OrionHttpJspPage.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		OrionHttpJspPage.java:56
+	void oracle.jsp.runtimev2.JspPageTable.compileAndServe(oracle.jsp.runtimev2.JspPageInfo, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspPageTable.java:537
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:272
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:209
+	void org.apache.struts.action.RequestProcessor.doForward(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:1014
+	void org.apache.struts.action.RequestProcessor.processForwardConfig(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.config.ForwardConfig)
+		RequestProcessor.java:417
+	void org.apache.struts.action.RequestProcessor.processActionForward(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.action.ActionForward)
+		RequestProcessor.java:390
+	void org.apache.struts.action.RequestProcessor.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:271
+	void org.apache.struts.action.ActionServlet.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:1292
+	void org.apache.struts.action.ActionServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:510
+	void javax.servlet.http.HttpServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		HttpServlet.java:760
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.processRequest(com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.ApplicationServerThread, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletRequest, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+11/26/18 6:19 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 6:19 PM Started
+11/26/18 6:19 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 6:19 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 6:19 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 6:19 PM Workspace1-Aplicacion-webapp: Servlet error
+javax.servlet.jsp.JspException: No getter method for property nombre of bean tabla
+	java.lang.Object org.apache.struts.util.RequestUtils.lookup(javax.servlet.jsp.PageContext, java.lang.String, java.lang.String, java.lang.String)
+		RequestUtils.java:742
+	int org.apache.struts.taglib.bean.WriteTag.doStartTag()
+		WriteTag.java:290
+	void _listadoPremios._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		listadoPremios.jsp:49
+	void oracle.jsp.runtime.HttpJsp.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpJsp.java:139
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:317
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:209
+	void org.apache.struts.action.RequestProcessor.doForward(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:1014
+	void org.apache.struts.action.RequestProcessor.processForwardConfig(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.config.ForwardConfig)
+		RequestProcessor.java:417
+	void org.apache.struts.action.RequestProcessor.processActionForward(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.struts.action.ActionForward)
+		RequestProcessor.java:390
+	void org.apache.struts.action.RequestProcessor.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		RequestProcessor.java:271
+	void org.apache.struts.action.ActionServlet.process(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:1292
+	void org.apache.struts.action.ActionServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		ActionServlet.java:510
+	void javax.servlet.http.HttpServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		HttpServlet.java:760
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.processRequest(com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.ApplicationServerThread, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletRequest, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+11/26/18 6:21 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+11/26/18 6:28 PM Started
+11/26/18 6:28 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 6:28 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 6:28 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 6:30 PM Started
+11/26/18 6:30 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 6:30 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 6:30 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 6:34 PM Started
+11/26/18 6:34 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 6:34 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 6:34 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 6:35 PM Started
+11/26/18 6:35 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 6:35 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 6:35 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+11/26/18 6:36 PM Started
+11/26/18 6:36 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
+11/26/18 6:36 PM Workspace1-Aplicacion-webapp: action: init
+11/26/18 6:36 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started

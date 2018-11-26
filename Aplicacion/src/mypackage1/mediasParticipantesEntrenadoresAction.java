@@ -39,7 +39,7 @@ public class mediasParticipantesEntrenadoresAction extends Action
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
-          request.getSession().setAttribute("idparticipantes", rsConsulta.getString("idparticipantes"));
+          request.getSession().setAttribute("idparticipantes", rsConsulta.getString("idparticipante"));
           request.getSession().setAttribute("identrenadores", rsConsulta.getString("identrenadores"));
       }
       return mapping.findForward("edit");

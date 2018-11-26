@@ -32,12 +32,12 @@
               <logic:iterate id="tabla" indexId="index" name="nn" property="tabla">
                 <tr>
                   <td>
-              <html:submit property="cod" >
+                      <html:submit property="cod">
                         <bean:write name="tabla" property="idparticipante" />
                       </html:submit>
                   </td>
                   <td>
-                    <bean:write name="tabla" property="identrenadores" />
+                    <bean:write name="tabla" property="entrenador" />
                   </td>
                 </tr>
               </logic:iterate>

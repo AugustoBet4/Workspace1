@@ -9,6 +9,12 @@ public class ClaseListadoPartidos
   String idarbitros;
   String idmodalidades;
   String idgrandslam;
+  String grandslam;
+  String locacion;
+  String modalidad;
+  String participante1;
+  String participante2;
+  String arbitro;
 
   public ClaseListadoPartidos()
   {
@@ -82,5 +88,65 @@ public class ClaseListadoPartidos
   public void setIdgrandslam(String newIdgrandslam)
   {
     idgrandslam = newIdgrandslam;
+  }
+
+  public String getGrandslam()
+  {
+    return grandslam;
+  }
+
+  public void setGrandslam(String newGrandslam)
+  {
+    grandslam = newGrandslam;
+  }
+
+  public String getLocacion()
+  {
+    return locacion;
+  }
+
+  public void setLocacion(String newLocacion)
+  {
+    locacion = newLocacion;
+  }
+
+  public String getModalidad()
+  {
+    return modalidad;
+  }
+
+  public void setModalidad(String newModalidad)
+  {
+    modalidad = newModalidad;
+  }
+
+  public String getParticipante1()
+  {
+    return participante1;
+  }
+
+  public void setParticipante1(String newParticipante1)
+  {
+    participante1 = newParticipante1;
+  }
+
+  public String getParticipante2()
+  {
+    return participante2;
+  }
+
+  public void setParticipante2(String newParticipante2)
+  {
+    participante2 = newParticipante2;
+  }
+
+  public String getArbitro()
+  {
+    return arbitro;
+  }
+
+  public void setArbitro(String newArbitro)
+  {
+    arbitro = newArbitro;
   }
 }
