@@ -216,19 +216,20 @@ public class indexListadoAction extends Action
       }
     }
     if(boton.equals("Partido")){
-       try{
-        String cadena = "select * from PARTIDO order by 1";
+      try{
+        String cadena = "select a.idpartido, b.locacion, c.nombre as participante1, d.nombre as participante2, e.nombre as arbitro, f.modalidad, g.nombre||' '||g.anio as grandslam from partido a, locaciones b, participantes c, participantes d, arbitros e, modalidades f, grandslam g where a.idlocaciones = b.idlocaciones and a.idparticipantes1 = c.idparticipantes and a.idparticipantes2 = d.idparticipantes and a.idarbitros = e.idarbitro and a.idmodalidades = f.idmodalidades and a.idgrandslam = g.idgrandslam order by 1";
         rsConsulta = conn.getData(cadena);
+        System.out.println(rsConsulta);
         ArrayList items = new ArrayList();
         while (rsConsulta.next()){
           ClaseListadoPartidos item = new ClaseListadoPartidos();
           item.setIdpartido(rsConsulta.getString("idpartido"));
-          item.setIdlocaciones(rsConsulta.getString("idlocaciones"));
-          item.setIdparticipantes1(rsConsulta.getString("idparticipantes1"));
-          item.setIdparticipantes2(rsConsulta.getString("idparticipantes2"));
-          item.setIdarbitros(rsConsulta.getString("idarbitros"));
-          item.setIdmodalidades(rsConsulta.getString("idmodalidades"));
-          item.setIdgrandslam(rsConsulta.getString("idgrandslam"));
+          item.setIdlocaciones(rsConsulta.getString("locacion"));
+          item.setIdparticipantes1(rsConsulta.getString("participante1"));
+          item.setIdparticipantes2(rsConsulta.getString("participante2"));
+          item.setIdarbitros(rsConsulta.getString("arbitro"));
+          item.setIdmodalidades(rsConsulta.getString("modalidad"));
+          item.setIdgrandslam(rsConsulta.getString("grandslam"));
           items.add(item);
           System.out.println("Paso ..");
         }

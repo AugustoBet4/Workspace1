@@ -8315,3 +8315,19 @@ javax.servlet.jsp.JspException: No getter method for property nombre of bean tab
 11/26/18 6:36 PM Workspace1-Aplicacion-webapp: JDevOJSP: init
 11/26/18 6:36 PM Workspace1-Aplicacion-webapp: action: init
 11/26/18 6:36 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+26/11/18 19:22 Started
+26/11/18 19:22 Workspace1-Aplicacion-webapp: JDevOJSP: init
+26/11/18 19:22 Workspace1-Aplicacion-webapp: action: init
+26/11/18 19:22 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+26/11/18 19:36 Started
+26/11/18 19:36 Workspace1-Aplicacion-webapp: JDevOJSP: init
+26/11/18 19:36 Workspace1-Aplicacion-webapp: action: init
+26/11/18 19:36 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+26/11/18 20:08 Started
+26/11/18 20:08 Workspace1-Aplicacion-webapp: JDevOJSP: init
+26/11/18 20:08 Workspace1-Aplicacion-webapp: action: init
+26/11/18 20:08 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+26/11/18 20:10 Started
+26/11/18 20:10 Workspace1-Aplicacion-webapp: JDevOJSP: init
+26/11/18 20:10 Workspace1-Aplicacion-webapp: action: init
+26/11/18 20:10 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
