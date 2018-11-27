@@ -48,10 +48,11 @@ public class _editNacionalidad extends oracle.jsp.runtime.HttpJsp {
 
       out.write(__jsp_StaticText.text[0]);
       out.write(__jsp_StaticText.text[1]);
-      /*@lineinfo:translated-code*//*@lineinfo:17^9*/      {
-        org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action styleClass");
+      /*@lineinfo:translated-code*//*@lineinfo:19^9*/      {
+        org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action onsubmit styleClass");
         __jsp_taghandler_1.setParent(null);
         __jsp_taghandler_1.setAction("/editNacionalidad");
+        __jsp_taghandler_1.setOnsubmit("return fParams( )");
         __jsp_taghandler_1.setStyleClass("form-group");
         __jsp_tag_starteval=__jsp_taghandler_1.doStartTag();
         if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
@@ -59,9 +60,10 @@ public class _editNacionalidad extends oracle.jsp.runtime.HttpJsp {
           do {
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[2]);
-            /*@lineinfo:translated-code*//*@lineinfo:22^19*/            {
-              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
+            /*@lineinfo:translated-code*//*@lineinfo:24^19*/            {
+              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag onkeypress property styleClass value");
               __jsp_taghandler_2.setParent(__jsp_taghandler_1);
+              __jsp_taghandler_2.setOnkeypress("EvaluateText('%d',this)");
               __jsp_taghandler_2.setProperty("id");
               __jsp_taghandler_2.setStyleClass("form-control-sm");
               __jsp_taghandler_2.setValue( OracleJspRuntime.toStr( session.getAttribute("idnacionalidad")));
@@ -79,7 +81,7 @@ public class _editNacionalidad extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[3]);
-            /*@lineinfo:translated-code*//*@lineinfo:31^19*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:33^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_3=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_3.setParent(__jsp_taghandler_1);
               __jsp_taghandler_3.setProperty("nacionalidad");
@@ -99,7 +101,7 @@ public class _editNacionalidad extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:37^15*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:39^15*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_4=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag styleClass value");
               __jsp_taghandler_4.setParent(__jsp_taghandler_1);
               __jsp_taghandler_4.setStyleClass("btn btn-success");
@@ -118,7 +120,7 @@ public class _editNacionalidad extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[5]);
-          /*@lineinfo:translated-code*//*@lineinfo:37^78*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+          /*@lineinfo:translated-code*//*@lineinfo:39^78*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
@@ -150,7 +152,7 @@ public class _editNacionalidad extends oracle.jsp.runtime.HttpJsp {
       text[0] = 
       "\n".toCharArray();
       text[1] = 
-      "\n<html>\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n    <title>\n      Edit\n    </title>\n  </head>\n  <body>\n    <div class=\"container\" style=\"margin-top: 3rem; margin-bottom: 3rem;\">\n      <div class=\"card\">\n        <h2 class=\"card-header\">Editar Nacionalidad\n        </h2>\n        <div class=\"card-body\">\n        ".toCharArray();
+      "\n<html>\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n    <title>\n      Edit\n    </title>\n  </head>\n<script language=\"JavaScript\" src=\"jscript/valida.js\"></script>\n<script language=\"JavaScript\" src=\"jscript/nacionalidad.js\"></script>\n  <body>\n    <div class=\"container\" style=\"margin-top: 3rem; margin-bottom: 3rem;\">\n      <div class=\"card\">\n        <h2 class=\"card-header\">Editar Nacionalidad\n        </h2>\n        <div class=\"card-body\">\n        ".toCharArray();
       text[2] = 
       "\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Codigo</h6>\n                  ".toCharArray();
       text[3] = 

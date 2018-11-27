@@ -21,7 +21,7 @@
               <div class="col-md">
                 <div class="form-group">
                   <h6>Codigo</h6>
-                  <html:text property="id" value='<%= session.getAttribute("idgrandslam") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)"/>
+                  <html:text property="id" value='<%= session.getAttribute("idgrandslam") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)" readonly="true" disabled="true"/>
                 </div>
               </div>
             </div>
