@@ -7,7 +7,7 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
 
-public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
+public class _listado__participantes extends com.orionserver.http.OrionHttpJspPage {
 
   public final String _globalsClassName = null;
 
@@ -30,27 +30,23 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
     PageContext pageContext = JspFactory.getDefaultFactory().getPageContext( this, request, response, null, true, JspWriter.DEFAULT_BUFFER, true);
     // Note: this is not emitted if the session directive == false
     HttpSession session = pageContext.getSession();
-    if (pageContext.getAttribute(OracleJspRuntime.JSP_REQUEST_REDIRECTED, PageContext.REQUEST_SCOPE) != null) {
-      pageContext.setAttribute(OracleJspRuntime.JSP_PAGE_DONTNOTIFY, "true", PageContext.PAGE_SCOPE);
-      JspFactory.getDefaultFactory().releasePageContext(pageContext);
-      return;
-}
     int __jsp_tag_starteval;
     ServletContext application = pageContext.getServletContext();
     JspWriter out = pageContext.getOut();
     _listado__participantes page = this;
     ServletConfig config = pageContext.getServletConfig();
 
+    com.evermind.server.http.JspCommonExtraWriter __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
     try {
       // global beans
       // end global beans
 
 
-      out.write(__jsp_StaticText.text[0]);
-      out.write(__jsp_StaticText.text[1]);
-      out.write(__jsp_StaticText.text[2]);
-      out.write(__jsp_StaticText.text[3]);
-      /*@lineinfo:translated-code*//*@lineinfo:24^13*/      {
+      __ojsp_s_out.write(__jsp_StaticText.text[0]);
+      __ojsp_s_out.write(__jsp_StaticText.text[1]);
+      __ojsp_s_out.write(__jsp_StaticText.text[2]);
+      __ojsp_s_out.write(__jsp_StaticText.text[3]);
+      /*@lineinfo:translated-code*//*@lineinfo:27^13*/      {
         org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action");
         __jsp_taghandler_1.setParent(null);
         __jsp_taghandler_1.setAction("/mediasParticipantes");
@@ -59,8 +55,8 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
         {
           do {
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:35^17*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[4]);
+            /*@lineinfo:translated-code*//*@lineinfo:38^17*/            {
               org.apache.struts.taglib.logic.IterateTag __jsp_taghandler_2=(org.apache.struts.taglib.logic.IterateTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.logic.IterateTag.class,"org.apache.struts.taglib.logic.IterateTag id indexId name property");
               __jsp_taghandler_2.setParent(__jsp_taghandler_1);
               __jsp_taghandler_2.setId("tabla");
@@ -73,12 +69,13 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_2,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                   tabla = (java.lang.Object) pageContext.findAttribute("tabla");
                   index = (java.lang.Integer) pageContext.findAttribute("index");
                   /*@lineinfo:generated-code*/
-                  out.write(__jsp_StaticText.text[5]);
-                  /*@lineinfo:translated-code*//*@lineinfo:38^23*/                  {
+                  __ojsp_s_out.write(__jsp_StaticText.text[5]);
+                  /*@lineinfo:translated-code*//*@lineinfo:41^23*/                  {
                     org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_3=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property");
                     __jsp_taghandler_3.setParent(__jsp_taghandler_2);
                     __jsp_taghandler_3.setProperty("cod");
@@ -86,10 +83,11 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
                     if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
                     {
                       out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_3,__jsp_tag_starteval,out);
+                      __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                       do {
                         /*@lineinfo:generated-code*/
-                        out.write(__jsp_StaticText.text[6]);
-                        /*@lineinfo:translated-code*//*@lineinfo:39^25*/                        {
+                        __ojsp_s_out.write(__jsp_StaticText.text[6]);
+                        /*@lineinfo:translated-code*//*@lineinfo:42^25*/                        {
                           org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_4=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
                           __jsp_taghandler_4.setParent(__jsp_taghandler_3);
                           __jsp_taghandler_4.setName("tabla");
@@ -105,17 +103,18 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
                           OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_4);
                         }
                         /*@lineinfo:generated-code*/
-                        out.write(__jsp_StaticText.text[7]);
-                      /*@lineinfo:translated-code*//*@lineinfo:39^66*/                      } while (__jsp_taghandler_3.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                        __ojsp_s_out.write(__jsp_StaticText.text[7]);
+                      /*@lineinfo:translated-code*//*@lineinfo:42^66*/                      } while (__jsp_taghandler_3.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                       out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                      __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                     }
                     if (__jsp_taghandler_3.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                       return;
                     OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_3);
                   }
                   /*@lineinfo:generated-code*/
-                  out.write(__jsp_StaticText.text[8]);
-                  /*@lineinfo:translated-code*//*@lineinfo:43^23*/                  {
+                  __ojsp_s_out.write(__jsp_StaticText.text[8]);
+                  /*@lineinfo:translated-code*//*@lineinfo:46^23*/                  {
                     org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_5=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
                     __jsp_taghandler_5.setParent(__jsp_taghandler_2);
                     __jsp_taghandler_5.setName("tabla");
@@ -131,8 +130,8 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
                     OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_5);
                   }
                   /*@lineinfo:generated-code*/
-                  out.write(__jsp_StaticText.text[9]);
-                  /*@lineinfo:translated-code*//*@lineinfo:46^23*/                  {
+                  __ojsp_s_out.write(__jsp_StaticText.text[9]);
+                  /*@lineinfo:translated-code*//*@lineinfo:49^23*/                  {
                     org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_6=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
                     __jsp_taghandler_6.setParent(__jsp_taghandler_2);
                     __jsp_taghandler_6.setName("tabla");
@@ -148,8 +147,8 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
                     OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_6);
                   }
                   /*@lineinfo:generated-code*/
-                  out.write(__jsp_StaticText.text[10]);
-                  /*@lineinfo:translated-code*//*@lineinfo:49^23*/                  {
+                  __ojsp_s_out.write(__jsp_StaticText.text[10]);
+                  /*@lineinfo:translated-code*//*@lineinfo:52^23*/                  {
                     org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_7=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
                     __jsp_taghandler_7.setParent(__jsp_taghandler_2);
                     __jsp_taghandler_7.setName("tabla");
@@ -165,8 +164,8 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
                     OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_7);
                   }
                   /*@lineinfo:generated-code*/
-                  out.write(__jsp_StaticText.text[11]);
-                  /*@lineinfo:translated-code*//*@lineinfo:52^23*/                  {
+                  __ojsp_s_out.write(__jsp_StaticText.text[11]);
+                  /*@lineinfo:translated-code*//*@lineinfo:55^23*/                  {
                     org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_8=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
                     __jsp_taghandler_8.setParent(__jsp_taghandler_2);
                     __jsp_taghandler_8.setName("tabla");
@@ -182,24 +181,25 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
                     OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_8);
                   }
                   /*@lineinfo:generated-code*/
-                  out.write(__jsp_StaticText.text[12]);
-                /*@lineinfo:translated-code*//*@lineinfo:52^74*/                } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                  __ojsp_s_out.write(__jsp_StaticText.text[12]);
+                /*@lineinfo:translated-code*//*@lineinfo:55^74*/                } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_2.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_2);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[13]);
-          /*@lineinfo:translated-code*//*@lineinfo:55^33*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+            __ojsp_s_out.write(__jsp_StaticText.text[13]);
+          /*@lineinfo:translated-code*//*@lineinfo:58^33*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
         OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_1);
       }
       /*@lineinfo:generated-code*/
-      out.write(__jsp_StaticText.text[14]);
+      __ojsp_s_out.write(__jsp_StaticText.text[14]);
 
 
     }
@@ -218,39 +218,39 @@ public class _listado__participantes extends oracle.jsp.runtime.HttpJsp {
 
   }
   private static class __jsp_StaticText {
-    private static final char text[][]=new char[15][];
+    private static final byte text[][]=new byte[15][];
     static {
       try {
       text[0] = 
-      "\n".toCharArray();
+      "\r\n".getBytes("Cp1252");
       text[1] = 
-      "\n".toCharArray();
+      "\r\n".getBytes("Cp1252");
       text[2] = 
-      "\n".toCharArray();
+      "\r\n".getBytes("Cp1252");
       text[3] = 
-      "\n<html>\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>\n    <title>\n      Grandslam - Listado Participantes\n    </title>\n  </head>\n  <body>\n    <div class=\"container\">\n      <div class=\"card mt-3\">\n        <h1 class=\"card-header\">\n          Grand Slam - Listado Participantes\n        </h1>\n        <div class=\"card-body\">\n          <div class=\"row justify-content-md-center\">\n            ".toCharArray();
+      "\r\n<html>\r\n  <head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\r\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\r\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\r\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>\r\n    <link rel=\"stylesheet\" href=\"css/estilos.css\" type=\"text/css\">\r\n    <title>\r\n      Grandslam - Listado Participantes\r\n    </title>\r\n    <script language=\"JavaScript\" src=\"jscript/jquery.js\"></script>\r\n    <script language=\"JavaScript\" src=\"jscript/lbajas.js\"></script>\r\n  </head>\r\n  <body>\r\n    <div class=\"container\">\r\n      <div class=\"card mt-3\">\r\n        <h1 class=\"card-header\">\r\n          Grand Slam - Listado Participantes\r\n        </h1>\r\n        <div class=\"card-body\">\r\n          <div class=\"row justify-content-md-center\">\r\n            ".getBytes("Cp1252");
       text[4] = 
-      "\n              <table class=\"table table-striped\">\n                <thead class=\"thead-dark\">\n                  <tr>\n                    <th scope=\"col\">Codigo</th>\n                    <th scope=\"col\">Nombre</th>\n                    <th scope=\"col\">Edad</th>\n                    <th scope=\"col\">Genero</th>\n                    <th scope=\"col\">Nacionalidad</th>\n                  </tr>\n                </thead>\n                ".toCharArray();
+      "\r\n              <table class=\"table table-striped\">\r\n                <thead class=\"thead-dark\">\r\n                  <tr>\r\n                    <th scope=\"col\">Codigo</th>\r\n                    <th scope=\"col\">Nombre</th>\r\n                    <th scope=\"col\">Edad</th>\r\n                    <th scope=\"col\">Genero</th>\r\n                    <th scope=\"col\">Nacionalidad</th>\r\n                  </tr>\r\n                </thead>\r\n                ".getBytes("Cp1252");
       text[5] = 
-      "\n                  <tr>\n                    <td>\n                      ".toCharArray();
+      "\r\n                  <tr>\r\n                    <td>\r\n                      ".getBytes("Cp1252");
       text[6] = 
-      "\n                        ".toCharArray();
+      "\r\n                        ".getBytes("Cp1252");
       text[7] = 
-      "\n                      ".toCharArray();
+      "\r\n                      ".getBytes("Cp1252");
       text[8] = 
-      "\n                    </td>\n                    <td>\n                      ".toCharArray();
+      "\r\n                    </td>\r\n                    <td>\r\n                      ".getBytes("Cp1252");
       text[9] = 
-      "\n                    </td>\n                    <td>\n                      ".toCharArray();
+      "\r\n                    </td>\r\n                    <td>\r\n                      ".getBytes("Cp1252");
       text[10] = 
-      "\n                    </td>\n                    <td>\n                      ".toCharArray();
+      "\r\n                    </td>\r\n                    <td>\r\n                      ".getBytes("Cp1252");
       text[11] = 
-      "\n                    </td>\n                    <td>\n                      ".toCharArray();
+      "\r\n                    </td>\r\n                    <td>\r\n                      ".getBytes("Cp1252");
       text[12] = 
-      "\n                    </td>\n                  </tr>\n                ".toCharArray();
+      "\r\n                    </td>\r\n                  </tr>\r\n                ".getBytes("Cp1252");
       text[13] = 
-      "\n              </table>\n            ".toCharArray();
+      "\r\n              </table>\r\n            ".getBytes("Cp1252");
       text[14] = 
-      "\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n\n".toCharArray();
+      "\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </body>\r\n</html>\r\n\r\n".getBytes("Cp1252");
       }
       catch (Throwable th) {
         System.err.println(th);

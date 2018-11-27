@@ -21,7 +21,7 @@
               <div class="col-md">
                 <div class="form-group">
                   <h6>Codigo</h6>
-                  <html:text property="id" value='<%= session.getAttribute("idgrandslam") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)" readonly="true" disabled="true"/>
+                  <html:text property="id" value='<%= session.getAttribute("idgrandslam") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)" readonly="true" />
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@
             <div class="row justify-content-md-center">
               <div class="col-md">
                 <div class="form-group">
-                  <h6>Año</h6>
+                  <h6>Aï¿½o</h6>
                   <html:text property="anio" value='<%= session.getAttribute("anio") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)"/>
                 </div>
               </div>

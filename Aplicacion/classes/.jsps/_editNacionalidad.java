@@ -61,10 +61,12 @@ public class _editNacionalidad extends oracle.jsp.runtime.HttpJsp {
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[2]);
             /*@lineinfo:translated-code*//*@lineinfo:24^19*/            {
-              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag onkeypress property styleClass value");
+              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag disabled onkeypress property readonly styleClass value");
               __jsp_taghandler_2.setParent(__jsp_taghandler_1);
+              __jsp_taghandler_2.setDisabled(true);
               __jsp_taghandler_2.setOnkeypress("EvaluateText('%d',this)");
               __jsp_taghandler_2.setProperty("id");
+              __jsp_taghandler_2.setReadonly(true);
               __jsp_taghandler_2.setStyleClass("form-control-sm");
               __jsp_taghandler_2.setValue( OracleJspRuntime.toStr( session.getAttribute("idnacionalidad")));
               __jsp_tag_starteval=__jsp_taghandler_2.doStartTag();

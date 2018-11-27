@@ -7,6 +7,8 @@
     <title>
       Edit
     </title>
+    <script language="JavaScript" src="jscript/valida.js"></script>
+    <script language="JavaScript" src="jscript/premios.js"></script>
   </head>
   <body>
     <div class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
@@ -14,12 +16,12 @@
         <h2 class="card-header">Editar Premios
         </h2>
         <div class="card-body">
-        <html:form action="/editPremios" styleClass="form-group">
+        <html:form action="/editPremios" styleClass="form-group" onsubmit="return fParams( )" >
             <div class="row justify-content-md-center">
               <div class="col-md">
                 <div class="form-group">
                   <h6>Codigo</h6>
-                  <html:text property="id" value='<%= session.getAttribute("idpremios") %>' styleClass="form-control-sm" />
+                  <html:text property="id" value='<%= session.getAttribute("idpremios") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)" readonly="true" />
                 </div>
               </div>
             </div>

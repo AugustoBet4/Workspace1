@@ -44,10 +44,11 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
 
       __ojsp_s_out.write(__jsp_StaticText.text[0]);
       __ojsp_s_out.write(__jsp_StaticText.text[1]);
-      /*@lineinfo:translated-code*//*@lineinfo:17^9*/      {
-        org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action styleClass");
+      /*@lineinfo:translated-code*//*@lineinfo:19^9*/      {
+        org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action onsubmit styleClass");
         __jsp_taghandler_1.setParent(null);
         __jsp_taghandler_1.setAction("/editParticipantes");
+        __jsp_taghandler_1.setOnsubmit("return fParams( )");
         __jsp_taghandler_1.setStyleClass("form-group");
         __jsp_tag_starteval=__jsp_taghandler_1.doStartTag();
         if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
@@ -55,10 +56,12 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
           do {
             /*@lineinfo:generated-code*/
             __ojsp_s_out.write(__jsp_StaticText.text[2]);
-            /*@lineinfo:translated-code*//*@lineinfo:22^19*/            {
-              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
+            /*@lineinfo:translated-code*//*@lineinfo:24^19*/            {
+              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag onkeypress property readonly styleClass value");
               __jsp_taghandler_2.setParent(__jsp_taghandler_1);
+              __jsp_taghandler_2.setOnkeypress("EvaluateText('%d',this)");
               __jsp_taghandler_2.setProperty("cod");
+              __jsp_taghandler_2.setReadonly(true);
               __jsp_taghandler_2.setStyleClass("form-control-sm");
               __jsp_taghandler_2.setValue( OracleJspRuntime.toStr( session.getAttribute("id")));
               __jsp_tag_starteval=__jsp_taghandler_2.doStartTag();
@@ -77,7 +80,7 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
             }
             /*@lineinfo:generated-code*/
             __ojsp_s_out.write(__jsp_StaticText.text[3]);
-            /*@lineinfo:translated-code*//*@lineinfo:31^19*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:33^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_3=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_3.setParent(__jsp_taghandler_1);
               __jsp_taghandler_3.setProperty("nombre");
@@ -99,7 +102,7 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
             }
             /*@lineinfo:generated-code*/
             __ojsp_s_out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:40^19*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:42^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_4=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_4.setParent(__jsp_taghandler_1);
               __jsp_taghandler_4.setProperty("edad");
@@ -121,7 +124,7 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
             }
             /*@lineinfo:generated-code*/
             __ojsp_s_out.write(__jsp_StaticText.text[5]);
-            /*@lineinfo:translated-code*//*@lineinfo:49^19*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:51^19*/            {
               org.apache.struts.taglib.html.SelectTag __jsp_taghandler_5=(org.apache.struts.taglib.html.SelectTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SelectTag.class,"org.apache.struts.taglib.html.SelectTag property styleClass value");
               __jsp_taghandler_5.setParent(__jsp_taghandler_1);
               __jsp_taghandler_5.setProperty("genero");
@@ -135,7 +138,7 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
                 do {
                   /*@lineinfo:generated-code*/
                   __ojsp_s_out.write(__jsp_StaticText.text[6]);
-                  /*@lineinfo:translated-code*//*@lineinfo:50^21*/                  {
+                  /*@lineinfo:translated-code*//*@lineinfo:52^21*/                  {
                     org.apache.struts.taglib.html.OptionTag __jsp_taghandler_6=(org.apache.struts.taglib.html.OptionTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.OptionTag.class,"org.apache.struts.taglib.html.OptionTag value");
                     __jsp_taghandler_6.setParent(__jsp_taghandler_5);
                     __jsp_taghandler_6.setValue("Masculino");
@@ -155,7 +158,7 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
                   }
                   /*@lineinfo:generated-code*/
                   __ojsp_s_out.write(__jsp_StaticText.text[7]);
-                  /*@lineinfo:translated-code*//*@lineinfo:51^21*/                  {
+                  /*@lineinfo:translated-code*//*@lineinfo:53^21*/                  {
                     org.apache.struts.taglib.html.OptionTag __jsp_taghandler_7=(org.apache.struts.taglib.html.OptionTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.OptionTag.class,"org.apache.struts.taglib.html.OptionTag value");
                     __jsp_taghandler_7.setParent(__jsp_taghandler_5);
                     __jsp_taghandler_7.setValue("Femenino");
@@ -175,7 +178,7 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
                   }
                   /*@lineinfo:generated-code*/
                   __ojsp_s_out.write(__jsp_StaticText.text[8]);
-                /*@lineinfo:translated-code*//*@lineinfo:51^53*/                } while (__jsp_taghandler_5.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                /*@lineinfo:translated-code*//*@lineinfo:53^53*/                } while (__jsp_taghandler_5.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
                 __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
@@ -185,7 +188,7 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
             }
             /*@lineinfo:generated-code*/
             __ojsp_s_out.write(__jsp_StaticText.text[9]);
-            /*@lineinfo:translated-code*//*@lineinfo:61^19*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:63^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_8=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_8.setParent(__jsp_taghandler_1);
               __jsp_taghandler_8.setProperty("nacionalidad");
@@ -207,7 +210,7 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
             }
             /*@lineinfo:generated-code*/
             __ojsp_s_out.write(__jsp_StaticText.text[10]);
-            /*@lineinfo:translated-code*//*@lineinfo:67^15*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:69^15*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_9=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag styleClass value");
               __jsp_taghandler_9.setParent(__jsp_taghandler_1);
               __jsp_taghandler_9.setStyleClass("btn btn-success");
@@ -228,7 +231,7 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
             }
             /*@lineinfo:generated-code*/
             __ojsp_s_out.write(__jsp_StaticText.text[11]);
-          /*@lineinfo:translated-code*//*@lineinfo:67^78*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+          /*@lineinfo:translated-code*//*@lineinfo:69^78*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
@@ -260,7 +263,7 @@ public class _editParticipantes extends com.orionserver.http.OrionHttpJspPage {
       text[0] = 
       "\r\n".getBytes("Cp1252");
       text[1] = 
-      "\r\n<html>\r\n  <head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\r\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n    <title>\r\n      Edit\r\n    </title>\r\n  </head>\r\n  <body>\r\n    <div class=\"container\" style=\"margin-top: 3rem; margin-bottom: 3rem;\">\r\n      <div class=\"card\">\r\n        <h2 class=\"card-header\">Edit Locacion\r\n        </h2>\r\n        <div class=\"card-body\">\r\n        ".getBytes("Cp1252");
+      "\r\n<html>\r\n  <head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\r\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n    <title>\r\n      Edit\r\n    </title>\r\n    <script language=\"JavaScript\" src=\"jscript/valida.js\"></script>\r\n    <script language=\"JavaScript\" src=\"jscript/participantes.js\"></script>\r\n  </head>\r\n  <body>\r\n    <div class=\"container\" style=\"margin-top: 3rem; margin-bottom: 3rem;\">\r\n      <div class=\"card\">\r\n        <h2 class=\"card-header\">Edit Locacion\r\n        </h2>\r\n        <div class=\"card-body\">\r\n        ".getBytes("Cp1252");
       text[2] = 
       "\r\n            <div class=\"row justify-content-md-center\">\r\n              <div class=\"col-md\">\r\n                <div class=\"form-group\">\r\n                  <h6>Codigo</h6>\r\n                  ".getBytes("Cp1252");
       text[3] = 

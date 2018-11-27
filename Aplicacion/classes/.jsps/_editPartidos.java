@@ -7,7 +7,7 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
 
-public class _editPartidos extends oracle.jsp.runtime.HttpJsp {
+public class _editPartidos extends com.orionserver.http.OrionHttpJspPage {
 
   public final String _globalsClassName = null;
 
@@ -30,56 +30,58 @@ public class _editPartidos extends oracle.jsp.runtime.HttpJsp {
     PageContext pageContext = JspFactory.getDefaultFactory().getPageContext( this, request, response, null, true, JspWriter.DEFAULT_BUFFER, true);
     // Note: this is not emitted if the session directive == false
     HttpSession session = pageContext.getSession();
-    if (pageContext.getAttribute(OracleJspRuntime.JSP_REQUEST_REDIRECTED, PageContext.REQUEST_SCOPE) != null) {
-      pageContext.setAttribute(OracleJspRuntime.JSP_PAGE_DONTNOTIFY, "true", PageContext.PAGE_SCOPE);
-      JspFactory.getDefaultFactory().releasePageContext(pageContext);
-      return;
-}
     int __jsp_tag_starteval;
     ServletContext application = pageContext.getServletContext();
     JspWriter out = pageContext.getOut();
     _editPartidos page = this;
     ServletConfig config = pageContext.getServletConfig();
 
+    com.evermind.server.http.JspCommonExtraWriter __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
     try {
       // global beans
       // end global beans
 
 
-      out.write(__jsp_StaticText.text[0]);
-      out.write(__jsp_StaticText.text[1]);
-      /*@lineinfo:translated-code*//*@lineinfo:17^9*/      {
-        org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action styleClass");
+      __ojsp_s_out.write(__jsp_StaticText.text[0]);
+      __ojsp_s_out.write(__jsp_StaticText.text[1]);
+      /*@lineinfo:translated-code*//*@lineinfo:19^9*/      {
+        org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action onsubmit styleClass");
         __jsp_taghandler_1.setParent(null);
         __jsp_taghandler_1.setAction("/editPartidos");
+        __jsp_taghandler_1.setOnsubmit("return fParams( )");
         __jsp_taghandler_1.setStyleClass("form-group");
         __jsp_tag_starteval=__jsp_taghandler_1.doStartTag();
         if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
         {
           do {
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[2]);
-            /*@lineinfo:translated-code*//*@lineinfo:22^19*/            {
-              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
+            __ojsp_s_out.write(__jsp_StaticText.text[2]);
+            /*@lineinfo:translated-code*//*@lineinfo:24^19*/            {
+              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag disabled onkeypress property readonly styleClass value");
               __jsp_taghandler_2.setParent(__jsp_taghandler_1);
+              __jsp_taghandler_2.setDisabled(true);
+              __jsp_taghandler_2.setOnkeypress("EvaluateText('%d',this)");
               __jsp_taghandler_2.setProperty("id");
+              __jsp_taghandler_2.setReadonly(true);
               __jsp_taghandler_2.setStyleClass("form-control-sm");
               __jsp_taghandler_2.setValue( OracleJspRuntime.toStr( session.getAttribute("idpartido")));
               __jsp_tag_starteval=__jsp_taghandler_2.doStartTag();
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_2,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_2.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_2);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[3]);
-            /*@lineinfo:translated-code*//*@lineinfo:31^19*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[3]);
+            /*@lineinfo:translated-code*//*@lineinfo:33^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_3=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_3.setParent(__jsp_taghandler_1);
               __jsp_taghandler_3.setProperty("idlocaciones");
@@ -89,17 +91,19 @@ public class _editPartidos extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_3,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_3.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_3.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_3);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:40^19*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[4]);
+            /*@lineinfo:translated-code*//*@lineinfo:42^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_4=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_4.setParent(__jsp_taghandler_1);
               __jsp_taghandler_4.setProperty("idparticipantes1");
@@ -109,17 +113,19 @@ public class _editPartidos extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_4,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_4.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_4.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_4);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[5]);
-            /*@lineinfo:translated-code*//*@lineinfo:48^19*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[5]);
+            /*@lineinfo:translated-code*//*@lineinfo:50^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_5=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_5.setParent(__jsp_taghandler_1);
               __jsp_taghandler_5.setProperty("idparticipantes2");
@@ -129,17 +135,19 @@ public class _editPartidos extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_5,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_5.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_5.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_5);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[6]);
-            /*@lineinfo:translated-code*//*@lineinfo:57^19*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[6]);
+            /*@lineinfo:translated-code*//*@lineinfo:59^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_6=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_6.setParent(__jsp_taghandler_1);
               __jsp_taghandler_6.setProperty("idarbitros");
@@ -149,17 +157,19 @@ public class _editPartidos extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_6,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_6.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_6.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_6);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[7]);
-            /*@lineinfo:translated-code*//*@lineinfo:65^19*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[7]);
+            /*@lineinfo:translated-code*//*@lineinfo:67^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_7=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_7.setParent(__jsp_taghandler_1);
               __jsp_taghandler_7.setProperty("idmodalidades");
@@ -169,17 +179,19 @@ public class _editPartidos extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_7,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_7.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_7.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_7);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[8]);
-            /*@lineinfo:translated-code*//*@lineinfo:73^19*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[8]);
+            /*@lineinfo:translated-code*//*@lineinfo:75^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_8=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_8.setParent(__jsp_taghandler_1);
               __jsp_taghandler_8.setProperty("idgrandslam");
@@ -189,17 +201,19 @@ public class _editPartidos extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_8,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_8.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_8.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_8);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[9]);
-            /*@lineinfo:translated-code*//*@lineinfo:80^15*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[9]);
+            /*@lineinfo:translated-code*//*@lineinfo:82^15*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_9=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag styleClass value");
               __jsp_taghandler_9.setParent(__jsp_taghandler_1);
               __jsp_taghandler_9.setStyleClass("btn btn-success");
@@ -208,24 +222,26 @@ public class _editPartidos extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_9,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_9.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_9.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_9);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[10]);
-          /*@lineinfo:translated-code*//*@lineinfo:80^78*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+            __ojsp_s_out.write(__jsp_StaticText.text[10]);
+          /*@lineinfo:translated-code*//*@lineinfo:82^78*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
         OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_1);
       }
       /*@lineinfo:generated-code*/
-      out.write(__jsp_StaticText.text[11]);
+      __ojsp_s_out.write(__jsp_StaticText.text[11]);
 
 
     }
@@ -244,33 +260,33 @@ public class _editPartidos extends oracle.jsp.runtime.HttpJsp {
 
   }
   private static class __jsp_StaticText {
-    private static final char text[][]=new char[12][];
+    private static final byte text[][]=new byte[12][];
     static {
       try {
       text[0] = 
-      "\n".toCharArray();
+      "\r\n".getBytes("Cp1252");
       text[1] = 
-      "\n<html>\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n    <title>\n      Edit\n    </title>\n  </head>\n  <body>\n    <div class=\"container\" style=\"margin-top: 3rem; margin-bottom: 3rem;\">\n      <div class=\"card\">\n        <h2 class=\"card-header\">Editar Partidos\n        </h2>\n        <div class=\"card-body\">\n        ".toCharArray();
+      "\r\n<html>\r\n  <head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\r\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n    <title>\r\n      Edit\r\n    </title>\r\n    <script language=\"JavaScript\" src=\"jscript/valida.js\"></script>\r\n    <script language=\"JavaScript\" src=\"jscript/editpartidos.js\"></script>\r\n  </head>\r\n  <body>\r\n    <div class=\"container\" style=\"margin-top: 3rem; margin-bottom: 3rem;\">\r\n      <div class=\"card\">\r\n        <h2 class=\"card-header\">Editar Partidos\r\n        </h2>\r\n        <div class=\"card-body\">\r\n        ".getBytes("Cp1252");
       text[2] = 
-      "\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Codigo</h6>\n                  ".toCharArray();
+      "\r\n            <div class=\"row justify-content-md-center\">\r\n              <div class=\"col-md\">\r\n                <div class=\"form-group\">\r\n                  <h6>Codigo</h6>\r\n                  ".getBytes("Cp1252");
       text[3] = 
-      "\n                </div>\n              </div>\n            </div>\n\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Locacion</h6>\n                  ".toCharArray();
+      "\r\n                </div>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"row justify-content-md-center\">\r\n              <div class=\"col-md\">\r\n                <div class=\"form-group\">\r\n                  <h6>Locacion</h6>\r\n                  ".getBytes("Cp1252");
       text[4] = 
-      "\n                </div>\n              </div>\n            </div>\n            \n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Participante 1</h6>\n                  ".toCharArray();
+      "\r\n                </div>\r\n              </div>\r\n            </div>\r\n            \r\n            <div class=\"row justify-content-md-center\">\r\n              <div class=\"col-md\">\r\n                <div class=\"form-group\">\r\n                  <h6>Participante 1</h6>\r\n                  ".getBytes("Cp1252");
       text[5] = 
-      "\n                </div>\n              </div>\n            </div>\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Participante 2</h6>\n                  ".toCharArray();
+      "\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"row justify-content-md-center\">\r\n              <div class=\"col-md\">\r\n                <div class=\"form-group\">\r\n                  <h6>Participante 2</h6>\r\n                  ".getBytes("Cp1252");
       text[6] = 
-      "\n                </div>\n              </div>\n            </div>\n            \n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Arbitro</h6>\n                  ".toCharArray();
+      "\r\n                </div>\r\n              </div>\r\n            </div>\r\n            \r\n            <div class=\"row justify-content-md-center\">\r\n              <div class=\"col-md\">\r\n                <div class=\"form-group\">\r\n                  <h6>Arbitro</h6>\r\n                  ".getBytes("Cp1252");
       text[7] = 
-      "\n                </div>\n              </div>\n            </div>\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Modalidad</h6>\n                  ".toCharArray();
+      "\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"row justify-content-md-center\">\r\n              <div class=\"col-md\">\r\n                <div class=\"form-group\">\r\n                  <h6>Modalidad</h6>\r\n                  ".getBytes("Cp1252");
       text[8] = 
-      "\n                </div>\n              </div>\n            </div>\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Grandslam</h6>\n                  ".toCharArray();
+      "\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <div class=\"row justify-content-md-center\">\r\n              <div class=\"col-md\">\r\n                <div class=\"form-group\">\r\n                  <h6>Grandslam</h6>\r\n                  ".getBytes("Cp1252");
       text[9] = 
-      "\n                </div>\n              </div>\n            </div>\n            \n          \n            <div class=\"form-group\">\n              ".toCharArray();
+      "\r\n                </div>\r\n              </div>\r\n            </div>\r\n            \r\n          \r\n            <div class=\"form-group\">\r\n              ".getBytes("Cp1252");
       text[10] = 
-      "\n            </div> \n          ".toCharArray();
+      "\r\n            </div> \r\n          ".getBytes("Cp1252");
       text[11] = 
-      "\n          \n        </div>\n      </div>\n    </div>\n  </body>\n</html>".toCharArray();
+      "\r\n          \r\n        </div>\r\n      </div>\r\n    </div>\r\n  </body>\r\n</html>".getBytes("Cp1252");
       }
       catch (Throwable th) {
         System.err.println(th);

@@ -7,19 +7,21 @@
     <title>
       Edit
     </title>
+    <script language="JavaScript" src="jscript/valida.js"></script>
+    <script language="JavaScript" src="jscript/participantes.js"></script>
   </head>
   <body>
     <div class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
       <div class="card">
-        <h2 class="card-header">Edit Locacion
+        <h2 class="card-header">Edit Participantes
         </h2>
         <div class="card-body">
-        <html:form action="/editParticipantes" styleClass="form-group">
+        <html:form action="/editParticipantes" styleClass="form-group" onsubmit="return fParams( )" >
             <div class="row justify-content-md-center">
               <div class="col-md">
                 <div class="form-group">
                   <h6>Codigo</h6>
-                  <html:text property="cod" value='<%= session.getAttribute("id") %>' styleClass="form-control-sm" />
+                  <html:text property="cod" value='<%= session.getAttribute("id") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)" readonly="true" />
                 </div>
               </div>
             </div>
