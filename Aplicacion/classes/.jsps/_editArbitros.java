@@ -61,12 +61,9 @@ public class _editArbitros extends oracle.jsp.runtime.HttpJsp {
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[2]);
             /*@lineinfo:translated-code*//*@lineinfo:24^19*/            {
-              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag onkeypress property styleClass value");
-              __jsp_taghandler_2.setParent(__jsp_taghandler_1);
-              __jsp_taghandler_2.setOnkeypress("EvaluateText('%d',this)");
               __jsp_taghandler_2.setProperty("id");
+              __jsp_taghandler_2.setReadonly(true);
               __jsp_taghandler_2.setStyleClass("form-control-sm");
-              __jsp_taghandler_2.setValue( OracleJspRuntime.toStr( session.getAttribute("idarbitro")));
               __jsp_tag_starteval=__jsp_taghandler_2.doStartTag();
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
@@ -81,7 +78,7 @@ public class _editArbitros extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[3]);
-            /*@lineinfo:translated-code*//*@lineinfo:33^19*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:32^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_3=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_3.setParent(__jsp_taghandler_1);
               __jsp_taghandler_3.setProperty("nombre");
@@ -101,7 +98,7 @@ public class _editArbitros extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:42^19*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:41^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_4=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag onkeypress property styleClass value");
               __jsp_taghandler_4.setParent(__jsp_taghandler_1);
               __jsp_taghandler_4.setOnkeypress("EvaluateText('%d',this)");
@@ -122,7 +119,7 @@ public class _editArbitros extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[5]);
-            /*@lineinfo:translated-code*//*@lineinfo:51^19*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:50^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_5=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property styleClass value");
               __jsp_taghandler_5.setParent(__jsp_taghandler_1);
               __jsp_taghandler_5.setProperty("email");
@@ -142,7 +139,7 @@ public class _editArbitros extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[6]);
-            /*@lineinfo:translated-code*//*@lineinfo:60^19*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:59^19*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_6=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag onkeypress property styleClass value");
               __jsp_taghandler_6.setParent(__jsp_taghandler_1);
               __jsp_taghandler_6.setOnkeypress("EvaluateText('%d',this)");
@@ -163,7 +160,7 @@ public class _editArbitros extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[7]);
-            /*@lineinfo:translated-code*//*@lineinfo:66^15*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:65^15*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_7=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag styleClass value");
               __jsp_taghandler_7.setParent(__jsp_taghandler_1);
               __jsp_taghandler_7.setStyleClass("btn btn-success");
@@ -182,7 +179,7 @@ public class _editArbitros extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[8]);
-          /*@lineinfo:translated-code*//*@lineinfo:66^78*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+          /*@lineinfo:translated-code*//*@lineinfo:65^78*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
@@ -218,7 +215,7 @@ public class _editArbitros extends oracle.jsp.runtime.HttpJsp {
       text[2] = 
       "\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Codigo</h6>\n                  ".toCharArray();
       text[3] = 
-      "\n                </div>\n              </div>\n            </div>\n\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Nombre</h6>\n                  ".toCharArray();
+      "\n                </div>\n              </div>\n            </div>\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Nombre</h6>\n                  ".toCharArray();
       text[4] = 
       "\n                </div>\n              </div>\n            </div>\n            \n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Telefono</h6>\n                  ".toCharArray();
       text[5] = 

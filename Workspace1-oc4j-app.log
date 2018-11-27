@@ -1076,7 +1076,7 @@ javax.servlet.jsp.JspException: Cannot find ActionMappings or ActionFormBeans co
 20/10/18 0:24 Workspace1-Aplicacion-webapp: JDevOJSP: init
 20/10/18 0:24 Workspace1-Aplicacion-webapp: action: init
 20/10/18 0:24 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-20/10/18 0:24 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Ronald\Desktop\Git\Proyectos\Workspace1\Aplicacion\public_html\altas_entrenadores.jsp (El sistema no puede encontrar el archivo especificado.
+20/10/18 0:24 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Ronald\Desktop\Git\Proyectos\Workspace1\Aplicacion\public_html\altas_entrenadores.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -1145,7 +1145,7 @@ javax.servlet.jsp.JspException: Cannot find ActionMappings or ActionFormBeans co
 20/10/18 0:25 Workspace1-Aplicacion-webapp: JDevOJSP: init
 20/10/18 0:25 Workspace1-Aplicacion-webapp: action: init
 20/10/18 0:25 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-20/10/18 0:25 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Ronald\Desktop\Git\Proyectos\Workspace1\Aplicacion\public_html\altas_entrenadores.jsp (El sistema no puede encontrar el archivo especificado.
+20/10/18 0:25 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Ronald\Desktop\Git\Proyectos\Workspace1\Aplicacion\public_html\altas_entrenadores.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -1214,7 +1214,7 @@ javax.servlet.jsp.JspException: Cannot find ActionMappings or ActionFormBeans co
 20/10/18 0:25 Workspace1-Aplicacion-webapp: JDevOJSP: init
 20/10/18 0:25 Workspace1-Aplicacion-webapp: action: init
 20/10/18 0:25 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-20/10/18 0:26 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Ronald\Desktop\Git\Proyectos\Workspace1\Aplicacion\public_html\altas_entrenadores.jsp (El sistema no puede encontrar el archivo especificado.
+20/10/18 0:26 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Ronald\Desktop\Git\Proyectos\Workspace1\Aplicacion\public_html\altas_entrenadores.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -1734,7 +1734,7 @@ javax.servlet.jsp.JspException: Cannot find ActionMappings or ActionFormBeans co
 20/10/18 21:07 Workspace1-Aplicacion-webapp: JDevOJSP: init
 20/10/18 21:07 Workspace1-Aplicacion-webapp: action: init
 20/10/18 21:07 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-20/10/18 21:07 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Ronald\Desktop\Git\Proyectos\Workspace1\Aplicacion\public_html\listado_arbitros.jsp (El sistema no puede encontrar el archivo especificado.
+20/10/18 21:07 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Ronald\Desktop\Git\Proyectos\Workspace1\Aplicacion\public_html\listado_arbitros.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -2164,7 +2164,7 @@ javax.servlet.jsp.JspException: No getter method for property resultado of bean 
 21/10/18 21:46 Workspace1-Aplicacion-webapp: JDevOJSP: init
 21/10/18 21:46 Workspace1-Aplicacion-webapp: action: init
 21/10/18 21:46 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-21/10/18 21:47 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\altasResultados.jsp (El sistema no puede encontrar el archivo especificado.
+21/10/18 21:47 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\altasResultados.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -2308,7 +2308,7 @@ javax.servlet.jsp.JspException: No getter method for property resultado of bean 
 21/10/18 21:52 Workspace1-Aplicacion-webapp: JDevOJSP: init
 21/10/18 21:52 Workspace1-Aplicacion-webapp: action: init
 21/10/18 21:52 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-21/10/18 21:55 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\listado_resultados.jsp (El sistema no puede encontrar el archivo especificado.
+21/10/18 21:55 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\listado_resultados.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -2469,7 +2469,7 @@ javax.servlet.jsp.JspException: Cannot retrieve definition for form bean null
 21/10/18 23:19 Workspace1-Aplicacion-webapp: JDevOJSP: init
 21/10/18 23:19 Workspace1-Aplicacion-webapp: action: init
 21/10/18 23:19 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-21/10/18 23:19 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\altas_partido.jsp (El sistema no puede encontrar el archivo especificado.
+21/10/18 23:19 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\altas_partido.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -3489,7 +3489,7 @@ javax.servlet.jsp.JspException: Cannot find bean under name ayuda
 22/10/18 16:42 Workspace1-Aplicacion-webapp: JDevOJSP: init
 22/10/18 16:42 Workspace1-Aplicacion-webapp: action: init
 22/10/18 16:42 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-22/10/18 16:42 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\listado_resultados.jsp (El sistema no puede encontrar el archivo especificado.
+22/10/18 16:42 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\listado_resultados.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -3620,7 +3620,7 @@ javax.servlet.jsp.JspException: No getter method for property locaciones of bean
 22/10/18 16:51 Workspace1-Aplicacion-webapp: JDevOJSP: init
 22/10/18 16:51 Workspace1-Aplicacion-webapp: action: init
 22/10/18 16:51 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-22/10/18 16:51 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\listadoPartido.jsp (El sistema no puede encontrar el archivo especificado.
+22/10/18 16:51 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\listadoPartido.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -4300,7 +4300,7 @@ javax.servlet.jsp.JspException: Cannot find bean nn in any scope
 23/10/18 17:47 Workspace1-Aplicacion-webapp: JDevOJSP: init
 23/10/18 17:47 Workspace1-Aplicacion-webapp: action: init
 23/10/18 17:47 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-23/10/18 17:51 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Ronald\Desktop\Git\Proyectos\Workspace1\Aplicacion\public_html\listado_participantes-entrenadores.jsp (El sistema no puede encontrar el archivo especificado.
+23/10/18 17:51 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Ronald\Desktop\Git\Proyectos\Workspace1\Aplicacion\public_html\listado_participantes-entrenadores.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -4568,7 +4568,7 @@ javax.servlet.jsp.JspException: Cannot find bean nn in any scope
 26/10/18 0:18 Workspace1-Aplicacion-webapp: JDevOJSP: init
 26/10/18 0:18 Workspace1-Aplicacion-webapp: action: init
 26/10/18 0:18 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-26/10/18 0:18 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\altas_participantes-entrenadores.jsp (El sistema no puede encontrar el archivo especificado.
+26/10/18 0:18 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: java.io.FileNotFoundException: C:\Users\Rodrigo\Desktop\Struts\Workspace1\Aplicacion\public_html\altas_participantes-entrenadores.jsp (El sistema no puede encontrar el archivo especificado.
 )
 	void java.io.FileInputStream.open(java.lang.String)
 		native code
@@ -6301,7 +6301,7 @@ java.lang.ClassCastException: mypackage1.bajasLocacionesForm
 25/11/18 1:32 Workspace1-Aplicacion-webapp: JDevOJSP: init
 25/11/18 1:32 Workspace1-Aplicacion-webapp: action: init
 25/11/18 1:32 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-25/11/18 1:32 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
+25/11/18 1:32 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
 	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
 		EvermindServletOutputStream.java:249
 	void com.evermind.server.http.EvermindJSPWriter.writeOut(byte[], int, int)
@@ -6343,7 +6343,7 @@ java.lang.ClassCastException: mypackage1.bajasLocacionesForm
 <HTML><BODY>
 <P> <H2  ALIGN=CENTER>Error JSP:</H2> <HR  ALIGN=CENTER> <P>
 <P><H3>URI de Solicitud:/Workspace1-Aplicacion-context-root/index.jsp</H3><P>
-<BR><H3>Excepción:</H3><PRE>
+<BR><H3>Excepciï¿½n:</H3><PRE>
 com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
 	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
 		EvermindServletOutputStream.java:249
@@ -7094,7 +7094,7 @@ javax.servlet.jsp.JspException: Cannot retrieve mapping for action /mediasArbitr
 26/11/18 6:37 Workspace1-Aplicacion-webapp: JDevOJSP: init
 26/11/18 6:37 Workspace1-Aplicacion-webapp: action: init
 26/11/18 6:37 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-26/11/18 6:38 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
+26/11/18 6:38 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
 	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
 		EvermindServletOutputStream.java:249
 	void com.evermind.server.http.EvermindJSPWriter.writeOut(byte[], int, int)
@@ -7160,7 +7160,7 @@ javax.servlet.jsp.JspException: Cannot retrieve mapping for action /mediasArbitr
 <HTML><BODY>
 <P> <H2  ALIGN=CENTER>Error JSP:</H2> <HR  ALIGN=CENTER> <P>
 <P><H3>URI de Solicitud:/Workspace1-Aplicacion-context-root/listadoArbitros.jsp</H3><P>
-<BR><H3>Excepción:</H3><PRE>
+<BR><H3>Excepciï¿½n:</H3><PRE>
 com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
 	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
 		EvermindServletOutputStream.java:249
@@ -7412,7 +7412,7 @@ java.lang.ClassCastException: mypackage1.bajasArbitrosForm
 26/11/18 7:02 Workspace1-Aplicacion-webapp: JDevOJSP: init
 26/11/18 7:02 Workspace1-Aplicacion-webapp: action: init
 26/11/18 7:02 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-26/11/18 7:02 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
+26/11/18 7:02 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
 	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
 		EvermindServletOutputStream.java:249
 	void com.evermind.server.http.EvermindJSPWriter.writeOut(byte[], int, int)
@@ -7454,7 +7454,7 @@ java.lang.ClassCastException: mypackage1.bajasArbitrosForm
 <HTML><BODY>
 <P> <H2  ALIGN=CENTER>Error JSP:</H2> <HR  ALIGN=CENTER> <P>
 <P><H3>URI de Solicitud:/Workspace1-Aplicacion-context-root/index.jsp</H3><P>
-<BR><H3>Excepción:</H3><PRE>
+<BR><H3>Excepciï¿½n:</H3><PRE>
 com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
 	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
 		EvermindServletOutputStream.java:249
@@ -7552,7 +7552,7 @@ java.lang.ClassCastException: mypackage1.bajasArbitrosForm
 26/11/18 7:24 Workspace1-Aplicacion-webapp: JDevOJSP: init
 26/11/18 7:24 Workspace1-Aplicacion-webapp: action: init
 26/11/18 7:24 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
-26/11/18 7:24 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
+26/11/18 7:24 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
 	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
 		EvermindServletOutputStream.java:249
 	void com.evermind.server.http.EvermindJSPWriter.writeOut(byte[], int, int)
@@ -7594,7 +7594,7 @@ java.lang.ClassCastException: mypackage1.bajasArbitrosForm
 <HTML><BODY>
 <P> <H2  ALIGN=CENTER>Error JSP:</H2> <HR  ALIGN=CENTER> <P>
 <P><H3>URI de Solicitud:/Workspace1-Aplicacion-context-root/index.jsp</H3><P>
-<BR><H3>Excepción:</H3><PRE>
+<BR><H3>Excepciï¿½n:</H3><PRE>
 com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
 	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
 		EvermindServletOutputStream.java:249
@@ -8807,6 +8807,42 @@ javax.servlet.jsp.JspException: No getter method available for property codigo f
 11/27/18 6:33 PM Workspace1-Aplicacion-webapp: action: init
 11/27/18 6:33 PM Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
 11/27/18 6:47 PM Workspace1-Aplicacion-webapp: JspServlet: unable to dispatch to requested page: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
+27/11/18 18:26 Started
+27/11/18 18:26 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 18:26 Workspace1-Aplicacion-webapp: action: init
+27/11/18 18:26 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 18:30 Started
+27/11/18 18:30 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 18:30 Workspace1-Aplicacion-webapp: action: init
+27/11/18 18:30 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 18:30 Started
+27/11/18 18:30 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 18:30 Workspace1-Aplicacion-webapp: action: init
+27/11/18 18:30 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 18:31 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 18:31 Workspace1-Aplicacion-webapp: action: init
+27/11/18 18:32 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 18:33 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 18:33 Workspace1-Aplicacion-webapp: action: init
+27/11/18 18:33 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 18:33 Started
+27/11/18 18:33 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+27/11/18 18:33 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 18:33 Workspace1-Aplicacion-webapp: action: init
+27/11/18 18:33 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 18:35 Started
+27/11/18 18:35 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 18:35 Workspace1-Aplicacion-webapp: action: init
+27/11/18 18:35 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 18:37 Started
+27/11/18 18:37 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 18:37 Workspace1-Aplicacion-webapp: action: init
+27/11/18 18:37 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 18:41 Started
+27/11/18 18:41 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 18:41 Workspace1-Aplicacion-webapp: action: init
+27/11/18 18:42 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 18:42 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la pï¿½gina solicitada: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
 	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
 		EvermindServletOutputStream.java:249
 	void com.evermind.server.http.EvermindJSPWriter.writeOut(byte[], int, int)
@@ -8819,6 +8855,8 @@ javax.servlet.jsp.JspException: No getter method available for property codigo f
 		OracleJspRuntime.java:1287
 	void _listadoArbitros._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 		listadoArbitros.jsp:55
+	void _index._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		index.jsp:70
 	void com.orionserver.http.OrionHttpJspPage.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
 		OrionHttpJspPage.java:56
 	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
@@ -8999,11 +9037,19 @@ com.evermind.server.http.HttpIOException: Connection aborted by peer: socket wri
 	void java.lang.Thread.run()
 		Thread.java:484
 
+<<<<<<< HEAD
 11/27/18 6:47 PM Workspace1-Aplicacion-webapp: OracleJSP:
 <HTML><BODY>
 <P> <H2  ALIGN=CENTER>JSP Error:</H2> <HR  ALIGN=CENTER> <P>
 <P><H3>Request URI:/Workspace1-Aplicacion-context-root/listadoArbitros.jsp</H3><P>
 <BR><H3>Exception:</H3><PRE>
+=======
+27/11/18 18:42 Workspace1-Aplicacion-webapp: OracleJSP:
+<HTML><BODY>
+<P> <H2  ALIGN=CENTER>Error JSP:</H2> <HR  ALIGN=CENTER> <P>
+<P><H3>URI de Solicitud:/Workspace1-Aplicacion-context-root/index.jsp</H3><P>
+<BR><H3>Excepciï¿½n:</H3><PRE>
+>>>>>>> c245995ba8bc0d1a9b5f17b134989ebf3f17a759
 com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
 	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
 		EvermindServletOutputStream.java:249
@@ -9015,6 +9061,7 @@ com.evermind.server.http.HttpIOException: Connection aborted by peer: socket wri
 		EvermindJSPWriter.java:313
 	void oracle.jsp.runtime.OracleJspRuntime.extraHandlePCFinally(javax.servlet.jsp.PageContext, boolean)
 		OracleJspRuntime.java:1287
+<<<<<<< HEAD
 	void _listadoArbitros._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 	[/listadoArbitros.jsp]
 		listadoArbitros.jsp:55
@@ -9025,6 +9072,16 @@ com.evermind.server.http.HttpIOException: Connection aborted by peer: socket wri
 		JspPageTable.java:537
 	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
 		JspPageTable.java:272
+=======
+	void _index._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+	[/index.jsp]
+		index.jsp:70
+	void com.orionserver.http.OrionHttpJspPage.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		OrionHttpJspPage.java:56
+		[SRC:/index.jsp:26]
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:317
+>>>>>>> c245995ba8bc0d1a9b5f17b134989ebf3f17a759
 	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 		JspServlet.java:465
 	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
@@ -9035,6 +9092,7 @@ com.evermind.server.http.HttpIOException: Connection aborted by peer: socket wri
 		ServletRequestDispatcher.java:721
 	void com.evermind.server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
 		ServletRequestDispatcher.java:306
+<<<<<<< HEAD
 	void com.evermind.server.http.ServletRequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
 		ServletRequestDispatcher.java:209
 	void org.apache.struts.action.RequestProcessor.doForward(java.lang.String, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
@@ -9057,6 +9115,8 @@ com.evermind.server.http.HttpIOException: Connection aborted by peer: socket wri
 		ServletRequestDispatcher.java:721
 	void com.evermind.server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
 		ServletRequestDispatcher.java:306
+=======
+>>>>>>> c245995ba8bc0d1a9b5f17b134989ebf3f17a759
 	boolean com.evermind.server.http.HttpRequestHandler.processRequest(com.evermind.server.ApplicationServerThread, com.evermind.server.http.EvermindHttpServletRequest, com.evermind.server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
 		HttpRequestHandler.java:767
 	void com.evermind.server.http.HttpRequestHandler.run(java.lang.Thread)
@@ -9072,3 +9132,8 @@ com.evermind.server.http.HttpIOException: Connection aborted by peer: socket wri
 <P><P><HR ALIGN=CENTER>
 </HTML></BODY>
 
+<<<<<<< HEAD
+=======
+27/11/18 18:42 Started
+27/11/18 18:42 Workspace1-Aplicacion-webapp: JDevOJSP: init
+>>>>>>> c245995ba8bc0d1a9b5f17b134989ebf3f17a759
