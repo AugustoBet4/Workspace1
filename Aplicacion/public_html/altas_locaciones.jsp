@@ -10,6 +10,8 @@
     <title>
       Grandslam - Alta Locaciones
     </title>
+  <script language="JavaScript" src="jscript/valida.js"></script>
+<script language="JavaScript" src="jscript/locaciones.js"></script>
   </head>
   <body>
     <div class="container">
@@ -18,13 +20,13 @@
           Grand Slam - Agregar Locaciones
         </h1>
         <div class="card-body">
-          <html:form action="/altasLocaciones" styleClass="form-group">
+          <html:form action="/altasLocaciones" styleClass="form-group" onsubmit="return fParams( )">
 
             <div class="row justify-content-md-center">
               <div class="col-md">
                 <div class="form-group">
                   <h6>ID</h6>
-                  <html:text property="id" styleClass="form-control" />
+                  <html:text property="id" styleClass="form-control" onkeypress="EvaluateText('%d',this)"/>
                 </div>
               </div>
             </div>

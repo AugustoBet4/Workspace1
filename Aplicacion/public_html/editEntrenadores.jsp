@@ -7,6 +7,9 @@
     <title>
       Edit
     </title>
+    
+  <script language="JavaScript" src="jscript/valida.js"></script>
+<script language="JavaScript" src="jscript/entrenador.js"></script>
   </head>
   <body>
     <div class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
@@ -14,12 +17,12 @@
         <h2 class="card-header">Editar Entrenadores
         </h2>
         <div class="card-body">
-        <html:form action="/editEntrenadores" styleClass="form-group">
+        <html:form action="/editEntrenadores" styleClass="form-group" onsubmit="return fParams( )">
             <div class="row justify-content-md-center">
               <div class="col-md">
                 <div class="form-group">
                   <h6>Codigo</h6>
-                  <html:text property="id" value='<%= session.getAttribute("identrenadores") %>' styleClass="form-control-sm" />
+                  <html:text property="id" value='<%= session.getAttribute("identrenadores") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)"/>
                 </div>
               </div>
             </div>
@@ -37,7 +40,7 @@
               <div class="col-md">
                 <div class="form-group">
                   <h6>Edad</h6>
-                  <html:text property="edad" value='<%= session.getAttribute("edad") %>' styleClass="form-control-sm" />
+                  <html:text property="edad" value='<%= session.getAttribute("edad") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)" />
                 </div>
               </div>
             </div>
@@ -46,7 +49,7 @@
               <div class="col-md">
                 <div class="form-group">
                   <h6>Nacionalidad</h6>
-                  <html:text property="idnacionalidad" value='<%= session.getAttribute("idnacionalidad") %>' styleClass="form-control-sm" />
+                  <html:text property="idnacionalidad" value='<%= session.getAttribute("idnacionalidad") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)"/>
                 </div>
               </div>
             </div>

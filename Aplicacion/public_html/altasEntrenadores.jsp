@@ -12,6 +12,8 @@
     </title>
   </head>
 
+<script language="JavaScript" src="jscript/valida.js"></script>
+<script language="JavaScript" src="jscript/entrenador.js"></script>
 <body>
 
 <div class="container">
@@ -20,13 +22,13 @@
             Grand Slam - Agregar Entrenador
           </h1>
           <div class="card-body">
-            <html:form action="/altasEntrenadores" styleClass="form-group">
+            <html:form action="/altasEntrenadores" styleClass="form-group" onsubmit="return fParams( )">
 
               <div class="row justify-content-md-center">
                 <div class="col-md">
                   <div class="form-group">
                     <h6>ID</h6>
-                    <html:text property="id" styleClass="form-control" />
+                    <html:text property="id" styleClass="form-control" onkeypress="EvaluateText('%d',this)"/>
                   </div>
                 </div>
               </div>
@@ -42,7 +44,7 @@
                 <div class="col-md">
                   <div class="form-group">
                     <h6>Edad</h6>
-                    <html:text property="edad" styleClass="form-control" />
+                    <html:text property="edad" styleClass="form-control" onkeypress="EvaluateText('%d',this)"/>
                   </div>
                 </div>
               </div>

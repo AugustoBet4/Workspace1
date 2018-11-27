@@ -11,6 +11,9 @@
       Grandslam - Alta Arbitro
     </title>
   </head>
+  
+<script language="JavaScript" src="jscript/valida.js"></script>
+<script language="JavaScript" src="jscript/arbitro.js"></script>
   <body>
 
    <div class="container">
@@ -19,13 +22,13 @@
             Grand Slam - Agregar Arbitro
           </h1>
           <div class="card-body">
-            <html:form action="/altasArbitros" styleClass="form-group">
+            <html:form action="/altasArbitros" styleClass="form-group" onsubmit="return fParams( )">
 
               <div class="row justify-content-md-center">
                 <div class="col-md">
                   <div class="form-group">
                     <h6>ID</h6>
-                    <html:text property="id" styleClass="form-control" />
+                    <html:text property="id" styleClass="form-control" onkeypress="EvaluateText('%d',this)"/>
                   </div>
                 </div>
               </div>
@@ -41,7 +44,7 @@
                 <div class="col-md">
                   <div class="form-group">
                     <h6>Telefono</h6>
-                    <html:text property="telefono" styleClass="form-control" />
+                    <html:text property="telefono" styleClass="form-control" onkeypress="EvaluateText('%d',this)"/>
                   </div>
                 </div>
               </div>

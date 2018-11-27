@@ -8,18 +8,20 @@
       Edit
     </title>
   </head>
+  <script language="JavaScript" src="jscript/valida.js"></script>
+<script language="JavaScript" src="jscript/locaciones.js"></script>
   <body>
     <div class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
       <div class="card">
         <h2 class="card-header">Edit Locacion
         </h2>
         <div class="card-body">
-        <html:form action="/editLocaciones" styleClass="form-group">
+        <html:form action="/editLocaciones" styleClass="form-group" onsubmit="return fParams( )">
             <div class="row justify-content-md-center">
               <div class="col-md">
                 <div class="form-group">
                   <h6>Codigo</h6>
-                  <html:text property="cod" value='<%= session.getAttribute("id") %>' styleClass="form-control-sm" />
+                  <html:text property="cod" value='<%= session.getAttribute("id") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)"/>
                 </div>
               </div>
             </div>
@@ -37,7 +39,7 @@
               <div class="col-md">
                 <div class="form-group">
                   <h6>Pais</h6>
-                  <html:text property="pais" value='<%= session.getAttribute("pais") %>' styleClass="form-control-sm" />
+                  <html:text property="pais" value='<%= session.getAttribute("pais") %>' styleClass="form-control-sm" onkeypress="EvaluateText('%d',this)"/>
                 </div>
               </div>
             </div>
