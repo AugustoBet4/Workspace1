@@ -10,6 +10,8 @@
     <title>
       Grandslam - Alta Participante
     </title>
+      <script language="JavaScript" src="jscript/valida.js"></script>
+      <script language="JavaScript" src="jscript/participantes.js"></script>
   </head>
   <body>
     <div class="container">
@@ -18,13 +20,13 @@
           Grand Slam - Agregar Participante
         </h1>
         <div class="card-body">
-          <html:form action="/altaParti" styleClass="form-group">
+          <html:form action="/altaParti" styleClass="form-group" onsubmit="return fParams( )" >
 
             <div class="row justify-content-md-center">
               <div class="col-md">
                 <div class="form-group">
                   <h6>ID</h6>
-                  <html:text property="id" styleClass="form-control" />
+                  <html:text property="id" styleClass="form-control" onkeypress="EvaluateText('%d',this)" />
                 </div>
               </div>
             </div>
