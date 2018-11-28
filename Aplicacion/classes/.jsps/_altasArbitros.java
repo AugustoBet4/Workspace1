@@ -234,29 +234,29 @@ public class _altasArbitros extends com.orionserver.http.OrionHttpJspPage {
     static {
       try {
       text[0] = 
-      "\r\n".getBytes("Cp1252");
+      "\n".getBytes("Cp1252");
       text[1] = 
-      "\r\n<html>\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\r\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\r\n    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\r\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\r\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>\r\n    <title>\r\n      Grandslam - Alta Arbitro\r\n    </title>\r\n  </head>\r\n  \r\n<script language=\"JavaScript\" src=\"jscript/valida.js\"></script>\r\n<script language=\"JavaScript\" src=\"jscript/arbitro.js\"></script>\r\n  <body>\r\n\r\n   <div class=\"container\">\r\n        <div class=\"card mt-3\">\r\n          <h1 class=\"card-header\">\r\n            Grand Slam - Agregar Arbitro\r\n          </h1>\r\n          <div class=\"card-body\">\r\n            ".getBytes("Cp1252");
+      "\n<html>\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>\n    <title>\n      Grandslam - Alta Arbitro\n    </title>\n  </head>\n  \n<script language=\"JavaScript\" src=\"jscript/valida.js\"></script>\n<script language=\"JavaScript\" src=\"jscript/arbitro.js\"></script>\n  <body>\n\n   <div class=\"container\">\n        <div class=\"card mt-3\">\n          <h1 class=\"card-header\">\n            Grand Slam - Agregar Arbitro\n          </h1>\n          <div class=\"card-body\">\n            ".getBytes("Cp1252");
       text[2] = 
-      "\r\n\r\n              <div class=\"row justify-content-md-center\">\r\n                <div class=\"col-md\">\r\n                  <div class=\"form-group\">\r\n                    <h6>ID</h6>\r\n                    ".getBytes("Cp1252");
+      "\n\n              <div class=\"row justify-content-md-center\">\n                <div class=\"col-md\">\n                  <div class=\"form-group\">\n                    <h6>ID</h6>\n                    ".getBytes("Cp1252");
       text[3] = 
-      "\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row justify-content-md-center\">\r\n                <div class=\"col-md\">\r\n                  <div class=\"form-group\">\r\n                    <h6>Nombre</h6>\r\n                    ".getBytes("Cp1252");
+      "\n                  </div>\n                </div>\n              </div>\n              <div class=\"row justify-content-md-center\">\n                <div class=\"col-md\">\n                  <div class=\"form-group\">\n                    <h6>Nombre</h6>\n                    ".getBytes("Cp1252");
       text[4] = 
-      "\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row justify-content-md-center\">\r\n                <div class=\"col-md\">\r\n                  <div class=\"form-group\">\r\n                    <h6>Telefono</h6>\r\n                    ".getBytes("Cp1252");
+      "\n                  </div>\n                </div>\n              </div>\n              <div class=\"row justify-content-md-center\">\n                <div class=\"col-md\">\n                  <div class=\"form-group\">\n                    <h6>Telefono</h6>\n                    ".getBytes("Cp1252");
       text[5] = 
-      "\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row justify-content-md-center\">\r\n                <div class=\"col-md\">\r\n                  <div class=\"form-group\">\r\n                    <h6>Email</h6>\r\n                    ".getBytes("Cp1252");
+      "\n                  </div>\n                </div>\n              </div>\n              <div class=\"row justify-content-md-center\">\n                <div class=\"col-md\">\n                  <div class=\"form-group\">\n                    <h6>Email</h6>\n                    ".getBytes("Cp1252");
       text[6] = 
-      "\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"row justify-content-md-center\">\r\n                <div class=\"col-md\">\r\n                  <div class=\"form-group\">\r\n                    <h6>Nacionalidad</h6>\r\n                    ".getBytes("Cp1252");
+      "\n                  </div>\n                </div>\n              </div>\n              <div class=\"row justify-content-md-center\">\n                <div class=\"col-md\">\n                  <div class=\"form-group\">\n                    <h6>Nacionalidad</h6>\n                    ".getBytes("Cp1252");
       text[7] = 
-      "\r\n                      ".getBytes("Cp1252");
+      "\n                      ".getBytes("Cp1252");
       text[8] = 
-      "\r\n                    ".getBytes("Cp1252");
+      "\n                    ".getBytes("Cp1252");
       text[9] = 
-      "\r\n                  </div>\r\n                </div>\r\n              </div>\r\n           \r\n              <div class=\"form-group\">\r\n                ".getBytes("Cp1252");
+      "\n                  </div>\n                </div>\n              </div>\n           \n              <div class=\"form-group\">\n                ".getBytes("Cp1252");
       text[10] = 
-      "\r\n              </div>\r\n            \r\n            ".getBytes("Cp1252");
+      "\n              </div>\n            \n            ".getBytes("Cp1252");
       text[11] = 
-      "\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n  </body>\r\n</html>\r\n".getBytes("Cp1252");
+      "\n          </div>\n        </div>\n      </div>\n\n  </body>\n</html>\n".getBytes("Cp1252");
       }
       catch (Throwable th) {
         System.err.println(th);

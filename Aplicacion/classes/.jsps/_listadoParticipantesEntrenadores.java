@@ -50,7 +50,7 @@ public class _listadoParticipantesEntrenadores extends oracle.jsp.runtime.HttpJs
       out.write(__jsp_StaticText.text[1]);
       out.write(__jsp_StaticText.text[2]);
       out.write(__jsp_StaticText.text[3]);
-      /*@lineinfo:translated-code*//*@lineinfo:24^13*/      {
+      /*@lineinfo:translated-code*//*@lineinfo:27^13*/      {
         org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action");
         __jsp_taghandler_1.setParent(null);
         __jsp_taghandler_1.setAction("/mediasParticipantesEntrenadores");
@@ -60,7 +60,7 @@ public class _listadoParticipantesEntrenadores extends oracle.jsp.runtime.HttpJs
           do {
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:32^15*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:35^15*/            {
               org.apache.struts.taglib.logic.IterateTag __jsp_taghandler_2=(org.apache.struts.taglib.logic.IterateTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.logic.IterateTag.class,"org.apache.struts.taglib.logic.IterateTag id indexId name property");
               __jsp_taghandler_2.setParent(__jsp_taghandler_1);
               __jsp_taghandler_2.setId("tabla");
@@ -78,7 +78,7 @@ public class _listadoParticipantesEntrenadores extends oracle.jsp.runtime.HttpJs
                   index = (java.lang.Integer) pageContext.findAttribute("index");
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[5]);
-                  /*@lineinfo:translated-code*//*@lineinfo:35^23*/                  {
+                  /*@lineinfo:translated-code*//*@lineinfo:38^23*/                  {
                     org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_3=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property");
                     __jsp_taghandler_3.setParent(__jsp_taghandler_2);
                     __jsp_taghandler_3.setProperty("cod");
@@ -89,7 +89,7 @@ public class _listadoParticipantesEntrenadores extends oracle.jsp.runtime.HttpJs
                       do {
                         /*@lineinfo:generated-code*/
                         out.write(__jsp_StaticText.text[6]);
-                        /*@lineinfo:translated-code*//*@lineinfo:36^25*/                        {
+                        /*@lineinfo:translated-code*//*@lineinfo:39^25*/                        {
                           org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_4=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
                           __jsp_taghandler_4.setParent(__jsp_taghandler_3);
                           __jsp_taghandler_4.setName("tabla");
@@ -106,7 +106,7 @@ public class _listadoParticipantesEntrenadores extends oracle.jsp.runtime.HttpJs
                         }
                         /*@lineinfo:generated-code*/
                         out.write(__jsp_StaticText.text[7]);
-                      /*@lineinfo:translated-code*//*@lineinfo:36^78*/                      } while (__jsp_taghandler_3.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                      /*@lineinfo:translated-code*//*@lineinfo:39^78*/                      } while (__jsp_taghandler_3.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                       out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
                     }
                     if (__jsp_taghandler_3.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -115,7 +115,7 @@ public class _listadoParticipantesEntrenadores extends oracle.jsp.runtime.HttpJs
                   }
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[8]);
-                  /*@lineinfo:translated-code*//*@lineinfo:40^21*/                  {
+                  /*@lineinfo:translated-code*//*@lineinfo:43^21*/                  {
                     org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_5=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
                     __jsp_taghandler_5.setParent(__jsp_taghandler_2);
                     __jsp_taghandler_5.setName("tabla");
@@ -132,7 +132,7 @@ public class _listadoParticipantesEntrenadores extends oracle.jsp.runtime.HttpJs
                   }
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[9]);
-                /*@lineinfo:translated-code*//*@lineinfo:40^70*/                } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                /*@lineinfo:translated-code*//*@lineinfo:43^70*/                } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
               }
               if (__jsp_taghandler_2.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -141,7 +141,7 @@ public class _listadoParticipantesEntrenadores extends oracle.jsp.runtime.HttpJs
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[10]);
-          /*@lineinfo:translated-code*//*@lineinfo:43^31*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+          /*@lineinfo:translated-code*//*@lineinfo:46^31*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
@@ -177,7 +177,7 @@ public class _listadoParticipantesEntrenadores extends oracle.jsp.runtime.HttpJs
       text[2] = 
       "\n".toCharArray();
       text[3] = 
-      "\n<html>\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>\n    <title>\n      Grandslam - Listado Participantes-Entrenadores\n    </title>\n  </head>\n  <body>\n    <div class=\"container\">\n      <div class=\"card mt-3\">\n        <h1 class=\"card-header\">\n          Grand Slam - Listado Participantes-Entrenadores\n        </h1>\n        <div class=\"card-body\">\n          <div class=\"row justify-content-md-center\">\n            ".toCharArray();
+      "\n<html>\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>\n    <link rel=\"stylesheet\" href=\"css/estilos.css\" type=\"text/css\">\n    <title>\n      Grandslam - Listado Participantes-Entrenadores\n    </title>\n    <script language=\"JavaScript\" src=\"jscript/jquery.js\"></script>\n    <script language=\"JavaScript\" src=\"jscript/lbajas.js\"></script>\n  </head>\n  <body>\n    <div class=\"container\">\n      <div class=\"card mt-3\">\n        <h1 class=\"card-header\">\n          Grand Slam - Listado Participantes-Entrenadores\n        </h1>\n        <div class=\"card-body\">\n          <div class=\"row justify-content-md-center\">\n            ".toCharArray();
       text[4] = 
       "\n            <table class=\"table table-striped\">\n              <thead class=\"thead-dark\">\n                <tr>\n                  <th scope=\"col\">Participante</th>\n                  <th scope=\"col\">Entrenador</th>\n                </tr>\n              </thead>\n              ".toCharArray();
       text[5] = 

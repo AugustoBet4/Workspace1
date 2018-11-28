@@ -61,9 +61,8 @@ public class _editEntrenadores extends oracle.jsp.runtime.HttpJsp {
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[2]);
             /*@lineinfo:translated-code*//*@lineinfo:25^19*/            {
-              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag disabled onkeypress property readonly styleClass value");
+              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag onkeypress property readonly styleClass value");
               __jsp_taghandler_2.setParent(__jsp_taghandler_1);
-              __jsp_taghandler_2.setDisabled(true);
               __jsp_taghandler_2.setOnkeypress("EvaluateText('%d',this)");
               __jsp_taghandler_2.setProperty("id");
               __jsp_taghandler_2.setReadonly(true);

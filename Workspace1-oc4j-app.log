@@ -10456,3 +10456,130 @@ com.evermind.server.http.HttpIOException: Connection aborted by peer: socket wri
 <P><P><HR ALIGN=CENTER>
 </HTML></BODY>
 
+27/11/18 19:52 Started
+27/11/18 19:52 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 19:52 Workspace1-Aplicacion-webapp: action: init
+27/11/18 19:53 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 19:53 Workspace1-Aplicacion-webapp: JspServlet: No se ha podido distribuir a la página solicitada: com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
+	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
+		EvermindServletOutputStream.java:249
+	void com.evermind.server.http.EvermindJSPWriter.writeOut(byte[], int, int)
+		EvermindJSPWriter.java:424
+	void com.evermind.server.http.EvermindJSPWriter.jspflush()
+		EvermindJSPWriter.java:341
+	void com.evermind.server.http.EvermindJSPWriter.close()
+		EvermindJSPWriter.java:313
+	void oracle.jsp.runtime.OracleJspRuntime.extraHandlePCFinally(javax.servlet.jsp.PageContext, boolean)
+		OracleJspRuntime.java:1287
+	void _index._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		index.jsp:70
+	void com.orionserver.http.OrionHttpJspPage.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		OrionHttpJspPage.java:56
+	void oracle.jsp.runtimev2.JspPageTable.compileAndServe(oracle.jsp.runtimev2.JspPageInfo, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspPageTable.java:537
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:272
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind.server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind.server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind.server.http.HttpRequestHandler.processRequest(com.evermind.server.ApplicationServerThread, com.evermind.server.http.EvermindHttpServletRequest, com.evermind.server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind.server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind.server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+
+27/11/18 19:53 Workspace1-Aplicacion-webapp: OracleJSP:
+<HTML><BODY>
+<P> <H2  ALIGN=CENTER>Error JSP:</H2> <HR  ALIGN=CENTER> <P>
+<P><H3>URI de Solicitud:/Workspace1-Aplicacion-context-root/index.jsp</H3><P>
+<BR><H3>Excepción:</H3><PRE>
+com.evermind.server.http.HttpIOException: Connection aborted by peer: socket write error
+	void com.evermind.server.http.EvermindServletOutputStream.write(byte[], int, int, javax.servlet.jsp.JspWriter)
+		EvermindServletOutputStream.java:249
+	void com.evermind.server.http.EvermindJSPWriter.writeOut(byte[], int, int)
+		EvermindJSPWriter.java:424
+	void com.evermind.server.http.EvermindJSPWriter.jspflush()
+		EvermindJSPWriter.java:341
+	void com.evermind.server.http.EvermindJSPWriter.close()
+		EvermindJSPWriter.java:313
+	void oracle.jsp.runtime.OracleJspRuntime.extraHandlePCFinally(javax.servlet.jsp.PageContext, boolean)
+		OracleJspRuntime.java:1287
+	void _index._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+	[/index.jsp]
+		index.jsp:70
+	void com.orionserver.http.OrionHttpJspPage.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		OrionHttpJspPage.java:56
+		[SRC:/index.jsp:26]
+	void oracle.jsp.runtimev2.JspPageTable.compileAndServe(oracle.jsp.runtimev2.JspPageInfo, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspPageTable.java:537
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:272
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind.server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind.server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind.server.http.HttpRequestHandler.processRequest(com.evermind.server.ApplicationServerThread, com.evermind.server.http.EvermindHttpServletRequest, com.evermind.server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind.server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind.server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+
+</PRE>
+<P><P><HR ALIGN=CENTER>
+</HTML></BODY>
+
+27/11/18 19:53 Started
+27/11/18 19:53 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 19:53 Workspace1-Aplicacion-webapp: action: init
+27/11/18 19:53 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 19:53 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Stopped
+27/11/18 19:55 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 19:55 Workspace1-Aplicacion-webapp: action: init
+27/11/18 19:55 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 23:46 Started
+27/11/18 23:46 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 23:46 Workspace1-Aplicacion-webapp: action: init
+27/11/18 23:46 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 23:47 Started
+27/11/18 23:47 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 23:47 Workspace1-Aplicacion-webapp: action: init
+27/11/18 23:47 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 23:48 Started
+27/11/18 23:48 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 23:48 Workspace1-Aplicacion-webapp: action: init
+27/11/18 23:48 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 23:52 Started
+27/11/18 23:52 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 23:52 Workspace1-Aplicacion-webapp: action: init
+27/11/18 23:52 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+27/11/18 23:55 Started
+27/11/18 23:55 Workspace1-Aplicacion-webapp: JDevOJSP: init
+27/11/18 23:55 Workspace1-Aplicacion-webapp: action: init
+27/11/18 23:55 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started
+28/11/18 0:16 Started
+28/11/18 0:16 Workspace1-Aplicacion-webapp: JDevOJSP: init
+28/11/18 0:16 Workspace1-Aplicacion-webapp: action: init
+28/11/18 0:16 Workspace1-Aplicacion-webapp: 9.0.3.0.0 Started

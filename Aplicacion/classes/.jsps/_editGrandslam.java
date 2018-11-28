@@ -61,9 +61,8 @@ public class _editGrandslam extends oracle.jsp.runtime.HttpJsp {
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[2]);
             /*@lineinfo:translated-code*//*@lineinfo:24^19*/            {
-              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag disabled onkeypress property readonly styleClass value");
+              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag onkeypress property readonly styleClass value");
               __jsp_taghandler_2.setParent(__jsp_taghandler_1);
-              __jsp_taghandler_2.setDisabled(true);
               __jsp_taghandler_2.setOnkeypress("EvaluateText('%d',this)");
               __jsp_taghandler_2.setProperty("id");
               __jsp_taghandler_2.setReadonly(true);
@@ -181,7 +180,7 @@ public class _editGrandslam extends oracle.jsp.runtime.HttpJsp {
       text[3] = 
       "\n                </div>\n              </div>\n            </div>\n\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Nombre</h6>\n                  ".toCharArray();
       text[4] = 
-      "\n                </div>\n              </div>\n            </div>\n\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Año</h6>\n                  ".toCharArray();
+      "\n                </div>\n              </div>\n            </div>\n\n            <div class=\"row justify-content-md-center\">\n              <div class=\"col-md\">\n                <div class=\"form-group\">\n                  <h6>Aï¿½o</h6>\n                  ".toCharArray();
       text[5] = 
       "\n                </div>\n              </div>\n            </div>\n\n            <div class=\"form-group\">\n              ".toCharArray();
       text[6] = 
